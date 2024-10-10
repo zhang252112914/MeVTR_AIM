@@ -1,0 +1,3467 @@
+2024-10-10 05:20:50,183:INFO: Effective parameters:
+2024-10-10 05:20:50,183:INFO:   <<< adaptive_cls: 0
+2024-10-10 05:20:50,183:INFO:   <<< aggregation: None
+2024-10-10 05:20:50,183:INFO:   <<< alpha: 1.0
+2024-10-10 05:20:50,184:INFO:   <<< batch_size: 256
+2024-10-10 05:20:50,184:INFO:   <<< batch_size_val: 64
+2024-10-10 05:20:50,184:INFO:   <<< cache_dir: 
+2024-10-10 05:20:50,184:INFO:   <<< cluser_embed_from_clip: 1
+2024-10-10 05:20:50,184:INFO:   <<< cluster_algo: kmediods++
+2024-10-10 05:20:50,184:INFO:   <<< cluster_distance: euclidean
+2024-10-10 05:20:50,184:INFO:   <<< cluster_embedding: 0
+2024-10-10 05:20:50,184:INFO:   <<< cluster_frame_embedding: 0
+2024-10-10 05:20:50,184:INFO:   <<< cluster_iter_limit: 100
+2024-10-10 05:20:50,184:INFO:   <<< cluster_threshold: 1e-05
+2024-10-10 05:20:50,184:INFO:   <<< coef_lr: 0.0001
+2024-10-10 05:20:50,184:INFO:   <<< cross_model: cross-base
+2024-10-10 05:20:50,184:INFO:   <<< cross_num_hidden_layers: 4
+2024-10-10 05:20:50,184:INFO:   <<< data_path: /home/zyl/MeVTR/charades/annotation
+2024-10-10 05:20:50,184:INFO:   <<< datatype: charades
+2024-10-10 05:20:50,184:INFO:   <<< do_eval: False
+2024-10-10 05:20:50,184:INFO:   <<< do_lower_case: False
+2024-10-10 05:20:50,184:INFO:   <<< do_pretrain: False
+2024-10-10 05:20:50,184:INFO:   <<< do_train: True
+2024-10-10 05:20:50,185:INFO:   <<< dynamic_alpha: False
+2024-10-10 05:20:50,185:INFO:   <<< epochs: 20
+2024-10-10 05:20:50,185:INFO:   <<< eval_frame_order: 0
+2024-10-10 05:20:50,185:INFO:   <<< expand_msrvtt_sentences: False
+2024-10-10 05:20:50,185:INFO:   <<< feature_framerate: 1
+2024-10-10 05:20:50,185:INFO:   <<< features_path: /home/zyl/MeVTR/charades/Charades_v2_3
+2024-10-10 05:20:50,185:INFO:   <<< fp16: False
+2024-10-10 05:20:50,185:INFO:   <<< fp16_opt_level: O1
+2024-10-10 05:20:50,185:INFO:   <<< freeze_layer_num: 0
+2024-10-10 05:20:50,185:INFO:   <<< gradient_accumulation_steps: 1
+2024-10-10 05:20:50,185:INFO:   <<< hard_negative_rate: 0.5
+2024-10-10 05:20:50,185:INFO:   <<< init_model: /home/zyl/MeVTR/pretrained_clip/modules/ViT-B-32.pt
+2024-10-10 05:20:50,185:INFO:   <<< linear_patch: 2d
+2024-10-10 05:20:50,185:INFO:   <<< local_rank: 0
+2024-10-10 05:20:50,186:INFO:   <<< loose_type: True
+2024-10-10 05:20:50,186:INFO:   <<< loss: balanced
+2024-10-10 05:20:50,186:INFO:   <<< lr: 0.0001
+2024-10-10 05:20:50,186:INFO:   <<< lr_decay: 0.9
+2024-10-10 05:20:50,186:INFO:   <<< margin: 0.1
+2024-10-10 05:20:50,186:INFO:   <<< max_frames: 64
+2024-10-10 05:20:50,186:INFO:   <<< max_words: 77
+2024-10-10 05:20:50,186:INFO:   <<< minkowski_norm_p: 2.0
+2024-10-10 05:20:50,186:INFO:   <<< n_display: 100
+2024-10-10 05:20:50,186:INFO:   <<< n_gpu: 1
+2024-10-10 05:20:50,186:INFO:   <<< n_pair: 1
+2024-10-10 05:20:50,186:INFO:   <<< negative_weighting: 1
+2024-10-10 05:20:50,186:INFO:   <<< num_thread_reader: 8
+2024-10-10 05:20:50,186:INFO:   <<< output_dir: /home/zyl/MeVTR/output
+2024-10-10 05:20:50,186:INFO:   <<< post_cluster_centroids: 16
+2024-10-10 05:20:50,186:INFO:   <<< post_process: cluster
+2024-10-10 05:20:50,186:INFO:   <<< pre_norm: 0
+2024-10-10 05:20:50,186:INFO:   <<< pretrained_clip_name: ViT-B/32
+2024-10-10 05:20:50,187:INFO:   <<< rank: 0
+2024-10-10 05:20:50,187:INFO:   <<< resume_model: None
+2024-10-10 05:20:50,187:INFO:   <<< sampled_use_mil: False
+2024-10-10 05:20:50,187:INFO:   <<< save_feature_path: None
+2024-10-10 05:20:50,187:INFO:   <<< seed: 42
+2024-10-10 05:20:50,187:INFO:   <<< sim_header: meanP
+2024-10-10 05:20:50,187:INFO:   <<< sim_lambda: 0.0
+2024-10-10 05:20:50,187:INFO:   <<< slice_framepos: 2
+2024-10-10 05:20:50,187:INFO:   <<< task_type: retrieval
+2024-10-10 05:20:50,187:INFO:   <<< temperature_new: 1.0
+2024-10-10 05:20:50,187:INFO:   <<< text_num_hidden_layers: 12
+2024-10-10 05:20:50,187:INFO:   <<< time_embedding: 0
+2024-10-10 05:20:50,187:INFO:   <<< train_csv: data/.train.csv
+2024-10-10 05:20:50,187:INFO:   <<< train_frame_order: 0
+2024-10-10 05:20:50,187:INFO:   <<< use_mil: False
+2024-10-10 05:20:50,187:INFO:   <<< val_csv: data/.val.csv
+2024-10-10 05:20:50,187:INFO:   <<< video_dim: 1024
+2024-10-10 05:20:50,187:INFO:   <<< visual_num_hidden_layers: 12
+2024-10-10 05:20:50,187:INFO:   <<< warmup_proportion: 0.1
+2024-10-10 05:20:50,187:INFO:   <<< world_size: 2
+2024-10-10 05:20:50,187:INFO: device: cuda:0 n_gpu: 1
+2024-10-10 05:20:50,195:INFO: Effective parameters:
+2024-10-10 05:20:50,196:INFO:   <<< adaptive_cls: 0
+2024-10-10 05:20:50,196:INFO:   <<< aggregation: None
+2024-10-10 05:20:50,196:INFO:   <<< alpha: 1.0
+2024-10-10 05:20:50,196:INFO:   <<< batch_size: 256
+2024-10-10 05:20:50,196:INFO:   <<< batch_size_val: 64
+2024-10-10 05:20:50,196:INFO:   <<< cache_dir: 
+2024-10-10 05:20:50,196:INFO:   <<< cluser_embed_from_clip: 1
+2024-10-10 05:20:50,196:INFO:   <<< cluster_algo: kmediods++
+2024-10-10 05:20:50,196:INFO:   <<< cluster_distance: euclidean
+2024-10-10 05:20:50,196:INFO:   <<< cluster_embedding: 0
+2024-10-10 05:20:50,196:INFO:   <<< cluster_frame_embedding: 0
+2024-10-10 05:20:50,196:INFO:   <<< cluster_iter_limit: 100
+2024-10-10 05:20:50,196:INFO:   <<< cluster_threshold: 1e-05
+2024-10-10 05:20:50,196:INFO:   <<< coef_lr: 0.0001
+2024-10-10 05:20:50,196:INFO:   <<< cross_model: cross-base
+2024-10-10 05:20:50,196:INFO:   <<< cross_num_hidden_layers: 4
+2024-10-10 05:20:50,196:INFO:   <<< data_path: /home/zyl/MeVTR/charades/annotation
+2024-10-10 05:20:50,197:INFO:   <<< datatype: charades
+2024-10-10 05:20:50,197:INFO:   <<< do_eval: False
+2024-10-10 05:20:50,197:INFO:   <<< do_lower_case: False
+2024-10-10 05:20:50,197:INFO:   <<< do_pretrain: False
+2024-10-10 05:20:50,197:INFO:   <<< do_train: True
+2024-10-10 05:20:50,197:INFO:   <<< dynamic_alpha: False
+2024-10-10 05:20:50,197:INFO:   <<< epochs: 20
+2024-10-10 05:20:50,197:INFO:   <<< eval_frame_order: 0
+2024-10-10 05:20:50,197:INFO:   <<< expand_msrvtt_sentences: False
+2024-10-10 05:20:50,197:INFO:   <<< feature_framerate: 1
+2024-10-10 05:20:50,197:INFO:   <<< features_path: /home/zyl/MeVTR/charades/Charades_v2_3
+2024-10-10 05:20:50,197:INFO:   <<< fp16: False
+2024-10-10 05:20:50,197:INFO:   <<< fp16_opt_level: O1
+2024-10-10 05:20:50,197:INFO:   <<< freeze_layer_num: 0
+2024-10-10 05:20:50,197:INFO:   <<< gradient_accumulation_steps: 1
+2024-10-10 05:20:50,197:INFO:   <<< hard_negative_rate: 0.5
+2024-10-10 05:20:50,197:INFO:   <<< init_model: /home/zyl/MeVTR/pretrained_clip/modules/ViT-B-32.pt
+2024-10-10 05:20:50,197:INFO:   <<< linear_patch: 2d
+2024-10-10 05:20:50,198:INFO:   <<< local_rank: 0
+2024-10-10 05:20:50,198:INFO:   <<< loose_type: True
+2024-10-10 05:20:50,198:INFO:   <<< loss: balanced
+2024-10-10 05:20:50,198:INFO:   <<< lr: 0.0001
+2024-10-10 05:20:50,198:INFO:   <<< lr_decay: 0.9
+2024-10-10 05:20:50,198:INFO:   <<< margin: 0.1
+2024-10-10 05:20:50,198:INFO:   <<< max_frames: 64
+2024-10-10 05:20:50,198:INFO:   <<< max_words: 77
+2024-10-10 05:20:50,198:INFO:   <<< minkowski_norm_p: 2.0
+2024-10-10 05:20:50,198:INFO:   <<< n_display: 100
+2024-10-10 05:20:50,198:INFO:   <<< n_gpu: 1
+2024-10-10 05:20:50,198:INFO:   <<< n_pair: 1
+2024-10-10 05:20:50,198:INFO:   <<< negative_weighting: 1
+2024-10-10 05:20:50,198:INFO:   <<< num_thread_reader: 8
+2024-10-10 05:20:50,198:INFO:   <<< output_dir: /home/zyl/MeVTR/output
+2024-10-10 05:20:50,198:INFO:   <<< post_cluster_centroids: 16
+2024-10-10 05:20:50,198:INFO:   <<< post_process: cluster
+2024-10-10 05:20:50,198:INFO:   <<< pre_norm: 0
+2024-10-10 05:20:50,199:INFO:   <<< pretrained_clip_name: ViT-B/32
+2024-10-10 05:20:50,199:INFO:   <<< rank: 1
+2024-10-10 05:20:50,199:INFO:   <<< resume_model: None
+2024-10-10 05:20:50,199:INFO:   <<< sampled_use_mil: False
+2024-10-10 05:20:50,199:INFO:   <<< save_feature_path: None
+2024-10-10 05:20:50,199:INFO:   <<< seed: 42
+2024-10-10 05:20:50,199:INFO:   <<< sim_header: meanP
+2024-10-10 05:20:50,199:INFO:   <<< sim_lambda: 0.0
+2024-10-10 05:20:50,199:INFO:   <<< slice_framepos: 2
+2024-10-10 05:20:50,199:INFO:   <<< task_type: retrieval
+2024-10-10 05:20:50,199:INFO:   <<< temperature_new: 1.0
+2024-10-10 05:20:50,199:INFO:   <<< text_num_hidden_layers: 12
+2024-10-10 05:20:50,199:INFO:   <<< time_embedding: 0
+2024-10-10 05:20:50,199:INFO:   <<< train_csv: data/.train.csv
+2024-10-10 05:20:50,199:INFO:   <<< train_frame_order: 0
+2024-10-10 05:20:50,199:INFO:   <<< use_mil: False
+2024-10-10 05:20:50,199:INFO:   <<< val_csv: data/.val.csv
+2024-10-10 05:20:50,199:INFO:   <<< video_dim: 1024
+2024-10-10 05:20:50,199:INFO:   <<< visual_num_hidden_layers: 12
+2024-10-10 05:20:50,200:INFO:   <<< warmup_proportion: 0.1
+2024-10-10 05:20:50,200:INFO:   <<< world_size: 2
+2024-10-10 05:20:50,200:INFO: device: cuda:0 n_gpu: 1
+2024-10-10 05:20:53,968:INFO: loading archive file /home/zyl/MeVTR/modules/cross-base
+2024-10-10 05:20:53,970:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 512,
+  "initializer_range": 0.02,
+  "intermediate_size": 2048,
+  "max_position_embeddings": 128,
+  "num_attention_heads": 8,
+  "num_hidden_layers": 4,
+  "type_vocab_size": 2,
+  "vocab_size": 512
+}
+
+2024-10-10 05:20:53,970:INFO: Weight doesn't exsits. /home/zyl/MeVTR/modules/cross-base/cross_pytorch_model.bin
+2024-10-10 05:20:53,971:WARNING: Stage-One:True, Stage-Two:False
+2024-10-10 05:20:53,971:WARNING: Test retrieval by loose type.
+2024-10-10 05:20:53,971:WARNING: 	 embed_dim: 512
+2024-10-10 05:20:53,971:WARNING: 	 image_resolution: 224
+2024-10-10 05:20:53,972:WARNING: 	 vision_layers: 12
+2024-10-10 05:20:53,972:WARNING: 	 vision_width: 768
+2024-10-10 05:20:53,972:WARNING: 	 vision_patch_size: 32
+2024-10-10 05:20:53,972:WARNING: 	 context_length: 77
+2024-10-10 05:20:53,972:WARNING: 	 vocab_size: 49408
+2024-10-10 05:20:53,972:WARNING: 	 transformer_width: 512
+2024-10-10 05:20:53,972:WARNING: 	 transformer_heads: 8
+2024-10-10 05:20:53,972:WARNING: 	 transformer_layers: 12
+2024-10-10 05:20:53,972:WARNING: 		 linear_patch: 2d
+2024-10-10 05:20:53,972:WARNING: 	 cut_top_layer: 0
+2024-10-10 05:20:54,057:INFO: loading archive file /home/zyl/MeVTR/modules/cross-base
+2024-10-10 05:20:54,058:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 512,
+  "initializer_range": 0.02,
+  "intermediate_size": 2048,
+  "max_position_embeddings": 128,
+  "num_attention_heads": 8,
+  "num_hidden_layers": 4,
+  "type_vocab_size": 2,
+  "vocab_size": 512
+}
+
+2024-10-10 05:20:54,058:INFO: Weight doesn't exsits. /home/zyl/MeVTR/modules/cross-base/cross_pytorch_model.bin
+2024-10-10 05:20:54,059:WARNING: Stage-One:True, Stage-Two:False
+2024-10-10 05:20:54,059:WARNING: Test retrieval by loose type.
+2024-10-10 05:20:54,059:WARNING: 	 embed_dim: 512
+2024-10-10 05:20:54,059:WARNING: 	 image_resolution: 224
+2024-10-10 05:20:54,059:WARNING: 	 vision_layers: 12
+2024-10-10 05:20:54,059:WARNING: 	 vision_width: 768
+2024-10-10 05:20:54,059:WARNING: 	 vision_patch_size: 32
+2024-10-10 05:20:54,059:WARNING: 	 context_length: 77
+2024-10-10 05:20:54,059:WARNING: 	 vocab_size: 49408
+2024-10-10 05:20:54,059:WARNING: 	 transformer_width: 512
+2024-10-10 05:20:54,059:WARNING: 	 transformer_heads: 8
+2024-10-10 05:20:54,059:WARNING: 	 transformer_layers: 12
+2024-10-10 05:20:54,059:WARNING: 		 linear_patch: 2d
+2024-10-10 05:20:54,060:WARNING: 	 cut_top_layer: 0
+2024-10-10 05:20:56,451:WARNING: 	 sim_header: meanP
+2024-10-10 05:20:56,686:WARNING: 	 sim_header: meanP
+2024-10-10 05:21:01,861:INFO: --------------------
+2024-10-10 05:21:01,862:INFO: Weights from pretrained model not used in MeRetriever: 
+   positional_embedding
+   text_projection
+   logit_scale
+   input_resolution
+   context_length
+   vocab_size
+   visual.class_embedding
+   visual.positional_embedding
+   visual.proj
+   visual.conv1.weight
+   visual.ln_pre.weight
+   visual.ln_pre.bias
+   visual.transformer.resblocks.0.attn.in_proj_weight
+   visual.transformer.resblocks.0.attn.in_proj_bias
+   visual.transformer.resblocks.0.attn.out_proj.weight
+   visual.transformer.resblocks.0.attn.out_proj.bias
+   visual.transformer.resblocks.0.ln_1.weight
+   visual.transformer.resblocks.0.ln_1.bias
+   visual.transformer.resblocks.0.mlp.c_fc.weight
+   visual.transformer.resblocks.0.mlp.c_fc.bias
+   visual.transformer.resblocks.0.mlp.c_proj.weight
+   visual.transformer.resblocks.0.mlp.c_proj.bias
+   visual.transformer.resblocks.0.ln_2.weight
+   visual.transformer.resblocks.0.ln_2.bias
+   visual.transformer.resblocks.1.attn.in_proj_weight
+   visual.transformer.resblocks.1.attn.in_proj_bias
+   visual.transformer.resblocks.1.attn.out_proj.weight
+   visual.transformer.resblocks.1.attn.out_proj.bias
+   visual.transformer.resblocks.1.ln_1.weight
+   visual.transformer.resblocks.1.ln_1.bias
+   visual.transformer.resblocks.1.mlp.c_fc.weight
+   visual.transformer.resblocks.1.mlp.c_fc.bias
+   visual.transformer.resblocks.1.mlp.c_proj.weight
+   visual.transformer.resblocks.1.mlp.c_proj.bias
+   visual.transformer.resblocks.1.ln_2.weight
+   visual.transformer.resblocks.1.ln_2.bias
+   visual.transformer.resblocks.2.attn.in_proj_weight
+   visual.transformer.resblocks.2.attn.in_proj_bias
+   visual.transformer.resblocks.2.attn.out_proj.weight
+   visual.transformer.resblocks.2.attn.out_proj.bias
+   visual.transformer.resblocks.2.ln_1.weight
+   visual.transformer.resblocks.2.ln_1.bias
+   visual.transformer.resblocks.2.mlp.c_fc.weight
+   visual.transformer.resblocks.2.mlp.c_fc.bias
+   visual.transformer.resblocks.2.mlp.c_proj.weight
+   visual.transformer.resblocks.2.mlp.c_proj.bias
+   visual.transformer.resblocks.2.ln_2.weight
+   visual.transformer.resblocks.2.ln_2.bias
+   visual.transformer.resblocks.3.attn.in_proj_weight
+   visual.transformer.resblocks.3.attn.in_proj_bias
+   visual.transformer.resblocks.3.attn.out_proj.weight
+   visual.transformer.resblocks.3.attn.out_proj.bias
+   visual.transformer.resblocks.3.ln_1.weight
+   visual.transformer.resblocks.3.ln_1.bias
+   visual.transformer.resblocks.3.mlp.c_fc.weight
+   visual.transformer.resblocks.3.mlp.c_fc.bias
+   visual.transformer.resblocks.3.mlp.c_proj.weight
+   visual.transformer.resblocks.3.mlp.c_proj.bias
+   visual.transformer.resblocks.3.ln_2.weight
+   visual.transformer.resblocks.3.ln_2.bias
+   visual.transformer.resblocks.4.attn.in_proj_weight
+   visual.transformer.resblocks.4.attn.in_proj_bias
+   visual.transformer.resblocks.4.attn.out_proj.weight
+   visual.transformer.resblocks.4.attn.out_proj.bias
+   visual.transformer.resblocks.4.ln_1.weight
+   visual.transformer.resblocks.4.ln_1.bias
+   visual.transformer.resblocks.4.mlp.c_fc.weight
+   visual.transformer.resblocks.4.mlp.c_fc.bias
+   visual.transformer.resblocks.4.mlp.c_proj.weight
+   visual.transformer.resblocks.4.mlp.c_proj.bias
+   visual.transformer.resblocks.4.ln_2.weight
+   visual.transformer.resblocks.4.ln_2.bias
+   visual.transformer.resblocks.5.attn.in_proj_weight
+   visual.transformer.resblocks.5.attn.in_proj_bias
+   visual.transformer.resblocks.5.attn.out_proj.weight
+   visual.transformer.resblocks.5.attn.out_proj.bias
+   visual.transformer.resblocks.5.ln_1.weight
+   visual.transformer.resblocks.5.ln_1.bias
+   visual.transformer.resblocks.5.mlp.c_fc.weight
+   visual.transformer.resblocks.5.mlp.c_fc.bias
+   visual.transformer.resblocks.5.mlp.c_proj.weight
+   visual.transformer.resblocks.5.mlp.c_proj.bias
+   visual.transformer.resblocks.5.ln_2.weight
+   visual.transformer.resblocks.5.ln_2.bias
+   visual.transformer.resblocks.6.attn.in_proj_weight
+   visual.transformer.resblocks.6.attn.in_proj_bias
+   visual.transformer.resblocks.6.attn.out_proj.weight
+   visual.transformer.resblocks.6.attn.out_proj.bias
+   visual.transformer.resblocks.6.ln_1.weight
+   visual.transformer.resblocks.6.ln_1.bias
+   visual.transformer.resblocks.6.mlp.c_fc.weight
+   visual.transformer.resblocks.6.mlp.c_fc.bias
+   visual.transformer.resblocks.6.mlp.c_proj.weight
+   visual.transformer.resblocks.6.mlp.c_proj.bias
+   visual.transformer.resblocks.6.ln_2.weight
+   visual.transformer.resblocks.6.ln_2.bias
+   visual.transformer.resblocks.7.attn.in_proj_weight
+   visual.transformer.resblocks.7.attn.in_proj_bias
+   visual.transformer.resblocks.7.attn.out_proj.weight
+   visual.transformer.resblocks.7.attn.out_proj.bias
+   visual.transformer.resblocks.7.ln_1.weight
+   visual.transformer.resblocks.7.ln_1.bias
+   visual.transformer.resblocks.7.mlp.c_fc.weight
+   visual.transformer.resblocks.7.mlp.c_fc.bias
+   visual.transformer.resblocks.7.mlp.c_proj.weight
+   visual.transformer.resblocks.7.mlp.c_proj.bias
+   visual.transformer.resblocks.7.ln_2.weight
+   visual.transformer.resblocks.7.ln_2.bias
+   visual.transformer.resblocks.8.attn.in_proj_weight
+   visual.transformer.resblocks.8.attn.in_proj_bias
+   visual.transformer.resblocks.8.attn.out_proj.weight
+   visual.transformer.resblocks.8.attn.out_proj.bias
+   visual.transformer.resblocks.8.ln_1.weight
+   visual.transformer.resblocks.8.ln_1.bias
+   visual.transformer.resblocks.8.mlp.c_fc.weight
+   visual.transformer.resblocks.8.mlp.c_fc.bias
+   visual.transformer.resblocks.8.mlp.c_proj.weight
+   visual.transformer.resblocks.8.mlp.c_proj.bias
+   visual.transformer.resblocks.8.ln_2.weight
+   visual.transformer.resblocks.8.ln_2.bias
+   visual.transformer.resblocks.9.attn.in_proj_weight
+   visual.transformer.resblocks.9.attn.in_proj_bias
+   visual.transformer.resblocks.9.attn.out_proj.weight
+   visual.transformer.resblocks.9.attn.out_proj.bias
+   visual.transformer.resblocks.9.ln_1.weight
+   visual.transformer.resblocks.9.ln_1.bias
+   visual.transformer.resblocks.9.mlp.c_fc.weight
+   visual.transformer.resblocks.9.mlp.c_fc.bias
+   visual.transformer.resblocks.9.mlp.c_proj.weight
+   visual.transformer.resblocks.9.mlp.c_proj.bias
+   visual.transformer.resblocks.9.ln_2.weight
+   visual.transformer.resblocks.9.ln_2.bias
+   visual.transformer.resblocks.10.attn.in_proj_weight
+   visual.transformer.resblocks.10.attn.in_proj_bias
+   visual.transformer.resblocks.10.attn.out_proj.weight
+   visual.transformer.resblocks.10.attn.out_proj.bias
+   visual.transformer.resblocks.10.ln_1.weight
+   visual.transformer.resblocks.10.ln_1.bias
+   visual.transformer.resblocks.10.mlp.c_fc.weight
+   visual.transformer.resblocks.10.mlp.c_fc.bias
+   visual.transformer.resblocks.10.mlp.c_proj.weight
+   visual.transformer.resblocks.10.mlp.c_proj.bias
+   visual.transformer.resblocks.10.ln_2.weight
+   visual.transformer.resblocks.10.ln_2.bias
+   visual.transformer.resblocks.11.attn.in_proj_weight
+   visual.transformer.resblocks.11.attn.in_proj_bias
+   visual.transformer.resblocks.11.attn.out_proj.weight
+   visual.transformer.resblocks.11.attn.out_proj.bias
+   visual.transformer.resblocks.11.ln_1.weight
+   visual.transformer.resblocks.11.ln_1.bias
+   visual.transformer.resblocks.11.mlp.c_fc.weight
+   visual.transformer.resblocks.11.mlp.c_fc.bias
+   visual.transformer.resblocks.11.mlp.c_proj.weight
+   visual.transformer.resblocks.11.mlp.c_proj.bias
+   visual.transformer.resblocks.11.ln_2.weight
+   visual.transformer.resblocks.11.ln_2.bias
+   visual.ln_post.weight
+   visual.ln_post.bias
+   transformer.resblocks.0.attn.in_proj_weight
+   transformer.resblocks.0.attn.in_proj_bias
+   transformer.resblocks.0.attn.out_proj.weight
+   transformer.resblocks.0.attn.out_proj.bias
+   transformer.resblocks.0.ln_1.weight
+   transformer.resblocks.0.ln_1.bias
+   transformer.resblocks.0.mlp.c_fc.weight
+   transformer.resblocks.0.mlp.c_fc.bias
+   transformer.resblocks.0.mlp.c_proj.weight
+   transformer.resblocks.0.mlp.c_proj.bias
+   transformer.resblocks.0.ln_2.weight
+   transformer.resblocks.0.ln_2.bias
+   transformer.resblocks.1.attn.in_proj_weight
+   transformer.resblocks.1.attn.in_proj_bias
+   transformer.resblocks.1.attn.out_proj.weight
+   transformer.resblocks.1.attn.out_proj.bias
+   transformer.resblocks.1.ln_1.weight
+   transformer.resblocks.1.ln_1.bias
+   transformer.resblocks.1.mlp.c_fc.weight
+   transformer.resblocks.1.mlp.c_fc.bias
+   transformer.resblocks.1.mlp.c_proj.weight
+   transformer.resblocks.1.mlp.c_proj.bias
+   transformer.resblocks.1.ln_2.weight
+   transformer.resblocks.1.ln_2.bias
+   transformer.resblocks.2.attn.in_proj_weight
+   transformer.resblocks.2.attn.in_proj_bias
+   transformer.resblocks.2.attn.out_proj.weight
+   transformer.resblocks.2.attn.out_proj.bias
+   transformer.resblocks.2.ln_1.weight
+   transformer.resblocks.2.ln_1.bias
+   transformer.resblocks.2.mlp.c_fc.weight
+   transformer.resblocks.2.mlp.c_fc.bias
+   transformer.resblocks.2.mlp.c_proj.weight
+   transformer.resblocks.2.mlp.c_proj.bias
+   transformer.resblocks.2.ln_2.weight
+   transformer.resblocks.2.ln_2.bias
+   transformer.resblocks.3.attn.in_proj_weight
+   transformer.resblocks.3.attn.in_proj_bias
+   transformer.resblocks.3.attn.out_proj.weight
+   transformer.resblocks.3.attn.out_proj.bias
+   transformer.resblocks.3.ln_1.weight
+   transformer.resblocks.3.ln_1.bias
+   transformer.resblocks.3.mlp.c_fc.weight
+   transformer.resblocks.3.mlp.c_fc.bias
+   transformer.resblocks.3.mlp.c_proj.weight
+   transformer.resblocks.3.mlp.c_proj.bias
+   transformer.resblocks.3.ln_2.weight
+   transformer.resblocks.3.ln_2.bias
+   transformer.resblocks.4.attn.in_proj_weight
+   transformer.resblocks.4.attn.in_proj_bias
+   transformer.resblocks.4.attn.out_proj.weight
+   transformer.resblocks.4.attn.out_proj.bias
+   transformer.resblocks.4.ln_1.weight
+   transformer.resblocks.4.ln_1.bias
+   transformer.resblocks.4.mlp.c_fc.weight
+   transformer.resblocks.4.mlp.c_fc.bias
+   transformer.resblocks.4.mlp.c_proj.weight
+   transformer.resblocks.4.mlp.c_proj.bias
+   transformer.resblocks.4.ln_2.weight
+   transformer.resblocks.4.ln_2.bias
+   transformer.resblocks.5.attn.in_proj_weight
+   transformer.resblocks.5.attn.in_proj_bias
+   transformer.resblocks.5.attn.out_proj.weight
+   transformer.resblocks.5.attn.out_proj.bias
+   transformer.resblocks.5.ln_1.weight
+   transformer.resblocks.5.ln_1.bias
+   transformer.resblocks.5.mlp.c_fc.weight
+   transformer.resblocks.5.mlp.c_fc.bias
+   transformer.resblocks.5.mlp.c_proj.weight
+   transformer.resblocks.5.mlp.c_proj.bias
+   transformer.resblocks.5.ln_2.weight
+   transformer.resblocks.5.ln_2.bias
+   transformer.resblocks.6.attn.in_proj_weight
+   transformer.resblocks.6.attn.in_proj_bias
+   transformer.resblocks.6.attn.out_proj.weight
+   transformer.resblocks.6.attn.out_proj.bias
+   transformer.resblocks.6.ln_1.weight
+   transformer.resblocks.6.ln_1.bias
+   transformer.resblocks.6.mlp.c_fc.weight
+   transformer.resblocks.6.mlp.c_fc.bias
+   transformer.resblocks.6.mlp.c_proj.weight
+   transformer.resblocks.6.mlp.c_proj.bias
+   transformer.resblocks.6.ln_2.weight
+   transformer.resblocks.6.ln_2.bias
+   transformer.resblocks.7.attn.in_proj_weight
+   transformer.resblocks.7.attn.in_proj_bias
+   transformer.resblocks.7.attn.out_proj.weight
+   transformer.resblocks.7.attn.out_proj.bias
+   transformer.resblocks.7.ln_1.weight
+   transformer.resblocks.7.ln_1.bias
+   transformer.resblocks.7.mlp.c_fc.weight
+   transformer.resblocks.7.mlp.c_fc.bias
+   transformer.resblocks.7.mlp.c_proj.weight
+   transformer.resblocks.7.mlp.c_proj.bias
+   transformer.resblocks.7.ln_2.weight
+   transformer.resblocks.7.ln_2.bias
+   transformer.resblocks.8.attn.in_proj_weight
+   transformer.resblocks.8.attn.in_proj_bias
+   transformer.resblocks.8.attn.out_proj.weight
+   transformer.resblocks.8.attn.out_proj.bias
+   transformer.resblocks.8.ln_1.weight
+   transformer.resblocks.8.ln_1.bias
+   transformer.resblocks.8.mlp.c_fc.weight
+   transformer.resblocks.8.mlp.c_fc.bias
+   transformer.resblocks.8.mlp.c_proj.weight
+   transformer.resblocks.8.mlp.c_proj.bias
+   transformer.resblocks.8.ln_2.weight
+   transformer.resblocks.8.ln_2.bias
+   transformer.resblocks.9.attn.in_proj_weight
+   transformer.resblocks.9.attn.in_proj_bias
+   transformer.resblocks.9.attn.out_proj.weight
+   transformer.resblocks.9.attn.out_proj.bias
+   transformer.resblocks.9.ln_1.weight
+   transformer.resblocks.9.ln_1.bias
+   transformer.resblocks.9.mlp.c_fc.weight
+   transformer.resblocks.9.mlp.c_fc.bias
+   transformer.resblocks.9.mlp.c_proj.weight
+   transformer.resblocks.9.mlp.c_proj.bias
+   transformer.resblocks.9.ln_2.weight
+   transformer.resblocks.9.ln_2.bias
+   transformer.resblocks.10.attn.in_proj_weight
+   transformer.resblocks.10.attn.in_proj_bias
+   transformer.resblocks.10.attn.out_proj.weight
+   transformer.resblocks.10.attn.out_proj.bias
+   transformer.resblocks.10.ln_1.weight
+   transformer.resblocks.10.ln_1.bias
+   transformer.resblocks.10.mlp.c_fc.weight
+   transformer.resblocks.10.mlp.c_fc.bias
+   transformer.resblocks.10.mlp.c_proj.weight
+   transformer.resblocks.10.mlp.c_proj.bias
+   transformer.resblocks.10.ln_2.weight
+   transformer.resblocks.10.ln_2.bias
+   transformer.resblocks.11.attn.in_proj_weight
+   transformer.resblocks.11.attn.in_proj_bias
+   transformer.resblocks.11.attn.out_proj.weight
+   transformer.resblocks.11.attn.out_proj.bias
+   transformer.resblocks.11.ln_1.weight
+   transformer.resblocks.11.ln_1.bias
+   transformer.resblocks.11.mlp.c_fc.weight
+   transformer.resblocks.11.mlp.c_fc.bias
+   transformer.resblocks.11.mlp.c_proj.weight
+   transformer.resblocks.11.mlp.c_proj.bias
+   transformer.resblocks.11.ln_2.weight
+   transformer.resblocks.11.ln_2.bias
+   token_embedding.weight
+   ln_final.weight
+   ln_final.bias
+   clip.input_resolution
+   clip.context_length
+   clip.vocab_size
+2024-10-10 05:21:01,999:INFO: --------------------
+2024-10-10 05:21:01,999:INFO: Weights from pretrained model not used in MeRetriever: 
+   positional_embedding
+   text_projection
+   logit_scale
+   input_resolution
+   context_length
+   vocab_size
+   visual.class_embedding
+   visual.positional_embedding
+   visual.proj
+   visual.conv1.weight
+   visual.ln_pre.weight
+   visual.ln_pre.bias
+   visual.transformer.resblocks.0.attn.in_proj_weight
+   visual.transformer.resblocks.0.attn.in_proj_bias
+   visual.transformer.resblocks.0.attn.out_proj.weight
+   visual.transformer.resblocks.0.attn.out_proj.bias
+   visual.transformer.resblocks.0.ln_1.weight
+   visual.transformer.resblocks.0.ln_1.bias
+   visual.transformer.resblocks.0.mlp.c_fc.weight
+   visual.transformer.resblocks.0.mlp.c_fc.bias
+   visual.transformer.resblocks.0.mlp.c_proj.weight
+   visual.transformer.resblocks.0.mlp.c_proj.bias
+   visual.transformer.resblocks.0.ln_2.weight
+   visual.transformer.resblocks.0.ln_2.bias
+   visual.transformer.resblocks.1.attn.in_proj_weight
+   visual.transformer.resblocks.1.attn.in_proj_bias
+   visual.transformer.resblocks.1.attn.out_proj.weight
+   visual.transformer.resblocks.1.attn.out_proj.bias
+   visual.transformer.resblocks.1.ln_1.weight
+   visual.transformer.resblocks.1.ln_1.bias
+   visual.transformer.resblocks.1.mlp.c_fc.weight
+   visual.transformer.resblocks.1.mlp.c_fc.bias
+   visual.transformer.resblocks.1.mlp.c_proj.weight
+   visual.transformer.resblocks.1.mlp.c_proj.bias
+   visual.transformer.resblocks.1.ln_2.weight
+   visual.transformer.resblocks.1.ln_2.bias
+   visual.transformer.resblocks.2.attn.in_proj_weight
+   visual.transformer.resblocks.2.attn.in_proj_bias
+   visual.transformer.resblocks.2.attn.out_proj.weight
+   visual.transformer.resblocks.2.attn.out_proj.bias
+   visual.transformer.resblocks.2.ln_1.weight
+   visual.transformer.resblocks.2.ln_1.bias
+   visual.transformer.resblocks.2.mlp.c_fc.weight
+   visual.transformer.resblocks.2.mlp.c_fc.bias
+   visual.transformer.resblocks.2.mlp.c_proj.weight
+   visual.transformer.resblocks.2.mlp.c_proj.bias
+   visual.transformer.resblocks.2.ln_2.weight
+   visual.transformer.resblocks.2.ln_2.bias
+   visual.transformer.resblocks.3.attn.in_proj_weight
+   visual.transformer.resblocks.3.attn.in_proj_bias
+   visual.transformer.resblocks.3.attn.out_proj.weight
+   visual.transformer.resblocks.3.attn.out_proj.bias
+   visual.transformer.resblocks.3.ln_1.weight
+   visual.transformer.resblocks.3.ln_1.bias
+   visual.transformer.resblocks.3.mlp.c_fc.weight
+   visual.transformer.resblocks.3.mlp.c_fc.bias
+   visual.transformer.resblocks.3.mlp.c_proj.weight
+   visual.transformer.resblocks.3.mlp.c_proj.bias
+   visual.transformer.resblocks.3.ln_2.weight
+   visual.transformer.resblocks.3.ln_2.bias
+   visual.transformer.resblocks.4.attn.in_proj_weight
+   visual.transformer.resblocks.4.attn.in_proj_bias
+   visual.transformer.resblocks.4.attn.out_proj.weight
+   visual.transformer.resblocks.4.attn.out_proj.bias
+   visual.transformer.resblocks.4.ln_1.weight
+   visual.transformer.resblocks.4.ln_1.bias
+   visual.transformer.resblocks.4.mlp.c_fc.weight
+   visual.transformer.resblocks.4.mlp.c_fc.bias
+   visual.transformer.resblocks.4.mlp.c_proj.weight
+   visual.transformer.resblocks.4.mlp.c_proj.bias
+   visual.transformer.resblocks.4.ln_2.weight
+   visual.transformer.resblocks.4.ln_2.bias
+   visual.transformer.resblocks.5.attn.in_proj_weight
+   visual.transformer.resblocks.5.attn.in_proj_bias
+   visual.transformer.resblocks.5.attn.out_proj.weight
+   visual.transformer.resblocks.5.attn.out_proj.bias
+   visual.transformer.resblocks.5.ln_1.weight
+   visual.transformer.resblocks.5.ln_1.bias
+   visual.transformer.resblocks.5.mlp.c_fc.weight
+   visual.transformer.resblocks.5.mlp.c_fc.bias
+   visual.transformer.resblocks.5.mlp.c_proj.weight
+   visual.transformer.resblocks.5.mlp.c_proj.bias
+   visual.transformer.resblocks.5.ln_2.weight
+   visual.transformer.resblocks.5.ln_2.bias
+   visual.transformer.resblocks.6.attn.in_proj_weight
+   visual.transformer.resblocks.6.attn.in_proj_bias
+   visual.transformer.resblocks.6.attn.out_proj.weight
+   visual.transformer.resblocks.6.attn.out_proj.bias
+   visual.transformer.resblocks.6.ln_1.weight
+   visual.transformer.resblocks.6.ln_1.bias
+   visual.transformer.resblocks.6.mlp.c_fc.weight
+   visual.transformer.resblocks.6.mlp.c_fc.bias
+   visual.transformer.resblocks.6.mlp.c_proj.weight
+   visual.transformer.resblocks.6.mlp.c_proj.bias
+   visual.transformer.resblocks.6.ln_2.weight
+   visual.transformer.resblocks.6.ln_2.bias
+   visual.transformer.resblocks.7.attn.in_proj_weight
+   visual.transformer.resblocks.7.attn.in_proj_bias
+   visual.transformer.resblocks.7.attn.out_proj.weight
+   visual.transformer.resblocks.7.attn.out_proj.bias
+   visual.transformer.resblocks.7.ln_1.weight
+   visual.transformer.resblocks.7.ln_1.bias
+   visual.transformer.resblocks.7.mlp.c_fc.weight
+   visual.transformer.resblocks.7.mlp.c_fc.bias
+   visual.transformer.resblocks.7.mlp.c_proj.weight
+   visual.transformer.resblocks.7.mlp.c_proj.bias
+   visual.transformer.resblocks.7.ln_2.weight
+   visual.transformer.resblocks.7.ln_2.bias
+   visual.transformer.resblocks.8.attn.in_proj_weight
+   visual.transformer.resblocks.8.attn.in_proj_bias
+   visual.transformer.resblocks.8.attn.out_proj.weight
+   visual.transformer.resblocks.8.attn.out_proj.bias
+   visual.transformer.resblocks.8.ln_1.weight
+   visual.transformer.resblocks.8.ln_1.bias
+   visual.transformer.resblocks.8.mlp.c_fc.weight
+   visual.transformer.resblocks.8.mlp.c_fc.bias
+   visual.transformer.resblocks.8.mlp.c_proj.weight
+   visual.transformer.resblocks.8.mlp.c_proj.bias
+   visual.transformer.resblocks.8.ln_2.weight
+   visual.transformer.resblocks.8.ln_2.bias
+   visual.transformer.resblocks.9.attn.in_proj_weight
+   visual.transformer.resblocks.9.attn.in_proj_bias
+   visual.transformer.resblocks.9.attn.out_proj.weight
+   visual.transformer.resblocks.9.attn.out_proj.bias
+   visual.transformer.resblocks.9.ln_1.weight
+   visual.transformer.resblocks.9.ln_1.bias
+   visual.transformer.resblocks.9.mlp.c_fc.weight
+   visual.transformer.resblocks.9.mlp.c_fc.bias
+   visual.transformer.resblocks.9.mlp.c_proj.weight
+   visual.transformer.resblocks.9.mlp.c_proj.bias
+   visual.transformer.resblocks.9.ln_2.weight
+   visual.transformer.resblocks.9.ln_2.bias
+   visual.transformer.resblocks.10.attn.in_proj_weight
+   visual.transformer.resblocks.10.attn.in_proj_bias
+   visual.transformer.resblocks.10.attn.out_proj.weight
+   visual.transformer.resblocks.10.attn.out_proj.bias
+   visual.transformer.resblocks.10.ln_1.weight
+   visual.transformer.resblocks.10.ln_1.bias
+   visual.transformer.resblocks.10.mlp.c_fc.weight
+   visual.transformer.resblocks.10.mlp.c_fc.bias
+   visual.transformer.resblocks.10.mlp.c_proj.weight
+   visual.transformer.resblocks.10.mlp.c_proj.bias
+   visual.transformer.resblocks.10.ln_2.weight
+   visual.transformer.resblocks.10.ln_2.bias
+   visual.transformer.resblocks.11.attn.in_proj_weight
+   visual.transformer.resblocks.11.attn.in_proj_bias
+   visual.transformer.resblocks.11.attn.out_proj.weight
+   visual.transformer.resblocks.11.attn.out_proj.bias
+   visual.transformer.resblocks.11.ln_1.weight
+   visual.transformer.resblocks.11.ln_1.bias
+   visual.transformer.resblocks.11.mlp.c_fc.weight
+   visual.transformer.resblocks.11.mlp.c_fc.bias
+   visual.transformer.resblocks.11.mlp.c_proj.weight
+   visual.transformer.resblocks.11.mlp.c_proj.bias
+   visual.transformer.resblocks.11.ln_2.weight
+   visual.transformer.resblocks.11.ln_2.bias
+   visual.ln_post.weight
+   visual.ln_post.bias
+   transformer.resblocks.0.attn.in_proj_weight
+   transformer.resblocks.0.attn.in_proj_bias
+   transformer.resblocks.0.attn.out_proj.weight
+   transformer.resblocks.0.attn.out_proj.bias
+   transformer.resblocks.0.ln_1.weight
+   transformer.resblocks.0.ln_1.bias
+   transformer.resblocks.0.mlp.c_fc.weight
+   transformer.resblocks.0.mlp.c_fc.bias
+   transformer.resblocks.0.mlp.c_proj.weight
+   transformer.resblocks.0.mlp.c_proj.bias
+   transformer.resblocks.0.ln_2.weight
+   transformer.resblocks.0.ln_2.bias
+   transformer.resblocks.1.attn.in_proj_weight
+   transformer.resblocks.1.attn.in_proj_bias
+   transformer.resblocks.1.attn.out_proj.weight
+   transformer.resblocks.1.attn.out_proj.bias
+   transformer.resblocks.1.ln_1.weight
+   transformer.resblocks.1.ln_1.bias
+   transformer.resblocks.1.mlp.c_fc.weight
+   transformer.resblocks.1.mlp.c_fc.bias
+   transformer.resblocks.1.mlp.c_proj.weight
+   transformer.resblocks.1.mlp.c_proj.bias
+   transformer.resblocks.1.ln_2.weight
+   transformer.resblocks.1.ln_2.bias
+   transformer.resblocks.2.attn.in_proj_weight
+   transformer.resblocks.2.attn.in_proj_bias
+   transformer.resblocks.2.attn.out_proj.weight
+   transformer.resblocks.2.attn.out_proj.bias
+   transformer.resblocks.2.ln_1.weight
+   transformer.resblocks.2.ln_1.bias
+   transformer.resblocks.2.mlp.c_fc.weight
+   transformer.resblocks.2.mlp.c_fc.bias
+   transformer.resblocks.2.mlp.c_proj.weight
+   transformer.resblocks.2.mlp.c_proj.bias
+   transformer.resblocks.2.ln_2.weight
+   transformer.resblocks.2.ln_2.bias
+   transformer.resblocks.3.attn.in_proj_weight
+   transformer.resblocks.3.attn.in_proj_bias
+   transformer.resblocks.3.attn.out_proj.weight
+   transformer.resblocks.3.attn.out_proj.bias
+   transformer.resblocks.3.ln_1.weight
+   transformer.resblocks.3.ln_1.bias
+   transformer.resblocks.3.mlp.c_fc.weight
+   transformer.resblocks.3.mlp.c_fc.bias
+   transformer.resblocks.3.mlp.c_proj.weight
+   transformer.resblocks.3.mlp.c_proj.bias
+   transformer.resblocks.3.ln_2.weight
+   transformer.resblocks.3.ln_2.bias
+   transformer.resblocks.4.attn.in_proj_weight
+   transformer.resblocks.4.attn.in_proj_bias
+   transformer.resblocks.4.attn.out_proj.weight
+   transformer.resblocks.4.attn.out_proj.bias
+   transformer.resblocks.4.ln_1.weight
+   transformer.resblocks.4.ln_1.bias
+   transformer.resblocks.4.mlp.c_fc.weight
+   transformer.resblocks.4.mlp.c_fc.bias
+   transformer.resblocks.4.mlp.c_proj.weight
+   transformer.resblocks.4.mlp.c_proj.bias
+   transformer.resblocks.4.ln_2.weight
+   transformer.resblocks.4.ln_2.bias
+   transformer.resblocks.5.attn.in_proj_weight
+   transformer.resblocks.5.attn.in_proj_bias
+   transformer.resblocks.5.attn.out_proj.weight
+   transformer.resblocks.5.attn.out_proj.bias
+   transformer.resblocks.5.ln_1.weight
+   transformer.resblocks.5.ln_1.bias
+   transformer.resblocks.5.mlp.c_fc.weight
+   transformer.resblocks.5.mlp.c_fc.bias
+   transformer.resblocks.5.mlp.c_proj.weight
+   transformer.resblocks.5.mlp.c_proj.bias
+   transformer.resblocks.5.ln_2.weight
+   transformer.resblocks.5.ln_2.bias
+   transformer.resblocks.6.attn.in_proj_weight
+   transformer.resblocks.6.attn.in_proj_bias
+   transformer.resblocks.6.attn.out_proj.weight
+   transformer.resblocks.6.attn.out_proj.bias
+   transformer.resblocks.6.ln_1.weight
+   transformer.resblocks.6.ln_1.bias
+   transformer.resblocks.6.mlp.c_fc.weight
+   transformer.resblocks.6.mlp.c_fc.bias
+   transformer.resblocks.6.mlp.c_proj.weight
+   transformer.resblocks.6.mlp.c_proj.bias
+   transformer.resblocks.6.ln_2.weight
+   transformer.resblocks.6.ln_2.bias
+   transformer.resblocks.7.attn.in_proj_weight
+   transformer.resblocks.7.attn.in_proj_bias
+   transformer.resblocks.7.attn.out_proj.weight
+   transformer.resblocks.7.attn.out_proj.bias
+   transformer.resblocks.7.ln_1.weight
+   transformer.resblocks.7.ln_1.bias
+   transformer.resblocks.7.mlp.c_fc.weight
+   transformer.resblocks.7.mlp.c_fc.bias
+   transformer.resblocks.7.mlp.c_proj.weight
+   transformer.resblocks.7.mlp.c_proj.bias
+   transformer.resblocks.7.ln_2.weight
+   transformer.resblocks.7.ln_2.bias
+   transformer.resblocks.8.attn.in_proj_weight
+   transformer.resblocks.8.attn.in_proj_bias
+   transformer.resblocks.8.attn.out_proj.weight
+   transformer.resblocks.8.attn.out_proj.bias
+   transformer.resblocks.8.ln_1.weight
+   transformer.resblocks.8.ln_1.bias
+   transformer.resblocks.8.mlp.c_fc.weight
+   transformer.resblocks.8.mlp.c_fc.bias
+   transformer.resblocks.8.mlp.c_proj.weight
+   transformer.resblocks.8.mlp.c_proj.bias
+   transformer.resblocks.8.ln_2.weight
+   transformer.resblocks.8.ln_2.bias
+   transformer.resblocks.9.attn.in_proj_weight
+   transformer.resblocks.9.attn.in_proj_bias
+   transformer.resblocks.9.attn.out_proj.weight
+   transformer.resblocks.9.attn.out_proj.bias
+   transformer.resblocks.9.ln_1.weight
+   transformer.resblocks.9.ln_1.bias
+   transformer.resblocks.9.mlp.c_fc.weight
+   transformer.resblocks.9.mlp.c_fc.bias
+   transformer.resblocks.9.mlp.c_proj.weight
+   transformer.resblocks.9.mlp.c_proj.bias
+   transformer.resblocks.9.ln_2.weight
+   transformer.resblocks.9.ln_2.bias
+   transformer.resblocks.10.attn.in_proj_weight
+   transformer.resblocks.10.attn.in_proj_bias
+   transformer.resblocks.10.attn.out_proj.weight
+   transformer.resblocks.10.attn.out_proj.bias
+   transformer.resblocks.10.ln_1.weight
+   transformer.resblocks.10.ln_1.bias
+   transformer.resblocks.10.mlp.c_fc.weight
+   transformer.resblocks.10.mlp.c_fc.bias
+   transformer.resblocks.10.mlp.c_proj.weight
+   transformer.resblocks.10.mlp.c_proj.bias
+   transformer.resblocks.10.ln_2.weight
+   transformer.resblocks.10.ln_2.bias
+   transformer.resblocks.11.attn.in_proj_weight
+   transformer.resblocks.11.attn.in_proj_bias
+   transformer.resblocks.11.attn.out_proj.weight
+   transformer.resblocks.11.attn.out_proj.bias
+   transformer.resblocks.11.ln_1.weight
+   transformer.resblocks.11.ln_1.bias
+   transformer.resblocks.11.mlp.c_fc.weight
+   transformer.resblocks.11.mlp.c_fc.bias
+   transformer.resblocks.11.mlp.c_proj.weight
+   transformer.resblocks.11.mlp.c_proj.bias
+   transformer.resblocks.11.ln_2.weight
+   transformer.resblocks.11.ln_2.bias
+   token_embedding.weight
+   ln_final.weight
+   ln_final.bias
+   clip.input_resolution
+   clip.context_length
+   clip.vocab_size
+2024-10-10 05:21:03,839:INFO: ***** Running test *****
+2024-10-10 05:21:03,839:INFO:   Num examples = 1334
+2024-10-10 05:21:03,840:INFO:   Batch size = 64
+2024-10-10 05:21:03,840:INFO:   Num steps = 6
+2024-10-10 05:21:03,840:INFO: ***** Running val *****
+2024-10-10 05:21:03,840:INFO:   Num examples = 1334
+2024-10-10 05:21:04,196:INFO: ***** Running test *****
+2024-10-10 05:21:04,196:INFO:   Num examples = 1334
+2024-10-10 05:21:04,196:INFO:   Batch size = 64
+2024-10-10 05:21:04,196:INFO:   Num steps = 6
+2024-10-10 05:21:04,196:INFO: ***** Running val *****
+2024-10-10 05:21:04,196:INFO:   Num examples = 1334
+2024-10-10 06:54:04,389:INFO: Effective parameters:
+2024-10-10 06:54:04,389:INFO:   <<< adaptive_cls: 0
+2024-10-10 06:54:04,389:INFO:   <<< aggregation: None
+2024-10-10 06:54:04,389:INFO:   <<< alpha: 1.0
+2024-10-10 06:54:04,389:INFO:   <<< batch_size: 256
+2024-10-10 06:54:04,389:INFO:   <<< batch_size_val: 64
+2024-10-10 06:54:04,389:INFO:   <<< cache_dir: 
+2024-10-10 06:54:04,390:INFO:   <<< cluser_embed_from_clip: 1
+2024-10-10 06:54:04,390:INFO:   <<< cluster_algo: kmediods++
+2024-10-10 06:54:04,390:INFO:   <<< cluster_distance: euclidean
+2024-10-10 06:54:04,390:INFO:   <<< cluster_embedding: 0
+2024-10-10 06:54:04,390:INFO:   <<< cluster_frame_embedding: 0
+2024-10-10 06:54:04,390:INFO:   <<< cluster_iter_limit: 100
+2024-10-10 06:54:04,390:INFO:   <<< cluster_threshold: 1e-05
+2024-10-10 06:54:04,390:INFO:   <<< coef_lr: 0.0001
+2024-10-10 06:54:04,390:INFO:   <<< cross_model: cross-base
+2024-10-10 06:54:04,390:INFO:   <<< cross_num_hidden_layers: 4
+2024-10-10 06:54:04,390:INFO:   <<< data_path: /home/zyl/MeVTR/charades/annotation
+2024-10-10 06:54:04,390:INFO:   <<< datatype: charades
+2024-10-10 06:54:04,390:INFO:   <<< do_eval: False
+2024-10-10 06:54:04,390:INFO:   <<< do_lower_case: False
+2024-10-10 06:54:04,390:INFO:   <<< do_pretrain: False
+2024-10-10 06:54:04,391:INFO:   <<< do_train: True
+2024-10-10 06:54:04,391:INFO:   <<< dynamic_alpha: False
+2024-10-10 06:54:04,391:INFO:   <<< epochs: 20
+2024-10-10 06:54:04,391:INFO:   <<< eval_frame_order: 0
+2024-10-10 06:54:04,391:INFO:   <<< expand_msrvtt_sentences: False
+2024-10-10 06:54:04,391:INFO:   <<< feature_framerate: 1
+2024-10-10 06:54:04,391:INFO:   <<< features_path: /home/zyl/MeVTR/charades/Charades_v2_3
+2024-10-10 06:54:04,391:INFO:   <<< fp16: False
+2024-10-10 06:54:04,391:INFO:   <<< fp16_opt_level: O1
+2024-10-10 06:54:04,391:INFO:   <<< freeze_layer_num: 0
+2024-10-10 06:54:04,391:INFO:   <<< gradient_accumulation_steps: 1
+2024-10-10 06:54:04,391:INFO:   <<< hard_negative_rate: 0.5
+2024-10-10 06:54:04,391:INFO:   <<< init_model: /home/zyl/MeVTR/pretrained_clip/modules/ViT-B-32.pt
+2024-10-10 06:54:04,391:INFO:   <<< linear_patch: 2d
+2024-10-10 06:54:04,391:INFO:   <<< local_rank: 0
+2024-10-10 06:54:04,391:INFO:   <<< loose_type: True
+2024-10-10 06:54:04,392:INFO:   <<< loss: balanced
+2024-10-10 06:54:04,392:INFO:   <<< lr: 0.0001
+2024-10-10 06:54:04,392:INFO:   <<< lr_decay: 0.9
+2024-10-10 06:54:04,392:INFO:   <<< margin: 0.1
+2024-10-10 06:54:04,392:INFO:   <<< max_frames: 64
+2024-10-10 06:54:04,392:INFO:   <<< max_words: 77
+2024-10-10 06:54:04,392:INFO:   <<< minkowski_norm_p: 2.0
+2024-10-10 06:54:04,392:INFO:   <<< n_display: 100
+2024-10-10 06:54:04,392:INFO:   <<< n_gpu: 1
+2024-10-10 06:54:04,392:INFO:   <<< n_pair: 1
+2024-10-10 06:54:04,392:INFO:   <<< negative_weighting: 1
+2024-10-10 06:54:04,392:INFO:   <<< num_thread_reader: 8
+2024-10-10 06:54:04,392:INFO:   <<< output_dir: /home/zyl/MeVTR/output
+2024-10-10 06:54:04,392:INFO:   <<< post_cluster_centroids: 16
+2024-10-10 06:54:04,392:INFO:   <<< post_process: cluster
+2024-10-10 06:54:04,392:INFO:   <<< pre_norm: 0
+2024-10-10 06:54:04,393:INFO:   <<< pretrained_clip_name: ViT-B/32
+2024-10-10 06:54:04,393:INFO:   <<< rank: 0
+2024-10-10 06:54:04,393:INFO:   <<< resume_model: None
+2024-10-10 06:54:04,393:INFO:   <<< sampled_use_mil: False
+2024-10-10 06:54:04,393:INFO:   <<< save_feature_path: None
+2024-10-10 06:54:04,393:INFO:   <<< seed: 42
+2024-10-10 06:54:04,393:INFO:   <<< sim_header: meanP
+2024-10-10 06:54:04,393:INFO:   <<< sim_lambda: 0.0
+2024-10-10 06:54:04,393:INFO:   <<< slice_framepos: 2
+2024-10-10 06:54:04,393:INFO:   <<< task_type: retrieval
+2024-10-10 06:54:04,393:INFO:   <<< temperature_new: 1.0
+2024-10-10 06:54:04,393:INFO:   <<< text_num_hidden_layers: 12
+2024-10-10 06:54:04,393:INFO:   <<< time_embedding: 0
+2024-10-10 06:54:04,393:INFO:   <<< train_csv: data/.train.csv
+2024-10-10 06:54:04,393:INFO:   <<< train_frame_order: 0
+2024-10-10 06:54:04,394:INFO:   <<< use_mil: False
+2024-10-10 06:54:04,394:INFO:   <<< val_csv: data/.val.csv
+2024-10-10 06:54:04,394:INFO:   <<< video_dim: 1024
+2024-10-10 06:54:04,394:INFO:   <<< visual_num_hidden_layers: 12
+2024-10-10 06:54:04,394:INFO:   <<< warmup_proportion: 0.1
+2024-10-10 06:54:04,394:INFO:   <<< world_size: 2
+2024-10-10 06:54:04,394:INFO: device: cuda:0 n_gpu: 1
+2024-10-10 06:54:04,436:INFO: Effective parameters:
+2024-10-10 06:54:04,436:INFO:   <<< adaptive_cls: 0
+2024-10-10 06:54:04,436:INFO:   <<< aggregation: None
+2024-10-10 06:54:04,436:INFO:   <<< alpha: 1.0
+2024-10-10 06:54:04,436:INFO:   <<< batch_size: 256
+2024-10-10 06:54:04,437:INFO:   <<< batch_size_val: 64
+2024-10-10 06:54:04,437:INFO:   <<< cache_dir: 
+2024-10-10 06:54:04,437:INFO:   <<< cluser_embed_from_clip: 1
+2024-10-10 06:54:04,437:INFO:   <<< cluster_algo: kmediods++
+2024-10-10 06:54:04,437:INFO:   <<< cluster_distance: euclidean
+2024-10-10 06:54:04,437:INFO:   <<< cluster_embedding: 0
+2024-10-10 06:54:04,437:INFO:   <<< cluster_frame_embedding: 0
+2024-10-10 06:54:04,437:INFO:   <<< cluster_iter_limit: 100
+2024-10-10 06:54:04,437:INFO:   <<< cluster_threshold: 1e-05
+2024-10-10 06:54:04,437:INFO:   <<< coef_lr: 0.0001
+2024-10-10 06:54:04,437:INFO:   <<< cross_model: cross-base
+2024-10-10 06:54:04,437:INFO:   <<< cross_num_hidden_layers: 4
+2024-10-10 06:54:04,437:INFO:   <<< data_path: /home/zyl/MeVTR/charades/annotation
+2024-10-10 06:54:04,437:INFO:   <<< datatype: charades
+2024-10-10 06:54:04,437:INFO:   <<< do_eval: False
+2024-10-10 06:54:04,437:INFO:   <<< do_lower_case: False
+2024-10-10 06:54:04,437:INFO:   <<< do_pretrain: False
+2024-10-10 06:54:04,437:INFO:   <<< do_train: True
+2024-10-10 06:54:04,437:INFO:   <<< dynamic_alpha: False
+2024-10-10 06:54:04,437:INFO:   <<< epochs: 20
+2024-10-10 06:54:04,437:INFO:   <<< eval_frame_order: 0
+2024-10-10 06:54:04,437:INFO:   <<< expand_msrvtt_sentences: False
+2024-10-10 06:54:04,437:INFO:   <<< feature_framerate: 1
+2024-10-10 06:54:04,437:INFO:   <<< features_path: /home/zyl/MeVTR/charades/Charades_v2_3
+2024-10-10 06:54:04,437:INFO:   <<< fp16: False
+2024-10-10 06:54:04,437:INFO:   <<< fp16_opt_level: O1
+2024-10-10 06:54:04,437:INFO:   <<< freeze_layer_num: 0
+2024-10-10 06:54:04,438:INFO:   <<< gradient_accumulation_steps: 1
+2024-10-10 06:54:04,438:INFO:   <<< hard_negative_rate: 0.5
+2024-10-10 06:54:04,438:INFO:   <<< init_model: /home/zyl/MeVTR/pretrained_clip/modules/ViT-B-32.pt
+2024-10-10 06:54:04,438:INFO:   <<< linear_patch: 2d
+2024-10-10 06:54:04,438:INFO:   <<< local_rank: 0
+2024-10-10 06:54:04,438:INFO:   <<< loose_type: True
+2024-10-10 06:54:04,438:INFO:   <<< loss: balanced
+2024-10-10 06:54:04,438:INFO:   <<< lr: 0.0001
+2024-10-10 06:54:04,438:INFO:   <<< lr_decay: 0.9
+2024-10-10 06:54:04,438:INFO:   <<< margin: 0.1
+2024-10-10 06:54:04,438:INFO:   <<< max_frames: 64
+2024-10-10 06:54:04,438:INFO:   <<< max_words: 77
+2024-10-10 06:54:04,438:INFO:   <<< minkowski_norm_p: 2.0
+2024-10-10 06:54:04,438:INFO:   <<< n_display: 100
+2024-10-10 06:54:04,438:INFO:   <<< n_gpu: 1
+2024-10-10 06:54:04,438:INFO:   <<< n_pair: 1
+2024-10-10 06:54:04,438:INFO:   <<< negative_weighting: 1
+2024-10-10 06:54:04,438:INFO:   <<< num_thread_reader: 8
+2024-10-10 06:54:04,438:INFO:   <<< output_dir: /home/zyl/MeVTR/output
+2024-10-10 06:54:04,438:INFO:   <<< post_cluster_centroids: 16
+2024-10-10 06:54:04,438:INFO:   <<< post_process: cluster
+2024-10-10 06:54:04,438:INFO:   <<< pre_norm: 0
+2024-10-10 06:54:04,438:INFO:   <<< pretrained_clip_name: ViT-B/32
+2024-10-10 06:54:04,438:INFO:   <<< rank: 1
+2024-10-10 06:54:04,438:INFO:   <<< resume_model: None
+2024-10-10 06:54:04,438:INFO:   <<< sampled_use_mil: False
+2024-10-10 06:54:04,438:INFO:   <<< save_feature_path: None
+2024-10-10 06:54:04,438:INFO:   <<< seed: 42
+2024-10-10 06:54:04,439:INFO:   <<< sim_header: meanP
+2024-10-10 06:54:04,439:INFO:   <<< sim_lambda: 0.0
+2024-10-10 06:54:04,439:INFO:   <<< slice_framepos: 2
+2024-10-10 06:54:04,439:INFO:   <<< task_type: retrieval
+2024-10-10 06:54:04,439:INFO:   <<< temperature_new: 1.0
+2024-10-10 06:54:04,439:INFO:   <<< text_num_hidden_layers: 12
+2024-10-10 06:54:04,439:INFO:   <<< time_embedding: 0
+2024-10-10 06:54:04,439:INFO:   <<< train_csv: data/.train.csv
+2024-10-10 06:54:04,439:INFO:   <<< train_frame_order: 0
+2024-10-10 06:54:04,439:INFO:   <<< use_mil: False
+2024-10-10 06:54:04,439:INFO:   <<< val_csv: data/.val.csv
+2024-10-10 06:54:04,439:INFO:   <<< video_dim: 1024
+2024-10-10 06:54:04,439:INFO:   <<< visual_num_hidden_layers: 12
+2024-10-10 06:54:04,439:INFO:   <<< warmup_proportion: 0.1
+2024-10-10 06:54:04,439:INFO:   <<< world_size: 2
+2024-10-10 06:54:04,439:INFO: device: cuda:0 n_gpu: 1
+2024-10-10 06:54:07,642:INFO: loading archive file /home/zyl/MeVTR/modules/cross-base
+2024-10-10 06:54:07,642:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 512,
+  "initializer_range": 0.02,
+  "intermediate_size": 2048,
+  "max_position_embeddings": 128,
+  "num_attention_heads": 8,
+  "num_hidden_layers": 4,
+  "type_vocab_size": 2,
+  "vocab_size": 512
+}
+
+2024-10-10 06:54:07,643:INFO: Weight doesn't exsits. /home/zyl/MeVTR/modules/cross-base/cross_pytorch_model.bin
+2024-10-10 06:54:07,643:WARNING: Stage-One:True, Stage-Two:False
+2024-10-10 06:54:07,643:WARNING: Test retrieval by loose type.
+2024-10-10 06:54:07,643:WARNING: 	 embed_dim: 512
+2024-10-10 06:54:07,643:WARNING: 	 image_resolution: 224
+2024-10-10 06:54:07,643:WARNING: 	 vision_layers: 12
+2024-10-10 06:54:07,644:WARNING: 	 vision_width: 768
+2024-10-10 06:54:07,644:WARNING: 	 vision_patch_size: 32
+2024-10-10 06:54:07,644:WARNING: 	 context_length: 77
+2024-10-10 06:54:07,644:WARNING: 	 vocab_size: 49408
+2024-10-10 06:54:07,644:WARNING: 	 transformer_width: 512
+2024-10-10 06:54:07,644:WARNING: 	 transformer_heads: 8
+2024-10-10 06:54:07,644:WARNING: 	 transformer_layers: 12
+2024-10-10 06:54:07,644:WARNING: 		 linear_patch: 2d
+2024-10-10 06:54:07,644:WARNING: 	 cut_top_layer: 0
+2024-10-10 06:54:07,722:INFO: loading archive file /home/zyl/MeVTR/modules/cross-base
+2024-10-10 06:54:07,723:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 512,
+  "initializer_range": 0.02,
+  "intermediate_size": 2048,
+  "max_position_embeddings": 128,
+  "num_attention_heads": 8,
+  "num_hidden_layers": 4,
+  "type_vocab_size": 2,
+  "vocab_size": 512
+}
+
+2024-10-10 06:54:07,723:INFO: Weight doesn't exsits. /home/zyl/MeVTR/modules/cross-base/cross_pytorch_model.bin
+2024-10-10 06:54:07,723:WARNING: Stage-One:True, Stage-Two:False
+2024-10-10 06:54:07,723:WARNING: Test retrieval by loose type.
+2024-10-10 06:54:07,723:WARNING: 	 embed_dim: 512
+2024-10-10 06:54:07,723:WARNING: 	 image_resolution: 224
+2024-10-10 06:54:07,723:WARNING: 	 vision_layers: 12
+2024-10-10 06:54:07,723:WARNING: 	 vision_width: 768
+2024-10-10 06:54:07,723:WARNING: 	 vision_patch_size: 32
+2024-10-10 06:54:07,723:WARNING: 	 context_length: 77
+2024-10-10 06:54:07,723:WARNING: 	 vocab_size: 49408
+2024-10-10 06:54:07,723:WARNING: 	 transformer_width: 512
+2024-10-10 06:54:07,724:WARNING: 	 transformer_heads: 8
+2024-10-10 06:54:07,724:WARNING: 	 transformer_layers: 12
+2024-10-10 06:54:07,724:WARNING: 		 linear_patch: 2d
+2024-10-10 06:54:07,724:WARNING: 	 cut_top_layer: 0
+2024-10-10 06:54:10,008:WARNING: 	 sim_header: meanP
+2024-10-10 06:54:10,252:WARNING: 	 sim_header: meanP
+2024-10-10 06:54:14,977:INFO: --------------------
+2024-10-10 06:54:14,977:INFO: Weights from pretrained model not used in MeRetriever: 
+   positional_embedding
+   text_projection
+   logit_scale
+   input_resolution
+   context_length
+   vocab_size
+   visual.class_embedding
+   visual.positional_embedding
+   visual.proj
+   visual.conv1.weight
+   visual.ln_pre.weight
+   visual.ln_pre.bias
+   visual.transformer.resblocks.0.attn.in_proj_weight
+   visual.transformer.resblocks.0.attn.in_proj_bias
+   visual.transformer.resblocks.0.attn.out_proj.weight
+   visual.transformer.resblocks.0.attn.out_proj.bias
+   visual.transformer.resblocks.0.ln_1.weight
+   visual.transformer.resblocks.0.ln_1.bias
+   visual.transformer.resblocks.0.mlp.c_fc.weight
+   visual.transformer.resblocks.0.mlp.c_fc.bias
+   visual.transformer.resblocks.0.mlp.c_proj.weight
+   visual.transformer.resblocks.0.mlp.c_proj.bias
+   visual.transformer.resblocks.0.ln_2.weight
+   visual.transformer.resblocks.0.ln_2.bias
+   visual.transformer.resblocks.1.attn.in_proj_weight
+   visual.transformer.resblocks.1.attn.in_proj_bias
+   visual.transformer.resblocks.1.attn.out_proj.weight
+   visual.transformer.resblocks.1.attn.out_proj.bias
+   visual.transformer.resblocks.1.ln_1.weight
+   visual.transformer.resblocks.1.ln_1.bias
+   visual.transformer.resblocks.1.mlp.c_fc.weight
+   visual.transformer.resblocks.1.mlp.c_fc.bias
+   visual.transformer.resblocks.1.mlp.c_proj.weight
+   visual.transformer.resblocks.1.mlp.c_proj.bias
+   visual.transformer.resblocks.1.ln_2.weight
+   visual.transformer.resblocks.1.ln_2.bias
+   visual.transformer.resblocks.2.attn.in_proj_weight
+   visual.transformer.resblocks.2.attn.in_proj_bias
+   visual.transformer.resblocks.2.attn.out_proj.weight
+   visual.transformer.resblocks.2.attn.out_proj.bias
+   visual.transformer.resblocks.2.ln_1.weight
+   visual.transformer.resblocks.2.ln_1.bias
+   visual.transformer.resblocks.2.mlp.c_fc.weight
+   visual.transformer.resblocks.2.mlp.c_fc.bias
+   visual.transformer.resblocks.2.mlp.c_proj.weight
+   visual.transformer.resblocks.2.mlp.c_proj.bias
+   visual.transformer.resblocks.2.ln_2.weight
+   visual.transformer.resblocks.2.ln_2.bias
+   visual.transformer.resblocks.3.attn.in_proj_weight
+   visual.transformer.resblocks.3.attn.in_proj_bias
+   visual.transformer.resblocks.3.attn.out_proj.weight
+   visual.transformer.resblocks.3.attn.out_proj.bias
+   visual.transformer.resblocks.3.ln_1.weight
+   visual.transformer.resblocks.3.ln_1.bias
+   visual.transformer.resblocks.3.mlp.c_fc.weight
+   visual.transformer.resblocks.3.mlp.c_fc.bias
+   visual.transformer.resblocks.3.mlp.c_proj.weight
+   visual.transformer.resblocks.3.mlp.c_proj.bias
+   visual.transformer.resblocks.3.ln_2.weight
+   visual.transformer.resblocks.3.ln_2.bias
+   visual.transformer.resblocks.4.attn.in_proj_weight
+   visual.transformer.resblocks.4.attn.in_proj_bias
+   visual.transformer.resblocks.4.attn.out_proj.weight
+   visual.transformer.resblocks.4.attn.out_proj.bias
+   visual.transformer.resblocks.4.ln_1.weight
+   visual.transformer.resblocks.4.ln_1.bias
+   visual.transformer.resblocks.4.mlp.c_fc.weight
+   visual.transformer.resblocks.4.mlp.c_fc.bias
+   visual.transformer.resblocks.4.mlp.c_proj.weight
+   visual.transformer.resblocks.4.mlp.c_proj.bias
+   visual.transformer.resblocks.4.ln_2.weight
+   visual.transformer.resblocks.4.ln_2.bias
+   visual.transformer.resblocks.5.attn.in_proj_weight
+   visual.transformer.resblocks.5.attn.in_proj_bias
+   visual.transformer.resblocks.5.attn.out_proj.weight
+   visual.transformer.resblocks.5.attn.out_proj.bias
+   visual.transformer.resblocks.5.ln_1.weight
+   visual.transformer.resblocks.5.ln_1.bias
+   visual.transformer.resblocks.5.mlp.c_fc.weight
+   visual.transformer.resblocks.5.mlp.c_fc.bias
+   visual.transformer.resblocks.5.mlp.c_proj.weight
+   visual.transformer.resblocks.5.mlp.c_proj.bias
+   visual.transformer.resblocks.5.ln_2.weight
+   visual.transformer.resblocks.5.ln_2.bias
+   visual.transformer.resblocks.6.attn.in_proj_weight
+   visual.transformer.resblocks.6.attn.in_proj_bias
+   visual.transformer.resblocks.6.attn.out_proj.weight
+   visual.transformer.resblocks.6.attn.out_proj.bias
+   visual.transformer.resblocks.6.ln_1.weight
+   visual.transformer.resblocks.6.ln_1.bias
+   visual.transformer.resblocks.6.mlp.c_fc.weight
+   visual.transformer.resblocks.6.mlp.c_fc.bias
+   visual.transformer.resblocks.6.mlp.c_proj.weight
+   visual.transformer.resblocks.6.mlp.c_proj.bias
+   visual.transformer.resblocks.6.ln_2.weight
+   visual.transformer.resblocks.6.ln_2.bias
+   visual.transformer.resblocks.7.attn.in_proj_weight
+   visual.transformer.resblocks.7.attn.in_proj_bias
+   visual.transformer.resblocks.7.attn.out_proj.weight
+   visual.transformer.resblocks.7.attn.out_proj.bias
+   visual.transformer.resblocks.7.ln_1.weight
+   visual.transformer.resblocks.7.ln_1.bias
+   visual.transformer.resblocks.7.mlp.c_fc.weight
+   visual.transformer.resblocks.7.mlp.c_fc.bias
+   visual.transformer.resblocks.7.mlp.c_proj.weight
+   visual.transformer.resblocks.7.mlp.c_proj.bias
+   visual.transformer.resblocks.7.ln_2.weight
+   visual.transformer.resblocks.7.ln_2.bias
+   visual.transformer.resblocks.8.attn.in_proj_weight
+   visual.transformer.resblocks.8.attn.in_proj_bias
+   visual.transformer.resblocks.8.attn.out_proj.weight
+   visual.transformer.resblocks.8.attn.out_proj.bias
+   visual.transformer.resblocks.8.ln_1.weight
+   visual.transformer.resblocks.8.ln_1.bias
+   visual.transformer.resblocks.8.mlp.c_fc.weight
+   visual.transformer.resblocks.8.mlp.c_fc.bias
+   visual.transformer.resblocks.8.mlp.c_proj.weight
+   visual.transformer.resblocks.8.mlp.c_proj.bias
+   visual.transformer.resblocks.8.ln_2.weight
+   visual.transformer.resblocks.8.ln_2.bias
+   visual.transformer.resblocks.9.attn.in_proj_weight
+   visual.transformer.resblocks.9.attn.in_proj_bias
+   visual.transformer.resblocks.9.attn.out_proj.weight
+   visual.transformer.resblocks.9.attn.out_proj.bias
+   visual.transformer.resblocks.9.ln_1.weight
+   visual.transformer.resblocks.9.ln_1.bias
+   visual.transformer.resblocks.9.mlp.c_fc.weight
+   visual.transformer.resblocks.9.mlp.c_fc.bias
+   visual.transformer.resblocks.9.mlp.c_proj.weight
+   visual.transformer.resblocks.9.mlp.c_proj.bias
+   visual.transformer.resblocks.9.ln_2.weight
+   visual.transformer.resblocks.9.ln_2.bias
+   visual.transformer.resblocks.10.attn.in_proj_weight
+   visual.transformer.resblocks.10.attn.in_proj_bias
+   visual.transformer.resblocks.10.attn.out_proj.weight
+   visual.transformer.resblocks.10.attn.out_proj.bias
+   visual.transformer.resblocks.10.ln_1.weight
+   visual.transformer.resblocks.10.ln_1.bias
+   visual.transformer.resblocks.10.mlp.c_fc.weight
+   visual.transformer.resblocks.10.mlp.c_fc.bias
+   visual.transformer.resblocks.10.mlp.c_proj.weight
+   visual.transformer.resblocks.10.mlp.c_proj.bias
+   visual.transformer.resblocks.10.ln_2.weight
+   visual.transformer.resblocks.10.ln_2.bias
+   visual.transformer.resblocks.11.attn.in_proj_weight
+   visual.transformer.resblocks.11.attn.in_proj_bias
+   visual.transformer.resblocks.11.attn.out_proj.weight
+   visual.transformer.resblocks.11.attn.out_proj.bias
+   visual.transformer.resblocks.11.ln_1.weight
+   visual.transformer.resblocks.11.ln_1.bias
+   visual.transformer.resblocks.11.mlp.c_fc.weight
+   visual.transformer.resblocks.11.mlp.c_fc.bias
+   visual.transformer.resblocks.11.mlp.c_proj.weight
+   visual.transformer.resblocks.11.mlp.c_proj.bias
+   visual.transformer.resblocks.11.ln_2.weight
+   visual.transformer.resblocks.11.ln_2.bias
+   visual.ln_post.weight
+   visual.ln_post.bias
+   transformer.resblocks.0.attn.in_proj_weight
+   transformer.resblocks.0.attn.in_proj_bias
+   transformer.resblocks.0.attn.out_proj.weight
+   transformer.resblocks.0.attn.out_proj.bias
+   transformer.resblocks.0.ln_1.weight
+   transformer.resblocks.0.ln_1.bias
+   transformer.resblocks.0.mlp.c_fc.weight
+   transformer.resblocks.0.mlp.c_fc.bias
+   transformer.resblocks.0.mlp.c_proj.weight
+   transformer.resblocks.0.mlp.c_proj.bias
+   transformer.resblocks.0.ln_2.weight
+   transformer.resblocks.0.ln_2.bias
+   transformer.resblocks.1.attn.in_proj_weight
+   transformer.resblocks.1.attn.in_proj_bias
+   transformer.resblocks.1.attn.out_proj.weight
+   transformer.resblocks.1.attn.out_proj.bias
+   transformer.resblocks.1.ln_1.weight
+   transformer.resblocks.1.ln_1.bias
+   transformer.resblocks.1.mlp.c_fc.weight
+   transformer.resblocks.1.mlp.c_fc.bias
+   transformer.resblocks.1.mlp.c_proj.weight
+   transformer.resblocks.1.mlp.c_proj.bias
+   transformer.resblocks.1.ln_2.weight
+   transformer.resblocks.1.ln_2.bias
+   transformer.resblocks.2.attn.in_proj_weight
+   transformer.resblocks.2.attn.in_proj_bias
+   transformer.resblocks.2.attn.out_proj.weight
+   transformer.resblocks.2.attn.out_proj.bias
+   transformer.resblocks.2.ln_1.weight
+   transformer.resblocks.2.ln_1.bias
+   transformer.resblocks.2.mlp.c_fc.weight
+   transformer.resblocks.2.mlp.c_fc.bias
+   transformer.resblocks.2.mlp.c_proj.weight
+   transformer.resblocks.2.mlp.c_proj.bias
+   transformer.resblocks.2.ln_2.weight
+   transformer.resblocks.2.ln_2.bias
+   transformer.resblocks.3.attn.in_proj_weight
+   transformer.resblocks.3.attn.in_proj_bias
+   transformer.resblocks.3.attn.out_proj.weight
+   transformer.resblocks.3.attn.out_proj.bias
+   transformer.resblocks.3.ln_1.weight
+   transformer.resblocks.3.ln_1.bias
+   transformer.resblocks.3.mlp.c_fc.weight
+   transformer.resblocks.3.mlp.c_fc.bias
+   transformer.resblocks.3.mlp.c_proj.weight
+   transformer.resblocks.3.mlp.c_proj.bias
+   transformer.resblocks.3.ln_2.weight
+   transformer.resblocks.3.ln_2.bias
+   transformer.resblocks.4.attn.in_proj_weight
+   transformer.resblocks.4.attn.in_proj_bias
+   transformer.resblocks.4.attn.out_proj.weight
+   transformer.resblocks.4.attn.out_proj.bias
+   transformer.resblocks.4.ln_1.weight
+   transformer.resblocks.4.ln_1.bias
+   transformer.resblocks.4.mlp.c_fc.weight
+   transformer.resblocks.4.mlp.c_fc.bias
+   transformer.resblocks.4.mlp.c_proj.weight
+   transformer.resblocks.4.mlp.c_proj.bias
+   transformer.resblocks.4.ln_2.weight
+   transformer.resblocks.4.ln_2.bias
+   transformer.resblocks.5.attn.in_proj_weight
+   transformer.resblocks.5.attn.in_proj_bias
+   transformer.resblocks.5.attn.out_proj.weight
+   transformer.resblocks.5.attn.out_proj.bias
+   transformer.resblocks.5.ln_1.weight
+   transformer.resblocks.5.ln_1.bias
+   transformer.resblocks.5.mlp.c_fc.weight
+   transformer.resblocks.5.mlp.c_fc.bias
+   transformer.resblocks.5.mlp.c_proj.weight
+   transformer.resblocks.5.mlp.c_proj.bias
+   transformer.resblocks.5.ln_2.weight
+   transformer.resblocks.5.ln_2.bias
+   transformer.resblocks.6.attn.in_proj_weight
+   transformer.resblocks.6.attn.in_proj_bias
+   transformer.resblocks.6.attn.out_proj.weight
+   transformer.resblocks.6.attn.out_proj.bias
+   transformer.resblocks.6.ln_1.weight
+   transformer.resblocks.6.ln_1.bias
+   transformer.resblocks.6.mlp.c_fc.weight
+   transformer.resblocks.6.mlp.c_fc.bias
+   transformer.resblocks.6.mlp.c_proj.weight
+   transformer.resblocks.6.mlp.c_proj.bias
+   transformer.resblocks.6.ln_2.weight
+   transformer.resblocks.6.ln_2.bias
+   transformer.resblocks.7.attn.in_proj_weight
+   transformer.resblocks.7.attn.in_proj_bias
+   transformer.resblocks.7.attn.out_proj.weight
+   transformer.resblocks.7.attn.out_proj.bias
+   transformer.resblocks.7.ln_1.weight
+   transformer.resblocks.7.ln_1.bias
+   transformer.resblocks.7.mlp.c_fc.weight
+   transformer.resblocks.7.mlp.c_fc.bias
+   transformer.resblocks.7.mlp.c_proj.weight
+   transformer.resblocks.7.mlp.c_proj.bias
+   transformer.resblocks.7.ln_2.weight
+   transformer.resblocks.7.ln_2.bias
+   transformer.resblocks.8.attn.in_proj_weight
+   transformer.resblocks.8.attn.in_proj_bias
+   transformer.resblocks.8.attn.out_proj.weight
+   transformer.resblocks.8.attn.out_proj.bias
+   transformer.resblocks.8.ln_1.weight
+   transformer.resblocks.8.ln_1.bias
+   transformer.resblocks.8.mlp.c_fc.weight
+   transformer.resblocks.8.mlp.c_fc.bias
+   transformer.resblocks.8.mlp.c_proj.weight
+   transformer.resblocks.8.mlp.c_proj.bias
+   transformer.resblocks.8.ln_2.weight
+   transformer.resblocks.8.ln_2.bias
+   transformer.resblocks.9.attn.in_proj_weight
+   transformer.resblocks.9.attn.in_proj_bias
+   transformer.resblocks.9.attn.out_proj.weight
+   transformer.resblocks.9.attn.out_proj.bias
+   transformer.resblocks.9.ln_1.weight
+   transformer.resblocks.9.ln_1.bias
+   transformer.resblocks.9.mlp.c_fc.weight
+   transformer.resblocks.9.mlp.c_fc.bias
+   transformer.resblocks.9.mlp.c_proj.weight
+   transformer.resblocks.9.mlp.c_proj.bias
+   transformer.resblocks.9.ln_2.weight
+   transformer.resblocks.9.ln_2.bias
+   transformer.resblocks.10.attn.in_proj_weight
+   transformer.resblocks.10.attn.in_proj_bias
+   transformer.resblocks.10.attn.out_proj.weight
+   transformer.resblocks.10.attn.out_proj.bias
+   transformer.resblocks.10.ln_1.weight
+   transformer.resblocks.10.ln_1.bias
+   transformer.resblocks.10.mlp.c_fc.weight
+   transformer.resblocks.10.mlp.c_fc.bias
+   transformer.resblocks.10.mlp.c_proj.weight
+   transformer.resblocks.10.mlp.c_proj.bias
+   transformer.resblocks.10.ln_2.weight
+   transformer.resblocks.10.ln_2.bias
+   transformer.resblocks.11.attn.in_proj_weight
+   transformer.resblocks.11.attn.in_proj_bias
+   transformer.resblocks.11.attn.out_proj.weight
+   transformer.resblocks.11.attn.out_proj.bias
+   transformer.resblocks.11.ln_1.weight
+   transformer.resblocks.11.ln_1.bias
+   transformer.resblocks.11.mlp.c_fc.weight
+   transformer.resblocks.11.mlp.c_fc.bias
+   transformer.resblocks.11.mlp.c_proj.weight
+   transformer.resblocks.11.mlp.c_proj.bias
+   transformer.resblocks.11.ln_2.weight
+   transformer.resblocks.11.ln_2.bias
+   token_embedding.weight
+   ln_final.weight
+   ln_final.bias
+   clip.input_resolution
+   clip.context_length
+   clip.vocab_size
+2024-10-10 06:54:15,251:INFO: --------------------
+2024-10-10 06:54:15,252:INFO: Weights from pretrained model not used in MeRetriever: 
+   positional_embedding
+   text_projection
+   logit_scale
+   input_resolution
+   context_length
+   vocab_size
+   visual.class_embedding
+   visual.positional_embedding
+   visual.proj
+   visual.conv1.weight
+   visual.ln_pre.weight
+   visual.ln_pre.bias
+   visual.transformer.resblocks.0.attn.in_proj_weight
+   visual.transformer.resblocks.0.attn.in_proj_bias
+   visual.transformer.resblocks.0.attn.out_proj.weight
+   visual.transformer.resblocks.0.attn.out_proj.bias
+   visual.transformer.resblocks.0.ln_1.weight
+   visual.transformer.resblocks.0.ln_1.bias
+   visual.transformer.resblocks.0.mlp.c_fc.weight
+   visual.transformer.resblocks.0.mlp.c_fc.bias
+   visual.transformer.resblocks.0.mlp.c_proj.weight
+   visual.transformer.resblocks.0.mlp.c_proj.bias
+   visual.transformer.resblocks.0.ln_2.weight
+   visual.transformer.resblocks.0.ln_2.bias
+   visual.transformer.resblocks.1.attn.in_proj_weight
+   visual.transformer.resblocks.1.attn.in_proj_bias
+   visual.transformer.resblocks.1.attn.out_proj.weight
+   visual.transformer.resblocks.1.attn.out_proj.bias
+   visual.transformer.resblocks.1.ln_1.weight
+   visual.transformer.resblocks.1.ln_1.bias
+   visual.transformer.resblocks.1.mlp.c_fc.weight
+   visual.transformer.resblocks.1.mlp.c_fc.bias
+   visual.transformer.resblocks.1.mlp.c_proj.weight
+   visual.transformer.resblocks.1.mlp.c_proj.bias
+   visual.transformer.resblocks.1.ln_2.weight
+   visual.transformer.resblocks.1.ln_2.bias
+   visual.transformer.resblocks.2.attn.in_proj_weight
+   visual.transformer.resblocks.2.attn.in_proj_bias
+   visual.transformer.resblocks.2.attn.out_proj.weight
+   visual.transformer.resblocks.2.attn.out_proj.bias
+   visual.transformer.resblocks.2.ln_1.weight
+   visual.transformer.resblocks.2.ln_1.bias
+   visual.transformer.resblocks.2.mlp.c_fc.weight
+   visual.transformer.resblocks.2.mlp.c_fc.bias
+   visual.transformer.resblocks.2.mlp.c_proj.weight
+   visual.transformer.resblocks.2.mlp.c_proj.bias
+   visual.transformer.resblocks.2.ln_2.weight
+   visual.transformer.resblocks.2.ln_2.bias
+   visual.transformer.resblocks.3.attn.in_proj_weight
+   visual.transformer.resblocks.3.attn.in_proj_bias
+   visual.transformer.resblocks.3.attn.out_proj.weight
+   visual.transformer.resblocks.3.attn.out_proj.bias
+   visual.transformer.resblocks.3.ln_1.weight
+   visual.transformer.resblocks.3.ln_1.bias
+   visual.transformer.resblocks.3.mlp.c_fc.weight
+   visual.transformer.resblocks.3.mlp.c_fc.bias
+   visual.transformer.resblocks.3.mlp.c_proj.weight
+   visual.transformer.resblocks.3.mlp.c_proj.bias
+   visual.transformer.resblocks.3.ln_2.weight
+   visual.transformer.resblocks.3.ln_2.bias
+   visual.transformer.resblocks.4.attn.in_proj_weight
+   visual.transformer.resblocks.4.attn.in_proj_bias
+   visual.transformer.resblocks.4.attn.out_proj.weight
+   visual.transformer.resblocks.4.attn.out_proj.bias
+   visual.transformer.resblocks.4.ln_1.weight
+   visual.transformer.resblocks.4.ln_1.bias
+   visual.transformer.resblocks.4.mlp.c_fc.weight
+   visual.transformer.resblocks.4.mlp.c_fc.bias
+   visual.transformer.resblocks.4.mlp.c_proj.weight
+   visual.transformer.resblocks.4.mlp.c_proj.bias
+   visual.transformer.resblocks.4.ln_2.weight
+   visual.transformer.resblocks.4.ln_2.bias
+   visual.transformer.resblocks.5.attn.in_proj_weight
+   visual.transformer.resblocks.5.attn.in_proj_bias
+   visual.transformer.resblocks.5.attn.out_proj.weight
+   visual.transformer.resblocks.5.attn.out_proj.bias
+   visual.transformer.resblocks.5.ln_1.weight
+   visual.transformer.resblocks.5.ln_1.bias
+   visual.transformer.resblocks.5.mlp.c_fc.weight
+   visual.transformer.resblocks.5.mlp.c_fc.bias
+   visual.transformer.resblocks.5.mlp.c_proj.weight
+   visual.transformer.resblocks.5.mlp.c_proj.bias
+   visual.transformer.resblocks.5.ln_2.weight
+   visual.transformer.resblocks.5.ln_2.bias
+   visual.transformer.resblocks.6.attn.in_proj_weight
+   visual.transformer.resblocks.6.attn.in_proj_bias
+   visual.transformer.resblocks.6.attn.out_proj.weight
+   visual.transformer.resblocks.6.attn.out_proj.bias
+   visual.transformer.resblocks.6.ln_1.weight
+   visual.transformer.resblocks.6.ln_1.bias
+   visual.transformer.resblocks.6.mlp.c_fc.weight
+   visual.transformer.resblocks.6.mlp.c_fc.bias
+   visual.transformer.resblocks.6.mlp.c_proj.weight
+   visual.transformer.resblocks.6.mlp.c_proj.bias
+   visual.transformer.resblocks.6.ln_2.weight
+   visual.transformer.resblocks.6.ln_2.bias
+   visual.transformer.resblocks.7.attn.in_proj_weight
+   visual.transformer.resblocks.7.attn.in_proj_bias
+   visual.transformer.resblocks.7.attn.out_proj.weight
+   visual.transformer.resblocks.7.attn.out_proj.bias
+   visual.transformer.resblocks.7.ln_1.weight
+   visual.transformer.resblocks.7.ln_1.bias
+   visual.transformer.resblocks.7.mlp.c_fc.weight
+   visual.transformer.resblocks.7.mlp.c_fc.bias
+   visual.transformer.resblocks.7.mlp.c_proj.weight
+   visual.transformer.resblocks.7.mlp.c_proj.bias
+   visual.transformer.resblocks.7.ln_2.weight
+   visual.transformer.resblocks.7.ln_2.bias
+   visual.transformer.resblocks.8.attn.in_proj_weight
+   visual.transformer.resblocks.8.attn.in_proj_bias
+   visual.transformer.resblocks.8.attn.out_proj.weight
+   visual.transformer.resblocks.8.attn.out_proj.bias
+   visual.transformer.resblocks.8.ln_1.weight
+   visual.transformer.resblocks.8.ln_1.bias
+   visual.transformer.resblocks.8.mlp.c_fc.weight
+   visual.transformer.resblocks.8.mlp.c_fc.bias
+   visual.transformer.resblocks.8.mlp.c_proj.weight
+   visual.transformer.resblocks.8.mlp.c_proj.bias
+   visual.transformer.resblocks.8.ln_2.weight
+   visual.transformer.resblocks.8.ln_2.bias
+   visual.transformer.resblocks.9.attn.in_proj_weight
+   visual.transformer.resblocks.9.attn.in_proj_bias
+   visual.transformer.resblocks.9.attn.out_proj.weight
+   visual.transformer.resblocks.9.attn.out_proj.bias
+   visual.transformer.resblocks.9.ln_1.weight
+   visual.transformer.resblocks.9.ln_1.bias
+   visual.transformer.resblocks.9.mlp.c_fc.weight
+   visual.transformer.resblocks.9.mlp.c_fc.bias
+   visual.transformer.resblocks.9.mlp.c_proj.weight
+   visual.transformer.resblocks.9.mlp.c_proj.bias
+   visual.transformer.resblocks.9.ln_2.weight
+   visual.transformer.resblocks.9.ln_2.bias
+   visual.transformer.resblocks.10.attn.in_proj_weight
+   visual.transformer.resblocks.10.attn.in_proj_bias
+   visual.transformer.resblocks.10.attn.out_proj.weight
+   visual.transformer.resblocks.10.attn.out_proj.bias
+   visual.transformer.resblocks.10.ln_1.weight
+   visual.transformer.resblocks.10.ln_1.bias
+   visual.transformer.resblocks.10.mlp.c_fc.weight
+   visual.transformer.resblocks.10.mlp.c_fc.bias
+   visual.transformer.resblocks.10.mlp.c_proj.weight
+   visual.transformer.resblocks.10.mlp.c_proj.bias
+   visual.transformer.resblocks.10.ln_2.weight
+   visual.transformer.resblocks.10.ln_2.bias
+   visual.transformer.resblocks.11.attn.in_proj_weight
+   visual.transformer.resblocks.11.attn.in_proj_bias
+   visual.transformer.resblocks.11.attn.out_proj.weight
+   visual.transformer.resblocks.11.attn.out_proj.bias
+   visual.transformer.resblocks.11.ln_1.weight
+   visual.transformer.resblocks.11.ln_1.bias
+   visual.transformer.resblocks.11.mlp.c_fc.weight
+   visual.transformer.resblocks.11.mlp.c_fc.bias
+   visual.transformer.resblocks.11.mlp.c_proj.weight
+   visual.transformer.resblocks.11.mlp.c_proj.bias
+   visual.transformer.resblocks.11.ln_2.weight
+   visual.transformer.resblocks.11.ln_2.bias
+   visual.ln_post.weight
+   visual.ln_post.bias
+   transformer.resblocks.0.attn.in_proj_weight
+   transformer.resblocks.0.attn.in_proj_bias
+   transformer.resblocks.0.attn.out_proj.weight
+   transformer.resblocks.0.attn.out_proj.bias
+   transformer.resblocks.0.ln_1.weight
+   transformer.resblocks.0.ln_1.bias
+   transformer.resblocks.0.mlp.c_fc.weight
+   transformer.resblocks.0.mlp.c_fc.bias
+   transformer.resblocks.0.mlp.c_proj.weight
+   transformer.resblocks.0.mlp.c_proj.bias
+   transformer.resblocks.0.ln_2.weight
+   transformer.resblocks.0.ln_2.bias
+   transformer.resblocks.1.attn.in_proj_weight
+   transformer.resblocks.1.attn.in_proj_bias
+   transformer.resblocks.1.attn.out_proj.weight
+   transformer.resblocks.1.attn.out_proj.bias
+   transformer.resblocks.1.ln_1.weight
+   transformer.resblocks.1.ln_1.bias
+   transformer.resblocks.1.mlp.c_fc.weight
+   transformer.resblocks.1.mlp.c_fc.bias
+   transformer.resblocks.1.mlp.c_proj.weight
+   transformer.resblocks.1.mlp.c_proj.bias
+   transformer.resblocks.1.ln_2.weight
+   transformer.resblocks.1.ln_2.bias
+   transformer.resblocks.2.attn.in_proj_weight
+   transformer.resblocks.2.attn.in_proj_bias
+   transformer.resblocks.2.attn.out_proj.weight
+   transformer.resblocks.2.attn.out_proj.bias
+   transformer.resblocks.2.ln_1.weight
+   transformer.resblocks.2.ln_1.bias
+   transformer.resblocks.2.mlp.c_fc.weight
+   transformer.resblocks.2.mlp.c_fc.bias
+   transformer.resblocks.2.mlp.c_proj.weight
+   transformer.resblocks.2.mlp.c_proj.bias
+   transformer.resblocks.2.ln_2.weight
+   transformer.resblocks.2.ln_2.bias
+   transformer.resblocks.3.attn.in_proj_weight
+   transformer.resblocks.3.attn.in_proj_bias
+   transformer.resblocks.3.attn.out_proj.weight
+   transformer.resblocks.3.attn.out_proj.bias
+   transformer.resblocks.3.ln_1.weight
+   transformer.resblocks.3.ln_1.bias
+   transformer.resblocks.3.mlp.c_fc.weight
+   transformer.resblocks.3.mlp.c_fc.bias
+   transformer.resblocks.3.mlp.c_proj.weight
+   transformer.resblocks.3.mlp.c_proj.bias
+   transformer.resblocks.3.ln_2.weight
+   transformer.resblocks.3.ln_2.bias
+   transformer.resblocks.4.attn.in_proj_weight
+   transformer.resblocks.4.attn.in_proj_bias
+   transformer.resblocks.4.attn.out_proj.weight
+   transformer.resblocks.4.attn.out_proj.bias
+   transformer.resblocks.4.ln_1.weight
+   transformer.resblocks.4.ln_1.bias
+   transformer.resblocks.4.mlp.c_fc.weight
+   transformer.resblocks.4.mlp.c_fc.bias
+   transformer.resblocks.4.mlp.c_proj.weight
+   transformer.resblocks.4.mlp.c_proj.bias
+   transformer.resblocks.4.ln_2.weight
+   transformer.resblocks.4.ln_2.bias
+   transformer.resblocks.5.attn.in_proj_weight
+   transformer.resblocks.5.attn.in_proj_bias
+   transformer.resblocks.5.attn.out_proj.weight
+   transformer.resblocks.5.attn.out_proj.bias
+   transformer.resblocks.5.ln_1.weight
+   transformer.resblocks.5.ln_1.bias
+   transformer.resblocks.5.mlp.c_fc.weight
+   transformer.resblocks.5.mlp.c_fc.bias
+   transformer.resblocks.5.mlp.c_proj.weight
+   transformer.resblocks.5.mlp.c_proj.bias
+   transformer.resblocks.5.ln_2.weight
+   transformer.resblocks.5.ln_2.bias
+   transformer.resblocks.6.attn.in_proj_weight
+   transformer.resblocks.6.attn.in_proj_bias
+   transformer.resblocks.6.attn.out_proj.weight
+   transformer.resblocks.6.attn.out_proj.bias
+   transformer.resblocks.6.ln_1.weight
+   transformer.resblocks.6.ln_1.bias
+   transformer.resblocks.6.mlp.c_fc.weight
+   transformer.resblocks.6.mlp.c_fc.bias
+   transformer.resblocks.6.mlp.c_proj.weight
+   transformer.resblocks.6.mlp.c_proj.bias
+   transformer.resblocks.6.ln_2.weight
+   transformer.resblocks.6.ln_2.bias
+   transformer.resblocks.7.attn.in_proj_weight
+   transformer.resblocks.7.attn.in_proj_bias
+   transformer.resblocks.7.attn.out_proj.weight
+   transformer.resblocks.7.attn.out_proj.bias
+   transformer.resblocks.7.ln_1.weight
+   transformer.resblocks.7.ln_1.bias
+   transformer.resblocks.7.mlp.c_fc.weight
+   transformer.resblocks.7.mlp.c_fc.bias
+   transformer.resblocks.7.mlp.c_proj.weight
+   transformer.resblocks.7.mlp.c_proj.bias
+   transformer.resblocks.7.ln_2.weight
+   transformer.resblocks.7.ln_2.bias
+   transformer.resblocks.8.attn.in_proj_weight
+   transformer.resblocks.8.attn.in_proj_bias
+   transformer.resblocks.8.attn.out_proj.weight
+   transformer.resblocks.8.attn.out_proj.bias
+   transformer.resblocks.8.ln_1.weight
+   transformer.resblocks.8.ln_1.bias
+   transformer.resblocks.8.mlp.c_fc.weight
+   transformer.resblocks.8.mlp.c_fc.bias
+   transformer.resblocks.8.mlp.c_proj.weight
+   transformer.resblocks.8.mlp.c_proj.bias
+   transformer.resblocks.8.ln_2.weight
+   transformer.resblocks.8.ln_2.bias
+   transformer.resblocks.9.attn.in_proj_weight
+   transformer.resblocks.9.attn.in_proj_bias
+   transformer.resblocks.9.attn.out_proj.weight
+   transformer.resblocks.9.attn.out_proj.bias
+   transformer.resblocks.9.ln_1.weight
+   transformer.resblocks.9.ln_1.bias
+   transformer.resblocks.9.mlp.c_fc.weight
+   transformer.resblocks.9.mlp.c_fc.bias
+   transformer.resblocks.9.mlp.c_proj.weight
+   transformer.resblocks.9.mlp.c_proj.bias
+   transformer.resblocks.9.ln_2.weight
+   transformer.resblocks.9.ln_2.bias
+   transformer.resblocks.10.attn.in_proj_weight
+   transformer.resblocks.10.attn.in_proj_bias
+   transformer.resblocks.10.attn.out_proj.weight
+   transformer.resblocks.10.attn.out_proj.bias
+   transformer.resblocks.10.ln_1.weight
+   transformer.resblocks.10.ln_1.bias
+   transformer.resblocks.10.mlp.c_fc.weight
+   transformer.resblocks.10.mlp.c_fc.bias
+   transformer.resblocks.10.mlp.c_proj.weight
+   transformer.resblocks.10.mlp.c_proj.bias
+   transformer.resblocks.10.ln_2.weight
+   transformer.resblocks.10.ln_2.bias
+   transformer.resblocks.11.attn.in_proj_weight
+   transformer.resblocks.11.attn.in_proj_bias
+   transformer.resblocks.11.attn.out_proj.weight
+   transformer.resblocks.11.attn.out_proj.bias
+   transformer.resblocks.11.ln_1.weight
+   transformer.resblocks.11.ln_1.bias
+   transformer.resblocks.11.mlp.c_fc.weight
+   transformer.resblocks.11.mlp.c_fc.bias
+   transformer.resblocks.11.mlp.c_proj.weight
+   transformer.resblocks.11.mlp.c_proj.bias
+   transformer.resblocks.11.ln_2.weight
+   transformer.resblocks.11.ln_2.bias
+   token_embedding.weight
+   ln_final.weight
+   ln_final.bias
+   clip.input_resolution
+   clip.context_length
+   clip.vocab_size
+2024-10-10 06:54:16,409:INFO: ***** Running test *****
+2024-10-10 06:54:16,409:INFO:   Num examples = 1334
+2024-10-10 06:54:16,409:INFO:   Batch size = 64
+2024-10-10 06:54:16,410:INFO:   Num steps = 6
+2024-10-10 06:54:16,410:INFO: ***** Running val *****
+2024-10-10 06:54:16,410:INFO:   Num examples = 1334
+2024-10-10 06:54:17,587:INFO: ***** Running test *****
+2024-10-10 06:54:17,587:INFO:   Num examples = 1334
+2024-10-10 06:54:17,587:INFO:   Batch size = 64
+2024-10-10 06:54:17,587:INFO:   Num steps = 6
+2024-10-10 06:54:17,587:INFO: ***** Running val *****
+2024-10-10 06:54:17,588:INFO:   Num examples = 1334
+2024-10-10 06:54:34,838:INFO: ***** Running training *****
+2024-10-10 06:54:34,838:INFO:   Num examples = 5338
+2024-10-10 06:54:34,838:INFO:   Batch size = 256
+2024-10-10 06:54:34,838:INFO: ***** Running training *****
+2024-10-10 06:54:34,839:INFO:   Num examples = 5338
+2024-10-10 06:54:34,839:INFO:   Num steps = 200
+2024-10-10 06:54:34,839:INFO:   Batch size = 256
+2024-10-10 06:54:34,839:INFO:   Num steps = 200
+2024-10-10 07:21:29,650:INFO: Effective parameters:
+2024-10-10 07:21:29,652:INFO:   <<< adaptive_cls: 0
+2024-10-10 07:21:29,652:INFO:   <<< aggregation: None
+2024-10-10 07:21:29,652:INFO:   <<< alpha: 1.0
+2024-10-10 07:21:29,652:INFO:   <<< batch_size: 256
+2024-10-10 07:21:29,652:INFO:   <<< batch_size_val: 64
+2024-10-10 07:21:29,652:INFO:   <<< cache_dir: 
+2024-10-10 07:21:29,652:INFO:   <<< cluser_embed_from_clip: 1
+2024-10-10 07:21:29,652:INFO:   <<< cluster_algo: kmediods++
+2024-10-10 07:21:29,652:INFO:   <<< cluster_distance: euclidean
+2024-10-10 07:21:29,652:INFO:   <<< cluster_embedding: 0
+2024-10-10 07:21:29,652:INFO:   <<< cluster_frame_embedding: 0
+2024-10-10 07:21:29,652:INFO:   <<< cluster_iter_limit: 100
+2024-10-10 07:21:29,652:INFO:   <<< cluster_threshold: 1e-05
+2024-10-10 07:21:29,652:INFO:   <<< coef_lr: 0.0001
+2024-10-10 07:21:29,652:INFO:   <<< cross_model: cross-base
+2024-10-10 07:21:29,652:INFO:   <<< cross_num_hidden_layers: 4
+2024-10-10 07:21:29,652:INFO:   <<< data_path: /home/zyl/MeVTR/charades/annotation
+2024-10-10 07:21:29,652:INFO:   <<< datatype: charades
+2024-10-10 07:21:29,652:INFO:   <<< do_eval: False
+2024-10-10 07:21:29,653:INFO:   <<< do_lower_case: False
+2024-10-10 07:21:29,653:INFO:   <<< do_pretrain: False
+2024-10-10 07:21:29,653:INFO:   <<< do_train: True
+2024-10-10 07:21:29,653:INFO:   <<< dynamic_alpha: False
+2024-10-10 07:21:29,653:INFO:   <<< epochs: 20
+2024-10-10 07:21:29,653:INFO:   <<< eval_frame_order: 0
+2024-10-10 07:21:29,653:INFO:   <<< expand_msrvtt_sentences: False
+2024-10-10 07:21:29,653:INFO:   <<< feature_framerate: 1
+2024-10-10 07:21:29,653:INFO:   <<< features_path: /home/zyl/MeVTR/charades/Charades_v2_3
+2024-10-10 07:21:29,653:INFO:   <<< fp16: False
+2024-10-10 07:21:29,653:INFO:   <<< fp16_opt_level: O1
+2024-10-10 07:21:29,653:INFO:   <<< freeze_layer_num: 0
+2024-10-10 07:21:29,653:INFO:   <<< gradient_accumulation_steps: 1
+2024-10-10 07:21:29,653:INFO:   <<< hard_negative_rate: 0.5
+2024-10-10 07:21:29,653:INFO:   <<< init_model: /home/zyl/MeVTR/pretrained_clip/modules/ViT-B-32.pt
+2024-10-10 07:21:29,653:INFO:   <<< linear_patch: 2d
+2024-10-10 07:21:29,653:INFO:   <<< local_rank: 0
+2024-10-10 07:21:29,653:INFO:   <<< loose_type: True
+2024-10-10 07:21:29,653:INFO:   <<< loss: balanced
+2024-10-10 07:21:29,653:INFO:   <<< lr: 0.0001
+2024-10-10 07:21:29,653:INFO:   <<< lr_decay: 0.9
+2024-10-10 07:21:29,653:INFO:   <<< margin: 0.1
+2024-10-10 07:21:29,653:INFO:   <<< max_frames: 64
+2024-10-10 07:21:29,653:INFO:   <<< max_words: 77
+2024-10-10 07:21:29,653:INFO:   <<< minkowski_norm_p: 2.0
+2024-10-10 07:21:29,653:INFO:   <<< n_display: 100
+2024-10-10 07:21:29,653:INFO:   <<< n_gpu: 1
+2024-10-10 07:21:29,653:INFO:   <<< n_pair: 1
+2024-10-10 07:21:29,653:INFO:   <<< negative_weighting: 1
+2024-10-10 07:21:29,653:INFO:   <<< num_thread_reader: 2
+2024-10-10 07:21:29,654:INFO:   <<< output_dir: /home/zyl/MeVTR/output
+2024-10-10 07:21:29,654:INFO:   <<< post_cluster_centroids: 16
+2024-10-10 07:21:29,654:INFO:   <<< post_process: cluster
+2024-10-10 07:21:29,654:INFO:   <<< pre_norm: 0
+2024-10-10 07:21:29,654:INFO:   <<< pretrained_clip_name: ViT-B/32
+2024-10-10 07:21:29,654:INFO:   <<< rank: 1
+2024-10-10 07:21:29,654:INFO:   <<< resume_model: None
+2024-10-10 07:21:29,654:INFO:   <<< sampled_use_mil: False
+2024-10-10 07:21:29,654:INFO:   <<< save_feature_path: None
+2024-10-10 07:21:29,654:INFO:   <<< seed: 42
+2024-10-10 07:21:29,654:INFO:   <<< sim_header: meanP
+2024-10-10 07:21:29,654:INFO:   <<< sim_lambda: 0.0
+2024-10-10 07:21:29,654:INFO:   <<< slice_framepos: 2
+2024-10-10 07:21:29,654:INFO:   <<< task_type: retrieval
+2024-10-10 07:21:29,654:INFO:   <<< temperature_new: 1.0
+2024-10-10 07:21:29,654:INFO:   <<< text_num_hidden_layers: 12
+2024-10-10 07:21:29,654:INFO:   <<< time_embedding: 0
+2024-10-10 07:21:29,654:INFO:   <<< train_csv: data/.train.csv
+2024-10-10 07:21:29,654:INFO:   <<< train_frame_order: 0
+2024-10-10 07:21:29,654:INFO:   <<< use_mil: False
+2024-10-10 07:21:29,654:INFO:   <<< val_csv: data/.val.csv
+2024-10-10 07:21:29,654:INFO:   <<< video_dim: 1024
+2024-10-10 07:21:29,654:INFO:   <<< visual_num_hidden_layers: 12
+2024-10-10 07:21:29,654:INFO:   <<< warmup_proportion: 0.1
+2024-10-10 07:21:29,654:INFO:   <<< world_size: 2
+2024-10-10 07:21:29,654:INFO: device: cuda:0 n_gpu: 2
+2024-10-10 07:21:29,655:INFO: Effective parameters:
+2024-10-10 07:21:29,655:INFO:   <<< adaptive_cls: 0
+2024-10-10 07:21:29,656:INFO:   <<< aggregation: None
+2024-10-10 07:21:29,656:INFO:   <<< alpha: 1.0
+2024-10-10 07:21:29,656:INFO:   <<< batch_size: 256
+2024-10-10 07:21:29,656:INFO:   <<< batch_size_val: 64
+2024-10-10 07:21:29,656:INFO:   <<< cache_dir: 
+2024-10-10 07:21:29,656:INFO:   <<< cluser_embed_from_clip: 1
+2024-10-10 07:21:29,656:INFO:   <<< cluster_algo: kmediods++
+2024-10-10 07:21:29,656:INFO:   <<< cluster_distance: euclidean
+2024-10-10 07:21:29,656:INFO:   <<< cluster_embedding: 0
+2024-10-10 07:21:29,656:INFO:   <<< cluster_frame_embedding: 0
+2024-10-10 07:21:29,656:INFO:   <<< cluster_iter_limit: 100
+2024-10-10 07:21:29,656:INFO:   <<< cluster_threshold: 1e-05
+2024-10-10 07:21:29,656:INFO:   <<< coef_lr: 0.0001
+2024-10-10 07:21:29,656:INFO:   <<< cross_model: cross-base
+2024-10-10 07:21:29,656:INFO:   <<< cross_num_hidden_layers: 4
+2024-10-10 07:21:29,656:INFO:   <<< data_path: /home/zyl/MeVTR/charades/annotation
+2024-10-10 07:21:29,657:INFO:   <<< datatype: charades
+2024-10-10 07:21:29,657:INFO:   <<< do_eval: False
+2024-10-10 07:21:29,657:INFO:   <<< do_lower_case: False
+2024-10-10 07:21:29,657:INFO:   <<< do_pretrain: False
+2024-10-10 07:21:29,657:INFO:   <<< do_train: True
+2024-10-10 07:21:29,657:INFO:   <<< dynamic_alpha: False
+2024-10-10 07:21:29,657:INFO:   <<< epochs: 20
+2024-10-10 07:21:29,657:INFO:   <<< eval_frame_order: 0
+2024-10-10 07:21:29,657:INFO:   <<< expand_msrvtt_sentences: False
+2024-10-10 07:21:29,657:INFO:   <<< feature_framerate: 1
+2024-10-10 07:21:29,657:INFO:   <<< features_path: /home/zyl/MeVTR/charades/Charades_v2_3
+2024-10-10 07:21:29,657:INFO:   <<< fp16: False
+2024-10-10 07:21:29,657:INFO:   <<< fp16_opt_level: O1
+2024-10-10 07:21:29,657:INFO:   <<< freeze_layer_num: 0
+2024-10-10 07:21:29,657:INFO:   <<< gradient_accumulation_steps: 1
+2024-10-10 07:21:29,658:INFO:   <<< hard_negative_rate: 0.5
+2024-10-10 07:21:29,658:INFO:   <<< init_model: /home/zyl/MeVTR/pretrained_clip/modules/ViT-B-32.pt
+2024-10-10 07:21:29,658:INFO:   <<< linear_patch: 2d
+2024-10-10 07:21:29,658:INFO:   <<< local_rank: 0
+2024-10-10 07:21:29,658:INFO:   <<< loose_type: True
+2024-10-10 07:21:29,658:INFO:   <<< loss: balanced
+2024-10-10 07:21:29,658:INFO:   <<< lr: 0.0001
+2024-10-10 07:21:29,658:INFO:   <<< lr_decay: 0.9
+2024-10-10 07:21:29,658:INFO:   <<< margin: 0.1
+2024-10-10 07:21:29,658:INFO:   <<< max_frames: 64
+2024-10-10 07:21:29,658:INFO:   <<< max_words: 77
+2024-10-10 07:21:29,658:INFO:   <<< minkowski_norm_p: 2.0
+2024-10-10 07:21:29,658:INFO:   <<< n_display: 100
+2024-10-10 07:21:29,658:INFO:   <<< n_gpu: 1
+2024-10-10 07:21:29,658:INFO:   <<< n_pair: 1
+2024-10-10 07:21:29,658:INFO:   <<< negative_weighting: 1
+2024-10-10 07:21:29,659:INFO:   <<< num_thread_reader: 2
+2024-10-10 07:21:29,659:INFO:   <<< output_dir: /home/zyl/MeVTR/output
+2024-10-10 07:21:29,659:INFO:   <<< post_cluster_centroids: 16
+2024-10-10 07:21:29,659:INFO:   <<< post_process: cluster
+2024-10-10 07:21:29,659:INFO:   <<< pre_norm: 0
+2024-10-10 07:21:29,659:INFO:   <<< pretrained_clip_name: ViT-B/32
+2024-10-10 07:21:29,659:INFO:   <<< rank: 0
+2024-10-10 07:21:29,659:INFO:   <<< resume_model: None
+2024-10-10 07:21:29,659:INFO:   <<< sampled_use_mil: False
+2024-10-10 07:21:29,659:INFO:   <<< save_feature_path: None
+2024-10-10 07:21:29,659:INFO:   <<< seed: 42
+2024-10-10 07:21:29,659:INFO:   <<< sim_header: meanP
+2024-10-10 07:21:29,659:INFO:   <<< sim_lambda: 0.0
+2024-10-10 07:21:29,659:INFO:   <<< slice_framepos: 2
+2024-10-10 07:21:29,659:INFO:   <<< task_type: retrieval
+2024-10-10 07:21:29,659:INFO:   <<< temperature_new: 1.0
+2024-10-10 07:21:29,660:INFO:   <<< text_num_hidden_layers: 12
+2024-10-10 07:21:29,660:INFO:   <<< time_embedding: 0
+2024-10-10 07:21:29,660:INFO:   <<< train_csv: data/.train.csv
+2024-10-10 07:21:29,660:INFO:   <<< train_frame_order: 0
+2024-10-10 07:21:29,660:INFO:   <<< use_mil: False
+2024-10-10 07:21:29,660:INFO:   <<< val_csv: data/.val.csv
+2024-10-10 07:21:29,660:INFO:   <<< video_dim: 1024
+2024-10-10 07:21:29,660:INFO:   <<< visual_num_hidden_layers: 12
+2024-10-10 07:21:29,660:INFO:   <<< warmup_proportion: 0.1
+2024-10-10 07:21:29,660:INFO:   <<< world_size: 2
+2024-10-10 07:21:29,660:INFO: device: cuda:0 n_gpu: 2
+2024-10-10 07:21:33,944:INFO: loading archive file /home/zyl/MeVTR/modules/cross-base
+2024-10-10 07:21:33,948:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 512,
+  "initializer_range": 0.02,
+  "intermediate_size": 2048,
+  "max_position_embeddings": 128,
+  "num_attention_heads": 8,
+  "num_hidden_layers": 4,
+  "type_vocab_size": 2,
+  "vocab_size": 512
+}
+
+2024-10-10 07:21:33,949:INFO: Weight doesn't exsits. /home/zyl/MeVTR/modules/cross-base/cross_pytorch_model.bin
+2024-10-10 07:21:33,949:WARNING: Stage-One:True, Stage-Two:False
+2024-10-10 07:21:33,949:WARNING: Test retrieval by loose type.
+2024-10-10 07:21:33,949:WARNING: 	 embed_dim: 512
+2024-10-10 07:21:33,949:WARNING: 	 image_resolution: 224
+2024-10-10 07:21:33,949:WARNING: 	 vision_layers: 12
+2024-10-10 07:21:33,949:WARNING: 	 vision_width: 768
+2024-10-10 07:21:33,949:WARNING: 	 vision_patch_size: 32
+2024-10-10 07:21:33,949:WARNING: 	 context_length: 77
+2024-10-10 07:21:33,949:WARNING: 	 vocab_size: 49408
+2024-10-10 07:21:33,949:WARNING: 	 transformer_width: 512
+2024-10-10 07:21:33,949:WARNING: 	 transformer_heads: 8
+2024-10-10 07:21:33,949:WARNING: 	 transformer_layers: 12
+2024-10-10 07:21:33,949:WARNING: 		 linear_patch: 2d
+2024-10-10 07:21:33,949:WARNING: 	 cut_top_layer: 0
+2024-10-10 07:21:33,992:INFO: loading archive file /home/zyl/MeVTR/modules/cross-base
+2024-10-10 07:21:33,992:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 512,
+  "initializer_range": 0.02,
+  "intermediate_size": 2048,
+  "max_position_embeddings": 128,
+  "num_attention_heads": 8,
+  "num_hidden_layers": 4,
+  "type_vocab_size": 2,
+  "vocab_size": 512
+}
+
+2024-10-10 07:21:33,992:INFO: Weight doesn't exsits. /home/zyl/MeVTR/modules/cross-base/cross_pytorch_model.bin
+2024-10-10 07:21:33,993:WARNING: Stage-One:True, Stage-Two:False
+2024-10-10 07:21:33,993:WARNING: Test retrieval by loose type.
+2024-10-10 07:21:33,993:WARNING: 	 embed_dim: 512
+2024-10-10 07:21:33,993:WARNING: 	 image_resolution: 224
+2024-10-10 07:21:33,993:WARNING: 	 vision_layers: 12
+2024-10-10 07:21:33,993:WARNING: 	 vision_width: 768
+2024-10-10 07:21:33,993:WARNING: 	 vision_patch_size: 32
+2024-10-10 07:21:33,993:WARNING: 	 context_length: 77
+2024-10-10 07:21:33,993:WARNING: 	 vocab_size: 49408
+2024-10-10 07:21:33,993:WARNING: 	 transformer_width: 512
+2024-10-10 07:21:33,993:WARNING: 	 transformer_heads: 8
+2024-10-10 07:21:33,993:WARNING: 	 transformer_layers: 12
+2024-10-10 07:21:33,994:WARNING: 		 linear_patch: 2d
+2024-10-10 07:21:33,994:WARNING: 	 cut_top_layer: 0
+2024-10-10 07:21:36,196:WARNING: 	 sim_header: meanP
+2024-10-10 07:21:36,249:WARNING: 	 sim_header: meanP
+2024-10-10 07:21:40,813:INFO: --------------------
+2024-10-10 07:21:40,814:INFO: Weights from pretrained model not used in MeRetriever: 
+   positional_embedding
+   text_projection
+   logit_scale
+   input_resolution
+   context_length
+   vocab_size
+   visual.class_embedding
+   visual.positional_embedding
+   visual.proj
+   visual.conv1.weight
+   visual.ln_pre.weight
+   visual.ln_pre.bias
+   visual.transformer.resblocks.0.attn.in_proj_weight
+   visual.transformer.resblocks.0.attn.in_proj_bias
+   visual.transformer.resblocks.0.attn.out_proj.weight
+   visual.transformer.resblocks.0.attn.out_proj.bias
+   visual.transformer.resblocks.0.ln_1.weight
+   visual.transformer.resblocks.0.ln_1.bias
+   visual.transformer.resblocks.0.mlp.c_fc.weight
+   visual.transformer.resblocks.0.mlp.c_fc.bias
+   visual.transformer.resblocks.0.mlp.c_proj.weight
+   visual.transformer.resblocks.0.mlp.c_proj.bias
+   visual.transformer.resblocks.0.ln_2.weight
+   visual.transformer.resblocks.0.ln_2.bias
+   visual.transformer.resblocks.1.attn.in_proj_weight
+   visual.transformer.resblocks.1.attn.in_proj_bias
+   visual.transformer.resblocks.1.attn.out_proj.weight
+   visual.transformer.resblocks.1.attn.out_proj.bias
+   visual.transformer.resblocks.1.ln_1.weight
+   visual.transformer.resblocks.1.ln_1.bias
+   visual.transformer.resblocks.1.mlp.c_fc.weight
+   visual.transformer.resblocks.1.mlp.c_fc.bias
+   visual.transformer.resblocks.1.mlp.c_proj.weight
+   visual.transformer.resblocks.1.mlp.c_proj.bias
+   visual.transformer.resblocks.1.ln_2.weight
+   visual.transformer.resblocks.1.ln_2.bias
+   visual.transformer.resblocks.2.attn.in_proj_weight
+   visual.transformer.resblocks.2.attn.in_proj_bias
+   visual.transformer.resblocks.2.attn.out_proj.weight
+   visual.transformer.resblocks.2.attn.out_proj.bias
+   visual.transformer.resblocks.2.ln_1.weight
+   visual.transformer.resblocks.2.ln_1.bias
+   visual.transformer.resblocks.2.mlp.c_fc.weight
+   visual.transformer.resblocks.2.mlp.c_fc.bias
+   visual.transformer.resblocks.2.mlp.c_proj.weight
+   visual.transformer.resblocks.2.mlp.c_proj.bias
+   visual.transformer.resblocks.2.ln_2.weight
+   visual.transformer.resblocks.2.ln_2.bias
+   visual.transformer.resblocks.3.attn.in_proj_weight
+   visual.transformer.resblocks.3.attn.in_proj_bias
+   visual.transformer.resblocks.3.attn.out_proj.weight
+   visual.transformer.resblocks.3.attn.out_proj.bias
+   visual.transformer.resblocks.3.ln_1.weight
+   visual.transformer.resblocks.3.ln_1.bias
+   visual.transformer.resblocks.3.mlp.c_fc.weight
+   visual.transformer.resblocks.3.mlp.c_fc.bias
+   visual.transformer.resblocks.3.mlp.c_proj.weight
+   visual.transformer.resblocks.3.mlp.c_proj.bias
+   visual.transformer.resblocks.3.ln_2.weight
+   visual.transformer.resblocks.3.ln_2.bias
+   visual.transformer.resblocks.4.attn.in_proj_weight
+   visual.transformer.resblocks.4.attn.in_proj_bias
+   visual.transformer.resblocks.4.attn.out_proj.weight
+   visual.transformer.resblocks.4.attn.out_proj.bias
+   visual.transformer.resblocks.4.ln_1.weight
+   visual.transformer.resblocks.4.ln_1.bias
+   visual.transformer.resblocks.4.mlp.c_fc.weight
+   visual.transformer.resblocks.4.mlp.c_fc.bias
+   visual.transformer.resblocks.4.mlp.c_proj.weight
+   visual.transformer.resblocks.4.mlp.c_proj.bias
+   visual.transformer.resblocks.4.ln_2.weight
+   visual.transformer.resblocks.4.ln_2.bias
+   visual.transformer.resblocks.5.attn.in_proj_weight
+   visual.transformer.resblocks.5.attn.in_proj_bias
+   visual.transformer.resblocks.5.attn.out_proj.weight
+   visual.transformer.resblocks.5.attn.out_proj.bias
+   visual.transformer.resblocks.5.ln_1.weight
+   visual.transformer.resblocks.5.ln_1.bias
+   visual.transformer.resblocks.5.mlp.c_fc.weight
+   visual.transformer.resblocks.5.mlp.c_fc.bias
+   visual.transformer.resblocks.5.mlp.c_proj.weight
+   visual.transformer.resblocks.5.mlp.c_proj.bias
+   visual.transformer.resblocks.5.ln_2.weight
+   visual.transformer.resblocks.5.ln_2.bias
+   visual.transformer.resblocks.6.attn.in_proj_weight
+   visual.transformer.resblocks.6.attn.in_proj_bias
+   visual.transformer.resblocks.6.attn.out_proj.weight
+   visual.transformer.resblocks.6.attn.out_proj.bias
+   visual.transformer.resblocks.6.ln_1.weight
+   visual.transformer.resblocks.6.ln_1.bias
+   visual.transformer.resblocks.6.mlp.c_fc.weight
+   visual.transformer.resblocks.6.mlp.c_fc.bias
+   visual.transformer.resblocks.6.mlp.c_proj.weight
+   visual.transformer.resblocks.6.mlp.c_proj.bias
+   visual.transformer.resblocks.6.ln_2.weight
+   visual.transformer.resblocks.6.ln_2.bias
+   visual.transformer.resblocks.7.attn.in_proj_weight
+   visual.transformer.resblocks.7.attn.in_proj_bias
+   visual.transformer.resblocks.7.attn.out_proj.weight
+   visual.transformer.resblocks.7.attn.out_proj.bias
+   visual.transformer.resblocks.7.ln_1.weight
+   visual.transformer.resblocks.7.ln_1.bias
+   visual.transformer.resblocks.7.mlp.c_fc.weight
+   visual.transformer.resblocks.7.mlp.c_fc.bias
+   visual.transformer.resblocks.7.mlp.c_proj.weight
+   visual.transformer.resblocks.7.mlp.c_proj.bias
+   visual.transformer.resblocks.7.ln_2.weight
+   visual.transformer.resblocks.7.ln_2.bias
+   visual.transformer.resblocks.8.attn.in_proj_weight
+   visual.transformer.resblocks.8.attn.in_proj_bias
+   visual.transformer.resblocks.8.attn.out_proj.weight
+   visual.transformer.resblocks.8.attn.out_proj.bias
+   visual.transformer.resblocks.8.ln_1.weight
+   visual.transformer.resblocks.8.ln_1.bias
+   visual.transformer.resblocks.8.mlp.c_fc.weight
+   visual.transformer.resblocks.8.mlp.c_fc.bias
+   visual.transformer.resblocks.8.mlp.c_proj.weight
+   visual.transformer.resblocks.8.mlp.c_proj.bias
+   visual.transformer.resblocks.8.ln_2.weight
+   visual.transformer.resblocks.8.ln_2.bias
+   visual.transformer.resblocks.9.attn.in_proj_weight
+   visual.transformer.resblocks.9.attn.in_proj_bias
+   visual.transformer.resblocks.9.attn.out_proj.weight
+   visual.transformer.resblocks.9.attn.out_proj.bias
+   visual.transformer.resblocks.9.ln_1.weight
+   visual.transformer.resblocks.9.ln_1.bias
+   visual.transformer.resblocks.9.mlp.c_fc.weight
+   visual.transformer.resblocks.9.mlp.c_fc.bias
+   visual.transformer.resblocks.9.mlp.c_proj.weight
+   visual.transformer.resblocks.9.mlp.c_proj.bias
+   visual.transformer.resblocks.9.ln_2.weight
+   visual.transformer.resblocks.9.ln_2.bias
+   visual.transformer.resblocks.10.attn.in_proj_weight
+   visual.transformer.resblocks.10.attn.in_proj_bias
+   visual.transformer.resblocks.10.attn.out_proj.weight
+   visual.transformer.resblocks.10.attn.out_proj.bias
+   visual.transformer.resblocks.10.ln_1.weight
+   visual.transformer.resblocks.10.ln_1.bias
+   visual.transformer.resblocks.10.mlp.c_fc.weight
+   visual.transformer.resblocks.10.mlp.c_fc.bias
+   visual.transformer.resblocks.10.mlp.c_proj.weight
+   visual.transformer.resblocks.10.mlp.c_proj.bias
+   visual.transformer.resblocks.10.ln_2.weight
+   visual.transformer.resblocks.10.ln_2.bias
+   visual.transformer.resblocks.11.attn.in_proj_weight
+   visual.transformer.resblocks.11.attn.in_proj_bias
+   visual.transformer.resblocks.11.attn.out_proj.weight
+   visual.transformer.resblocks.11.attn.out_proj.bias
+   visual.transformer.resblocks.11.ln_1.weight
+   visual.transformer.resblocks.11.ln_1.bias
+   visual.transformer.resblocks.11.mlp.c_fc.weight
+   visual.transformer.resblocks.11.mlp.c_fc.bias
+   visual.transformer.resblocks.11.mlp.c_proj.weight
+   visual.transformer.resblocks.11.mlp.c_proj.bias
+   visual.transformer.resblocks.11.ln_2.weight
+   visual.transformer.resblocks.11.ln_2.bias
+   visual.ln_post.weight
+   visual.ln_post.bias
+   transformer.resblocks.0.attn.in_proj_weight
+   transformer.resblocks.0.attn.in_proj_bias
+   transformer.resblocks.0.attn.out_proj.weight
+   transformer.resblocks.0.attn.out_proj.bias
+   transformer.resblocks.0.ln_1.weight
+   transformer.resblocks.0.ln_1.bias
+   transformer.resblocks.0.mlp.c_fc.weight
+   transformer.resblocks.0.mlp.c_fc.bias
+   transformer.resblocks.0.mlp.c_proj.weight
+   transformer.resblocks.0.mlp.c_proj.bias
+   transformer.resblocks.0.ln_2.weight
+   transformer.resblocks.0.ln_2.bias
+   transformer.resblocks.1.attn.in_proj_weight
+   transformer.resblocks.1.attn.in_proj_bias
+   transformer.resblocks.1.attn.out_proj.weight
+   transformer.resblocks.1.attn.out_proj.bias
+   transformer.resblocks.1.ln_1.weight
+   transformer.resblocks.1.ln_1.bias
+   transformer.resblocks.1.mlp.c_fc.weight
+   transformer.resblocks.1.mlp.c_fc.bias
+   transformer.resblocks.1.mlp.c_proj.weight
+   transformer.resblocks.1.mlp.c_proj.bias
+   transformer.resblocks.1.ln_2.weight
+   transformer.resblocks.1.ln_2.bias
+   transformer.resblocks.2.attn.in_proj_weight
+   transformer.resblocks.2.attn.in_proj_bias
+   transformer.resblocks.2.attn.out_proj.weight
+   transformer.resblocks.2.attn.out_proj.bias
+   transformer.resblocks.2.ln_1.weight
+   transformer.resblocks.2.ln_1.bias
+   transformer.resblocks.2.mlp.c_fc.weight
+   transformer.resblocks.2.mlp.c_fc.bias
+   transformer.resblocks.2.mlp.c_proj.weight
+   transformer.resblocks.2.mlp.c_proj.bias
+   transformer.resblocks.2.ln_2.weight
+   transformer.resblocks.2.ln_2.bias
+   transformer.resblocks.3.attn.in_proj_weight
+   transformer.resblocks.3.attn.in_proj_bias
+   transformer.resblocks.3.attn.out_proj.weight
+   transformer.resblocks.3.attn.out_proj.bias
+   transformer.resblocks.3.ln_1.weight
+   transformer.resblocks.3.ln_1.bias
+   transformer.resblocks.3.mlp.c_fc.weight
+   transformer.resblocks.3.mlp.c_fc.bias
+   transformer.resblocks.3.mlp.c_proj.weight
+   transformer.resblocks.3.mlp.c_proj.bias
+   transformer.resblocks.3.ln_2.weight
+   transformer.resblocks.3.ln_2.bias
+   transformer.resblocks.4.attn.in_proj_weight
+   transformer.resblocks.4.attn.in_proj_bias
+   transformer.resblocks.4.attn.out_proj.weight
+   transformer.resblocks.4.attn.out_proj.bias
+   transformer.resblocks.4.ln_1.weight
+   transformer.resblocks.4.ln_1.bias
+   transformer.resblocks.4.mlp.c_fc.weight
+   transformer.resblocks.4.mlp.c_fc.bias
+   transformer.resblocks.4.mlp.c_proj.weight
+   transformer.resblocks.4.mlp.c_proj.bias
+   transformer.resblocks.4.ln_2.weight
+   transformer.resblocks.4.ln_2.bias
+   transformer.resblocks.5.attn.in_proj_weight
+   transformer.resblocks.5.attn.in_proj_bias
+   transformer.resblocks.5.attn.out_proj.weight
+   transformer.resblocks.5.attn.out_proj.bias
+   transformer.resblocks.5.ln_1.weight
+   transformer.resblocks.5.ln_1.bias
+   transformer.resblocks.5.mlp.c_fc.weight
+   transformer.resblocks.5.mlp.c_fc.bias
+   transformer.resblocks.5.mlp.c_proj.weight
+   transformer.resblocks.5.mlp.c_proj.bias
+   transformer.resblocks.5.ln_2.weight
+   transformer.resblocks.5.ln_2.bias
+   transformer.resblocks.6.attn.in_proj_weight
+   transformer.resblocks.6.attn.in_proj_bias
+   transformer.resblocks.6.attn.out_proj.weight
+   transformer.resblocks.6.attn.out_proj.bias
+   transformer.resblocks.6.ln_1.weight
+   transformer.resblocks.6.ln_1.bias
+   transformer.resblocks.6.mlp.c_fc.weight
+   transformer.resblocks.6.mlp.c_fc.bias
+   transformer.resblocks.6.mlp.c_proj.weight
+   transformer.resblocks.6.mlp.c_proj.bias
+   transformer.resblocks.6.ln_2.weight
+   transformer.resblocks.6.ln_2.bias
+   transformer.resblocks.7.attn.in_proj_weight
+   transformer.resblocks.7.attn.in_proj_bias
+   transformer.resblocks.7.attn.out_proj.weight
+   transformer.resblocks.7.attn.out_proj.bias
+   transformer.resblocks.7.ln_1.weight
+   transformer.resblocks.7.ln_1.bias
+   transformer.resblocks.7.mlp.c_fc.weight
+   transformer.resblocks.7.mlp.c_fc.bias
+   transformer.resblocks.7.mlp.c_proj.weight
+   transformer.resblocks.7.mlp.c_proj.bias
+   transformer.resblocks.7.ln_2.weight
+   transformer.resblocks.7.ln_2.bias
+   transformer.resblocks.8.attn.in_proj_weight
+   transformer.resblocks.8.attn.in_proj_bias
+   transformer.resblocks.8.attn.out_proj.weight
+   transformer.resblocks.8.attn.out_proj.bias
+   transformer.resblocks.8.ln_1.weight
+   transformer.resblocks.8.ln_1.bias
+   transformer.resblocks.8.mlp.c_fc.weight
+   transformer.resblocks.8.mlp.c_fc.bias
+   transformer.resblocks.8.mlp.c_proj.weight
+   transformer.resblocks.8.mlp.c_proj.bias
+   transformer.resblocks.8.ln_2.weight
+   transformer.resblocks.8.ln_2.bias
+   transformer.resblocks.9.attn.in_proj_weight
+   transformer.resblocks.9.attn.in_proj_bias
+   transformer.resblocks.9.attn.out_proj.weight
+   transformer.resblocks.9.attn.out_proj.bias
+   transformer.resblocks.9.ln_1.weight
+   transformer.resblocks.9.ln_1.bias
+   transformer.resblocks.9.mlp.c_fc.weight
+   transformer.resblocks.9.mlp.c_fc.bias
+   transformer.resblocks.9.mlp.c_proj.weight
+   transformer.resblocks.9.mlp.c_proj.bias
+   transformer.resblocks.9.ln_2.weight
+   transformer.resblocks.9.ln_2.bias
+   transformer.resblocks.10.attn.in_proj_weight
+   transformer.resblocks.10.attn.in_proj_bias
+   transformer.resblocks.10.attn.out_proj.weight
+   transformer.resblocks.10.attn.out_proj.bias
+   transformer.resblocks.10.ln_1.weight
+   transformer.resblocks.10.ln_1.bias
+   transformer.resblocks.10.mlp.c_fc.weight
+   transformer.resblocks.10.mlp.c_fc.bias
+   transformer.resblocks.10.mlp.c_proj.weight
+   transformer.resblocks.10.mlp.c_proj.bias
+   transformer.resblocks.10.ln_2.weight
+   transformer.resblocks.10.ln_2.bias
+   transformer.resblocks.11.attn.in_proj_weight
+   transformer.resblocks.11.attn.in_proj_bias
+   transformer.resblocks.11.attn.out_proj.weight
+   transformer.resblocks.11.attn.out_proj.bias
+   transformer.resblocks.11.ln_1.weight
+   transformer.resblocks.11.ln_1.bias
+   transformer.resblocks.11.mlp.c_fc.weight
+   transformer.resblocks.11.mlp.c_fc.bias
+   transformer.resblocks.11.mlp.c_proj.weight
+   transformer.resblocks.11.mlp.c_proj.bias
+   transformer.resblocks.11.ln_2.weight
+   transformer.resblocks.11.ln_2.bias
+   token_embedding.weight
+   ln_final.weight
+   ln_final.bias
+   clip.input_resolution
+   clip.context_length
+   clip.vocab_size
+2024-10-10 07:21:40,988:INFO: --------------------
+2024-10-10 07:21:40,988:INFO: Weights from pretrained model not used in MeRetriever: 
+   positional_embedding
+   text_projection
+   logit_scale
+   input_resolution
+   context_length
+   vocab_size
+   visual.class_embedding
+   visual.positional_embedding
+   visual.proj
+   visual.conv1.weight
+   visual.ln_pre.weight
+   visual.ln_pre.bias
+   visual.transformer.resblocks.0.attn.in_proj_weight
+   visual.transformer.resblocks.0.attn.in_proj_bias
+   visual.transformer.resblocks.0.attn.out_proj.weight
+   visual.transformer.resblocks.0.attn.out_proj.bias
+   visual.transformer.resblocks.0.ln_1.weight
+   visual.transformer.resblocks.0.ln_1.bias
+   visual.transformer.resblocks.0.mlp.c_fc.weight
+   visual.transformer.resblocks.0.mlp.c_fc.bias
+   visual.transformer.resblocks.0.mlp.c_proj.weight
+   visual.transformer.resblocks.0.mlp.c_proj.bias
+   visual.transformer.resblocks.0.ln_2.weight
+   visual.transformer.resblocks.0.ln_2.bias
+   visual.transformer.resblocks.1.attn.in_proj_weight
+   visual.transformer.resblocks.1.attn.in_proj_bias
+   visual.transformer.resblocks.1.attn.out_proj.weight
+   visual.transformer.resblocks.1.attn.out_proj.bias
+   visual.transformer.resblocks.1.ln_1.weight
+   visual.transformer.resblocks.1.ln_1.bias
+   visual.transformer.resblocks.1.mlp.c_fc.weight
+   visual.transformer.resblocks.1.mlp.c_fc.bias
+   visual.transformer.resblocks.1.mlp.c_proj.weight
+   visual.transformer.resblocks.1.mlp.c_proj.bias
+   visual.transformer.resblocks.1.ln_2.weight
+   visual.transformer.resblocks.1.ln_2.bias
+   visual.transformer.resblocks.2.attn.in_proj_weight
+   visual.transformer.resblocks.2.attn.in_proj_bias
+   visual.transformer.resblocks.2.attn.out_proj.weight
+   visual.transformer.resblocks.2.attn.out_proj.bias
+   visual.transformer.resblocks.2.ln_1.weight
+   visual.transformer.resblocks.2.ln_1.bias
+   visual.transformer.resblocks.2.mlp.c_fc.weight
+   visual.transformer.resblocks.2.mlp.c_fc.bias
+   visual.transformer.resblocks.2.mlp.c_proj.weight
+   visual.transformer.resblocks.2.mlp.c_proj.bias
+   visual.transformer.resblocks.2.ln_2.weight
+   visual.transformer.resblocks.2.ln_2.bias
+   visual.transformer.resblocks.3.attn.in_proj_weight
+   visual.transformer.resblocks.3.attn.in_proj_bias
+   visual.transformer.resblocks.3.attn.out_proj.weight
+   visual.transformer.resblocks.3.attn.out_proj.bias
+   visual.transformer.resblocks.3.ln_1.weight
+   visual.transformer.resblocks.3.ln_1.bias
+   visual.transformer.resblocks.3.mlp.c_fc.weight
+   visual.transformer.resblocks.3.mlp.c_fc.bias
+   visual.transformer.resblocks.3.mlp.c_proj.weight
+   visual.transformer.resblocks.3.mlp.c_proj.bias
+   visual.transformer.resblocks.3.ln_2.weight
+   visual.transformer.resblocks.3.ln_2.bias
+   visual.transformer.resblocks.4.attn.in_proj_weight
+   visual.transformer.resblocks.4.attn.in_proj_bias
+   visual.transformer.resblocks.4.attn.out_proj.weight
+   visual.transformer.resblocks.4.attn.out_proj.bias
+   visual.transformer.resblocks.4.ln_1.weight
+   visual.transformer.resblocks.4.ln_1.bias
+   visual.transformer.resblocks.4.mlp.c_fc.weight
+   visual.transformer.resblocks.4.mlp.c_fc.bias
+   visual.transformer.resblocks.4.mlp.c_proj.weight
+   visual.transformer.resblocks.4.mlp.c_proj.bias
+   visual.transformer.resblocks.4.ln_2.weight
+   visual.transformer.resblocks.4.ln_2.bias
+   visual.transformer.resblocks.5.attn.in_proj_weight
+   visual.transformer.resblocks.5.attn.in_proj_bias
+   visual.transformer.resblocks.5.attn.out_proj.weight
+   visual.transformer.resblocks.5.attn.out_proj.bias
+   visual.transformer.resblocks.5.ln_1.weight
+   visual.transformer.resblocks.5.ln_1.bias
+   visual.transformer.resblocks.5.mlp.c_fc.weight
+   visual.transformer.resblocks.5.mlp.c_fc.bias
+   visual.transformer.resblocks.5.mlp.c_proj.weight
+   visual.transformer.resblocks.5.mlp.c_proj.bias
+   visual.transformer.resblocks.5.ln_2.weight
+   visual.transformer.resblocks.5.ln_2.bias
+   visual.transformer.resblocks.6.attn.in_proj_weight
+   visual.transformer.resblocks.6.attn.in_proj_bias
+   visual.transformer.resblocks.6.attn.out_proj.weight
+   visual.transformer.resblocks.6.attn.out_proj.bias
+   visual.transformer.resblocks.6.ln_1.weight
+   visual.transformer.resblocks.6.ln_1.bias
+   visual.transformer.resblocks.6.mlp.c_fc.weight
+   visual.transformer.resblocks.6.mlp.c_fc.bias
+   visual.transformer.resblocks.6.mlp.c_proj.weight
+   visual.transformer.resblocks.6.mlp.c_proj.bias
+   visual.transformer.resblocks.6.ln_2.weight
+   visual.transformer.resblocks.6.ln_2.bias
+   visual.transformer.resblocks.7.attn.in_proj_weight
+   visual.transformer.resblocks.7.attn.in_proj_bias
+   visual.transformer.resblocks.7.attn.out_proj.weight
+   visual.transformer.resblocks.7.attn.out_proj.bias
+   visual.transformer.resblocks.7.ln_1.weight
+   visual.transformer.resblocks.7.ln_1.bias
+   visual.transformer.resblocks.7.mlp.c_fc.weight
+   visual.transformer.resblocks.7.mlp.c_fc.bias
+   visual.transformer.resblocks.7.mlp.c_proj.weight
+   visual.transformer.resblocks.7.mlp.c_proj.bias
+   visual.transformer.resblocks.7.ln_2.weight
+   visual.transformer.resblocks.7.ln_2.bias
+   visual.transformer.resblocks.8.attn.in_proj_weight
+   visual.transformer.resblocks.8.attn.in_proj_bias
+   visual.transformer.resblocks.8.attn.out_proj.weight
+   visual.transformer.resblocks.8.attn.out_proj.bias
+   visual.transformer.resblocks.8.ln_1.weight
+   visual.transformer.resblocks.8.ln_1.bias
+   visual.transformer.resblocks.8.mlp.c_fc.weight
+   visual.transformer.resblocks.8.mlp.c_fc.bias
+   visual.transformer.resblocks.8.mlp.c_proj.weight
+   visual.transformer.resblocks.8.mlp.c_proj.bias
+   visual.transformer.resblocks.8.ln_2.weight
+   visual.transformer.resblocks.8.ln_2.bias
+   visual.transformer.resblocks.9.attn.in_proj_weight
+   visual.transformer.resblocks.9.attn.in_proj_bias
+   visual.transformer.resblocks.9.attn.out_proj.weight
+   visual.transformer.resblocks.9.attn.out_proj.bias
+   visual.transformer.resblocks.9.ln_1.weight
+   visual.transformer.resblocks.9.ln_1.bias
+   visual.transformer.resblocks.9.mlp.c_fc.weight
+   visual.transformer.resblocks.9.mlp.c_fc.bias
+   visual.transformer.resblocks.9.mlp.c_proj.weight
+   visual.transformer.resblocks.9.mlp.c_proj.bias
+   visual.transformer.resblocks.9.ln_2.weight
+   visual.transformer.resblocks.9.ln_2.bias
+   visual.transformer.resblocks.10.attn.in_proj_weight
+   visual.transformer.resblocks.10.attn.in_proj_bias
+   visual.transformer.resblocks.10.attn.out_proj.weight
+   visual.transformer.resblocks.10.attn.out_proj.bias
+   visual.transformer.resblocks.10.ln_1.weight
+   visual.transformer.resblocks.10.ln_1.bias
+   visual.transformer.resblocks.10.mlp.c_fc.weight
+   visual.transformer.resblocks.10.mlp.c_fc.bias
+   visual.transformer.resblocks.10.mlp.c_proj.weight
+   visual.transformer.resblocks.10.mlp.c_proj.bias
+   visual.transformer.resblocks.10.ln_2.weight
+   visual.transformer.resblocks.10.ln_2.bias
+   visual.transformer.resblocks.11.attn.in_proj_weight
+   visual.transformer.resblocks.11.attn.in_proj_bias
+   visual.transformer.resblocks.11.attn.out_proj.weight
+   visual.transformer.resblocks.11.attn.out_proj.bias
+   visual.transformer.resblocks.11.ln_1.weight
+   visual.transformer.resblocks.11.ln_1.bias
+   visual.transformer.resblocks.11.mlp.c_fc.weight
+   visual.transformer.resblocks.11.mlp.c_fc.bias
+   visual.transformer.resblocks.11.mlp.c_proj.weight
+   visual.transformer.resblocks.11.mlp.c_proj.bias
+   visual.transformer.resblocks.11.ln_2.weight
+   visual.transformer.resblocks.11.ln_2.bias
+   visual.ln_post.weight
+   visual.ln_post.bias
+   transformer.resblocks.0.attn.in_proj_weight
+   transformer.resblocks.0.attn.in_proj_bias
+   transformer.resblocks.0.attn.out_proj.weight
+   transformer.resblocks.0.attn.out_proj.bias
+   transformer.resblocks.0.ln_1.weight
+   transformer.resblocks.0.ln_1.bias
+   transformer.resblocks.0.mlp.c_fc.weight
+   transformer.resblocks.0.mlp.c_fc.bias
+   transformer.resblocks.0.mlp.c_proj.weight
+   transformer.resblocks.0.mlp.c_proj.bias
+   transformer.resblocks.0.ln_2.weight
+   transformer.resblocks.0.ln_2.bias
+   transformer.resblocks.1.attn.in_proj_weight
+   transformer.resblocks.1.attn.in_proj_bias
+   transformer.resblocks.1.attn.out_proj.weight
+   transformer.resblocks.1.attn.out_proj.bias
+   transformer.resblocks.1.ln_1.weight
+   transformer.resblocks.1.ln_1.bias
+   transformer.resblocks.1.mlp.c_fc.weight
+   transformer.resblocks.1.mlp.c_fc.bias
+   transformer.resblocks.1.mlp.c_proj.weight
+   transformer.resblocks.1.mlp.c_proj.bias
+   transformer.resblocks.1.ln_2.weight
+   transformer.resblocks.1.ln_2.bias
+   transformer.resblocks.2.attn.in_proj_weight
+   transformer.resblocks.2.attn.in_proj_bias
+   transformer.resblocks.2.attn.out_proj.weight
+   transformer.resblocks.2.attn.out_proj.bias
+   transformer.resblocks.2.ln_1.weight
+   transformer.resblocks.2.ln_1.bias
+   transformer.resblocks.2.mlp.c_fc.weight
+   transformer.resblocks.2.mlp.c_fc.bias
+   transformer.resblocks.2.mlp.c_proj.weight
+   transformer.resblocks.2.mlp.c_proj.bias
+   transformer.resblocks.2.ln_2.weight
+   transformer.resblocks.2.ln_2.bias
+   transformer.resblocks.3.attn.in_proj_weight
+   transformer.resblocks.3.attn.in_proj_bias
+   transformer.resblocks.3.attn.out_proj.weight
+   transformer.resblocks.3.attn.out_proj.bias
+   transformer.resblocks.3.ln_1.weight
+   transformer.resblocks.3.ln_1.bias
+   transformer.resblocks.3.mlp.c_fc.weight
+   transformer.resblocks.3.mlp.c_fc.bias
+   transformer.resblocks.3.mlp.c_proj.weight
+   transformer.resblocks.3.mlp.c_proj.bias
+   transformer.resblocks.3.ln_2.weight
+   transformer.resblocks.3.ln_2.bias
+   transformer.resblocks.4.attn.in_proj_weight
+   transformer.resblocks.4.attn.in_proj_bias
+   transformer.resblocks.4.attn.out_proj.weight
+   transformer.resblocks.4.attn.out_proj.bias
+   transformer.resblocks.4.ln_1.weight
+   transformer.resblocks.4.ln_1.bias
+   transformer.resblocks.4.mlp.c_fc.weight
+   transformer.resblocks.4.mlp.c_fc.bias
+   transformer.resblocks.4.mlp.c_proj.weight
+   transformer.resblocks.4.mlp.c_proj.bias
+   transformer.resblocks.4.ln_2.weight
+   transformer.resblocks.4.ln_2.bias
+   transformer.resblocks.5.attn.in_proj_weight
+   transformer.resblocks.5.attn.in_proj_bias
+   transformer.resblocks.5.attn.out_proj.weight
+   transformer.resblocks.5.attn.out_proj.bias
+   transformer.resblocks.5.ln_1.weight
+   transformer.resblocks.5.ln_1.bias
+   transformer.resblocks.5.mlp.c_fc.weight
+   transformer.resblocks.5.mlp.c_fc.bias
+   transformer.resblocks.5.mlp.c_proj.weight
+   transformer.resblocks.5.mlp.c_proj.bias
+   transformer.resblocks.5.ln_2.weight
+   transformer.resblocks.5.ln_2.bias
+   transformer.resblocks.6.attn.in_proj_weight
+   transformer.resblocks.6.attn.in_proj_bias
+   transformer.resblocks.6.attn.out_proj.weight
+   transformer.resblocks.6.attn.out_proj.bias
+   transformer.resblocks.6.ln_1.weight
+   transformer.resblocks.6.ln_1.bias
+   transformer.resblocks.6.mlp.c_fc.weight
+   transformer.resblocks.6.mlp.c_fc.bias
+   transformer.resblocks.6.mlp.c_proj.weight
+   transformer.resblocks.6.mlp.c_proj.bias
+   transformer.resblocks.6.ln_2.weight
+   transformer.resblocks.6.ln_2.bias
+   transformer.resblocks.7.attn.in_proj_weight
+   transformer.resblocks.7.attn.in_proj_bias
+   transformer.resblocks.7.attn.out_proj.weight
+   transformer.resblocks.7.attn.out_proj.bias
+   transformer.resblocks.7.ln_1.weight
+   transformer.resblocks.7.ln_1.bias
+   transformer.resblocks.7.mlp.c_fc.weight
+   transformer.resblocks.7.mlp.c_fc.bias
+   transformer.resblocks.7.mlp.c_proj.weight
+   transformer.resblocks.7.mlp.c_proj.bias
+   transformer.resblocks.7.ln_2.weight
+   transformer.resblocks.7.ln_2.bias
+   transformer.resblocks.8.attn.in_proj_weight
+   transformer.resblocks.8.attn.in_proj_bias
+   transformer.resblocks.8.attn.out_proj.weight
+   transformer.resblocks.8.attn.out_proj.bias
+   transformer.resblocks.8.ln_1.weight
+   transformer.resblocks.8.ln_1.bias
+   transformer.resblocks.8.mlp.c_fc.weight
+   transformer.resblocks.8.mlp.c_fc.bias
+   transformer.resblocks.8.mlp.c_proj.weight
+   transformer.resblocks.8.mlp.c_proj.bias
+   transformer.resblocks.8.ln_2.weight
+   transformer.resblocks.8.ln_2.bias
+   transformer.resblocks.9.attn.in_proj_weight
+   transformer.resblocks.9.attn.in_proj_bias
+   transformer.resblocks.9.attn.out_proj.weight
+   transformer.resblocks.9.attn.out_proj.bias
+   transformer.resblocks.9.ln_1.weight
+   transformer.resblocks.9.ln_1.bias
+   transformer.resblocks.9.mlp.c_fc.weight
+   transformer.resblocks.9.mlp.c_fc.bias
+   transformer.resblocks.9.mlp.c_proj.weight
+   transformer.resblocks.9.mlp.c_proj.bias
+   transformer.resblocks.9.ln_2.weight
+   transformer.resblocks.9.ln_2.bias
+   transformer.resblocks.10.attn.in_proj_weight
+   transformer.resblocks.10.attn.in_proj_bias
+   transformer.resblocks.10.attn.out_proj.weight
+   transformer.resblocks.10.attn.out_proj.bias
+   transformer.resblocks.10.ln_1.weight
+   transformer.resblocks.10.ln_1.bias
+   transformer.resblocks.10.mlp.c_fc.weight
+   transformer.resblocks.10.mlp.c_fc.bias
+   transformer.resblocks.10.mlp.c_proj.weight
+   transformer.resblocks.10.mlp.c_proj.bias
+   transformer.resblocks.10.ln_2.weight
+   transformer.resblocks.10.ln_2.bias
+   transformer.resblocks.11.attn.in_proj_weight
+   transformer.resblocks.11.attn.in_proj_bias
+   transformer.resblocks.11.attn.out_proj.weight
+   transformer.resblocks.11.attn.out_proj.bias
+   transformer.resblocks.11.ln_1.weight
+   transformer.resblocks.11.ln_1.bias
+   transformer.resblocks.11.mlp.c_fc.weight
+   transformer.resblocks.11.mlp.c_fc.bias
+   transformer.resblocks.11.mlp.c_proj.weight
+   transformer.resblocks.11.mlp.c_proj.bias
+   transformer.resblocks.11.ln_2.weight
+   transformer.resblocks.11.ln_2.bias
+   token_embedding.weight
+   ln_final.weight
+   ln_final.bias
+   clip.input_resolution
+   clip.context_length
+   clip.vocab_size
+2024-10-10 07:21:42,297:INFO: ***** Running test *****
+2024-10-10 07:21:42,297:INFO:   Num examples = 1334
+2024-10-10 07:21:42,297:INFO:   Batch size = 64
+2024-10-10 07:21:42,297:INFO:   Num steps = 11
+2024-10-10 07:21:42,297:INFO: ***** Running val *****
+2024-10-10 07:21:42,297:INFO:   Num examples = 1334
+2024-10-10 07:21:42,376:INFO: ***** Running test *****
+2024-10-10 07:21:42,376:INFO:   Num examples = 1334
+2024-10-10 07:21:42,376:INFO:   Batch size = 64
+2024-10-10 07:21:42,376:INFO:   Num steps = 11
+2024-10-10 07:21:42,376:INFO: ***** Running val *****
+2024-10-10 07:21:42,376:INFO:   Num examples = 1334
+2024-10-10 07:21:44,486:INFO: ***** Running training *****
+2024-10-10 07:21:44,486:INFO:   Num examples = 5338
+2024-10-10 07:21:44,486:INFO:   Batch size = 256
+2024-10-10 07:21:44,486:INFO:   Num steps = 400
+2024-10-10 07:21:44,492:INFO: ***** Running training *****
+2024-10-10 07:21:44,493:INFO:   Num examples = 5338
+2024-10-10 07:21:44,493:INFO:   Batch size = 256
+2024-10-10 07:21:44,493:INFO:   Num steps = 400
+
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "/home/zyl/MeVTR/main_task_retrieval_multi.py", line 653, in <module>
+[rank1]:     main()
+[rank1]:   File "/home/zyl/.conda/envs/zylenv2/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 348, in wrapper
+[rank1]:     return f(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/home/zyl/MeVTR/main_task_retrieval_multi.py", line 632, in main
+[rank1]:     tr_loss, global_step = train_epoch(epoch, args, model, train_dataloader, device, n_gpu, optimizer,
+[rank1]:                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/home/zyl/MeVTR/main_task_retrieval_multi.py", line 346, in train_epoch
+[rank1]:     if args.regularize == 'none':
+[rank1]:        ^^^^^^^^^^^^^^^
+[rank1]: AttributeError: 'Namespace' object has no attribute 'regularize'
+W1010 07:34:49.436000 123374485071680 torch/distributed/elastic/multiprocessing/api.py:858] Sending process 3034208 closing signal SIGTERM
+E1010 07:34:49.438000 123374485071680 torch/distributed/elastic/multiprocessing/api.py:833] failed (exitcode: 1) local_rank: 1 (pid: 3034209) of binary: /home/zyl/.conda/envs/zylenv2/bin/python
+E1010 07:34:49.440000 123374485071680 torch/distributed/elastic/multiprocessing/errors/error_handler.py:137] no error file defined for parent, to copy child error file (/tmp/torchelastic_fc8evm05/none_r1j8nccg/attempt_0/1/error.json)
+Traceback (most recent call last):
+  File "/home/zyl/.conda/envs/zylenv2/bin/torchrun", line 33, in <module>
+    sys.exit(load_entry_point('torch==2.4.1', 'console_scripts', 'torchrun')())
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zyl/.conda/envs/zylenv2/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 348, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/zyl/.conda/envs/zylenv2/lib/python3.12/site-packages/torch/distributed/run.py", line 901, in main
+    run(args)
+  File "/home/zyl/.conda/envs/zylenv2/lib/python3.12/site-packages/torch/distributed/run.py", line 892, in run
+    elastic_launch(
+  File "/home/zyl/.conda/envs/zylenv2/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 133, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/zyl/.conda/envs/zylenv2/lib/python3.12/site-packages/torch/distributed/launcher/api.py", line 264, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+main_task_retrieval_multi.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2024-10-10_07:34:45
+  host      : yzwgroup.lan
+  rank      : 1 (local_rank: 1)
+  exitcode  : 1 (pid: 3034209)
+  error_file: /tmp/torchelastic_fc8evm05/none_r1j8nccg/attempt_0/1/error.json
+  traceback : Traceback (most recent call last):
+    File "/home/zyl/.conda/envs/zylenv2/lib/python3.12/site-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 348, in wrapper
+      return f(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^
+    File "/home/zyl/MeVTR/main_task_retrieval_multi.py", line 632, in main
+      tr_loss, global_step = train_epoch(epoch, args, model, train_dataloader, device, n_gpu, optimizer,
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    File "/home/zyl/MeVTR/main_task_retrieval_multi.py", line 346, in train_epoch
+      if args.regularize == 'none':
+         ^^^^^^^^^^^^^^^
+  AttributeError: 'Namespace' object has no attribute 'regularize'
+  
+============================================================2024-10-10 07:48:55,468:INFO: Effective parameters:
+2024-10-10 07:48:55,468:INFO:   <<< adaptive_cls: 0
+2024-10-10 07:48:55,469:INFO:   <<< aggregation: None
+2024-10-10 07:48:55,469:INFO:   <<< alpha: 1.0
+2024-10-10 07:48:55,469:INFO:   <<< batch_size: 256
+2024-10-10 07:48:55,469:INFO:   <<< batch_size_val: 64
+2024-10-10 07:48:55,469:INFO:   <<< cache_dir: 
+2024-10-10 07:48:55,469:INFO:   <<< cluser_embed_from_clip: 1
+2024-10-10 07:48:55,469:INFO:   <<< cluster_algo: kmediods++
+2024-10-10 07:48:55,469:INFO:   <<< cluster_distance: euclidean
+2024-10-10 07:48:55,469:INFO:   <<< cluster_embedding: 0
+2024-10-10 07:48:55,469:INFO:   <<< cluster_frame_embedding: 0
+2024-10-10 07:48:55,469:INFO:   <<< cluster_iter_limit: 100
+2024-10-10 07:48:55,469:INFO:   <<< cluster_threshold: 1e-05
+2024-10-10 07:48:55,469:INFO:   <<< coef_lr: 0.0001
+2024-10-10 07:48:55,469:INFO:   <<< cross_model: cross-base
+2024-10-10 07:48:55,469:INFO:   <<< cross_num_hidden_layers: 4
+2024-10-10 07:48:55,469:INFO:   <<< data_path: /home/zyl/MeVTR_data_and_models/charades/annotation
+2024-10-10 07:48:55,469:INFO:   <<< datatype: charades
+2024-10-10 07:48:55,469:INFO:   <<< do_eval: False
+2024-10-10 07:48:55,469:INFO:   <<< do_lower_case: False
+2024-10-10 07:48:55,469:INFO:   <<< do_pretrain: False
+2024-10-10 07:48:55,469:INFO:   <<< do_train: True
+2024-10-10 07:48:55,470:INFO:   <<< dynamic_alpha: False
+2024-10-10 07:48:55,470:INFO:   <<< epochs: 20
+2024-10-10 07:48:55,470:INFO:   <<< eval_frame_order: 0
+2024-10-10 07:48:55,470:INFO:   <<< expand_msrvtt_sentences: False
+2024-10-10 07:48:55,470:INFO:   <<< feature_framerate: 1
+2024-10-10 07:48:55,470:INFO:   <<< features_path: /home/zyl/MeVTR_data_and_models/charades/Charades_v2_3
+2024-10-10 07:48:55,470:INFO:   <<< fp16: False
+2024-10-10 07:48:55,470:INFO:   <<< fp16_opt_level: O1
+2024-10-10 07:48:55,470:INFO:   <<< freeze_layer_num: 0
+2024-10-10 07:48:55,470:INFO:   <<< gradient_accumulation_steps: 1
+2024-10-10 07:48:55,470:INFO:   <<< hard_negative_rate: 0.5
+2024-10-10 07:48:55,470:INFO:   <<< init_model: /home/zyl/MeVTR_data_and_models/pretrained_clip/modules/ViT-B-32.pt
+2024-10-10 07:48:55,470:INFO:   <<< linear_patch: 2d
+2024-10-10 07:48:55,470:INFO:   <<< local_rank: 0
+2024-10-10 07:48:55,470:INFO:   <<< loose_type: True
+2024-10-10 07:48:55,470:INFO:   <<< loss: balanced
+2024-10-10 07:48:55,470:INFO:   <<< lr: 0.0001
+2024-10-10 07:48:55,470:INFO:   <<< lr_decay: 0.9
+2024-10-10 07:48:55,470:INFO:   <<< margin: 0.1
+2024-10-10 07:48:55,470:INFO:   <<< max_frames: 64
+2024-10-10 07:48:55,470:INFO:   <<< max_words: 77
+2024-10-10 07:48:55,470:INFO:   <<< minkowski_norm_p: 2.0
+2024-10-10 07:48:55,471:INFO:   <<< n_display: 100
+2024-10-10 07:48:55,471:INFO:   <<< n_gpu: 1
+2024-10-10 07:48:55,471:INFO:   <<< n_pair: 1
+2024-10-10 07:48:55,471:INFO:   <<< negative_weighting: 1
+2024-10-10 07:48:55,471:INFO:   <<< num_thread_reader: 2
+2024-10-10 07:48:55,471:INFO:   <<< output_dir: /home/zyl/MeVTR/output
+2024-10-10 07:48:55,471:INFO:   <<< post_cluster_centroids: 16
+2024-10-10 07:48:55,471:INFO:   <<< post_process: cluster
+2024-10-10 07:48:55,471:INFO:   <<< pre_norm: 0
+2024-10-10 07:48:55,471:INFO:   <<< pretrained_clip_name: ViT-B/32
+2024-10-10 07:48:55,471:INFO:   <<< rank: 1
+2024-10-10 07:48:55,471:INFO:   <<< resume_model: None
+2024-10-10 07:48:55,471:INFO:   <<< sampled_use_mil: False
+2024-10-10 07:48:55,471:INFO:   <<< save_feature_path: None
+2024-10-10 07:48:55,471:INFO:   <<< seed: 42
+2024-10-10 07:48:55,471:INFO:   <<< sim_header: meanP
+2024-10-10 07:48:55,471:INFO:   <<< sim_lambda: 0.0
+2024-10-10 07:48:55,471:INFO:   <<< slice_framepos: 2
+2024-10-10 07:48:55,471:INFO:   <<< task_type: retrieval
+2024-10-10 07:48:55,471:INFO:   <<< temperature_new: 1.0
+2024-10-10 07:48:55,471:INFO:   <<< text_num_hidden_layers: 12
+2024-10-10 07:48:55,472:INFO:   <<< time_embedding: 0
+2024-10-10 07:48:55,472:INFO:   <<< train_csv: data/.train.csv
+2024-10-10 07:48:55,472:INFO:   <<< train_frame_order: 0
+2024-10-10 07:48:55,472:INFO:   <<< use_mil: False
+2024-10-10 07:48:55,472:INFO:   <<< val_csv: data/.val.csv
+2024-10-10 07:48:55,472:INFO:   <<< video_dim: 1024
+2024-10-10 07:48:55,472:INFO:   <<< visual_num_hidden_layers: 12
+2024-10-10 07:48:55,472:INFO:   <<< warmup_proportion: 0.1
+2024-10-10 07:48:55,472:INFO:   <<< world_size: 2
+2024-10-10 07:48:55,472:INFO: device: cuda:0 n_gpu: 2
+2024-10-10 07:48:55,474:INFO: Effective parameters:
+2024-10-10 07:48:55,474:INFO:   <<< adaptive_cls: 0
+2024-10-10 07:48:55,475:INFO:   <<< aggregation: None
+2024-10-10 07:48:55,475:INFO:   <<< alpha: 1.0
+2024-10-10 07:48:55,475:INFO:   <<< batch_size: 256
+2024-10-10 07:48:55,475:INFO:   <<< batch_size_val: 64
+2024-10-10 07:48:55,475:INFO:   <<< cache_dir: 
+2024-10-10 07:48:55,475:INFO:   <<< cluser_embed_from_clip: 1
+2024-10-10 07:48:55,475:INFO:   <<< cluster_algo: kmediods++
+2024-10-10 07:48:55,475:INFO:   <<< cluster_distance: euclidean
+2024-10-10 07:48:55,475:INFO:   <<< cluster_embedding: 0
+2024-10-10 07:48:55,475:INFO:   <<< cluster_frame_embedding: 0
+2024-10-10 07:48:55,475:INFO:   <<< cluster_iter_limit: 100
+2024-10-10 07:48:55,475:INFO:   <<< cluster_threshold: 1e-05
+2024-10-10 07:48:55,475:INFO:   <<< coef_lr: 0.0001
+2024-10-10 07:48:55,475:INFO:   <<< cross_model: cross-base
+2024-10-10 07:48:55,475:INFO:   <<< cross_num_hidden_layers: 4
+2024-10-10 07:48:55,475:INFO:   <<< data_path: /home/zyl/MeVTR_data_and_models/charades/annotation
+2024-10-10 07:48:55,475:INFO:   <<< datatype: charades
+2024-10-10 07:48:55,475:INFO:   <<< do_eval: False
+2024-10-10 07:48:55,476:INFO:   <<< do_lower_case: False
+2024-10-10 07:48:55,476:INFO:   <<< do_pretrain: False
+2024-10-10 07:48:55,476:INFO:   <<< do_train: True
+2024-10-10 07:48:55,476:INFO:   <<< dynamic_alpha: False
+2024-10-10 07:48:55,476:INFO:   <<< epochs: 20
+2024-10-10 07:48:55,476:INFO:   <<< eval_frame_order: 0
+2024-10-10 07:48:55,476:INFO:   <<< expand_msrvtt_sentences: False
+2024-10-10 07:48:55,476:INFO:   <<< feature_framerate: 1
+2024-10-10 07:48:55,476:INFO:   <<< features_path: /home/zyl/MeVTR_data_and_models/charades/Charades_v2_3
+2024-10-10 07:48:55,476:INFO:   <<< fp16: False
+2024-10-10 07:48:55,476:INFO:   <<< fp16_opt_level: O1
+2024-10-10 07:48:55,476:INFO:   <<< freeze_layer_num: 0
+2024-10-10 07:48:55,476:INFO:   <<< gradient_accumulation_steps: 1
+2024-10-10 07:48:55,476:INFO:   <<< hard_negative_rate: 0.5
+2024-10-10 07:48:55,476:INFO:   <<< init_model: /home/zyl/MeVTR_data_and_models/pretrained_clip/modules/ViT-B-32.pt
+2024-10-10 07:48:55,476:INFO:   <<< linear_patch: 2d
+2024-10-10 07:48:55,476:INFO:   <<< local_rank: 0
+2024-10-10 07:48:55,476:INFO:   <<< loose_type: True
+2024-10-10 07:48:55,476:INFO:   <<< loss: balanced
+2024-10-10 07:48:55,476:INFO:   <<< lr: 0.0001
+2024-10-10 07:48:55,477:INFO:   <<< lr_decay: 0.9
+2024-10-10 07:48:55,477:INFO:   <<< margin: 0.1
+2024-10-10 07:48:55,477:INFO:   <<< max_frames: 64
+2024-10-10 07:48:55,477:INFO:   <<< max_words: 77
+2024-10-10 07:48:55,477:INFO:   <<< minkowski_norm_p: 2.0
+2024-10-10 07:48:55,477:INFO:   <<< n_display: 100
+2024-10-10 07:48:55,477:INFO:   <<< n_gpu: 1
+2024-10-10 07:48:55,477:INFO:   <<< n_pair: 1
+2024-10-10 07:48:55,477:INFO:   <<< negative_weighting: 1
+2024-10-10 07:48:55,477:INFO:   <<< num_thread_reader: 2
+2024-10-10 07:48:55,477:INFO:   <<< output_dir: /home/zyl/MeVTR/output
+2024-10-10 07:48:55,477:INFO:   <<< post_cluster_centroids: 16
+2024-10-10 07:48:55,477:INFO:   <<< post_process: cluster
+2024-10-10 07:48:55,477:INFO:   <<< pre_norm: 0
+2024-10-10 07:48:55,477:INFO:   <<< pretrained_clip_name: ViT-B/32
+2024-10-10 07:48:55,477:INFO:   <<< rank: 0
+2024-10-10 07:48:55,477:INFO:   <<< resume_model: None
+2024-10-10 07:48:55,477:INFO:   <<< sampled_use_mil: False
+2024-10-10 07:48:55,477:INFO:   <<< save_feature_path: None
+2024-10-10 07:48:55,478:INFO:   <<< seed: 42
+2024-10-10 07:48:55,478:INFO:   <<< sim_header: meanP
+2024-10-10 07:48:55,478:INFO:   <<< sim_lambda: 0.0
+2024-10-10 07:48:55,478:INFO:   <<< slice_framepos: 2
+2024-10-10 07:48:55,478:INFO:   <<< task_type: retrieval
+2024-10-10 07:48:55,478:INFO:   <<< temperature_new: 1.0
+2024-10-10 07:48:55,478:INFO:   <<< text_num_hidden_layers: 12
+2024-10-10 07:48:55,478:INFO:   <<< time_embedding: 0
+2024-10-10 07:48:55,478:INFO:   <<< train_csv: data/.train.csv
+2024-10-10 07:48:55,478:INFO:   <<< train_frame_order: 0
+2024-10-10 07:48:55,478:INFO:   <<< use_mil: False
+2024-10-10 07:48:55,478:INFO:   <<< val_csv: data/.val.csv
+2024-10-10 07:48:55,478:INFO:   <<< video_dim: 1024
+2024-10-10 07:48:55,478:INFO:   <<< visual_num_hidden_layers: 12
+2024-10-10 07:48:55,478:INFO:   <<< warmup_proportion: 0.1
+2024-10-10 07:48:55,478:INFO:   <<< world_size: 2
+2024-10-10 07:48:55,479:INFO: device: cuda:0 n_gpu: 2
+2024-10-10 07:48:58,378:INFO: loading archive file /home/zyl/MeVTR/modules/cross-base
+2024-10-10 07:48:58,378:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 512,
+  "initializer_range": 0.02,
+  "intermediate_size": 2048,
+  "max_position_embeddings": 128,
+  "num_attention_heads": 8,
+  "num_hidden_layers": 4,
+  "type_vocab_size": 2,
+  "vocab_size": 512
+}
+
+2024-10-10 07:48:58,378:INFO: Weight doesn't exsits. /home/zyl/MeVTR/modules/cross-base/cross_pytorch_model.bin
+2024-10-10 07:48:58,379:WARNING: Stage-One:True, Stage-Two:False
+2024-10-10 07:48:58,379:WARNING: Test retrieval by loose type.
+2024-10-10 07:48:58,379:WARNING: 	 embed_dim: 512
+2024-10-10 07:48:58,379:WARNING: 	 image_resolution: 224
+2024-10-10 07:48:58,379:WARNING: 	 vision_layers: 12
+2024-10-10 07:48:58,379:WARNING: 	 vision_width: 768
+2024-10-10 07:48:58,379:WARNING: 	 vision_patch_size: 32
+2024-10-10 07:48:58,379:WARNING: 	 context_length: 77
+2024-10-10 07:48:58,379:WARNING: 	 vocab_size: 49408
+2024-10-10 07:48:58,379:WARNING: 	 transformer_width: 512
+2024-10-10 07:48:58,379:WARNING: 	 transformer_heads: 8
+2024-10-10 07:48:58,379:WARNING: 	 transformer_layers: 12
+2024-10-10 07:48:58,379:WARNING: 		 linear_patch: 2d
+2024-10-10 07:48:58,379:WARNING: 	 cut_top_layer: 0
+2024-10-10 07:48:59,003:INFO: loading archive file /home/zyl/MeVTR/modules/cross-base
+2024-10-10 07:48:59,003:INFO: Model config {
+  "attention_probs_dropout_prob": 0.1,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 512,
+  "initializer_range": 0.02,
+  "intermediate_size": 2048,
+  "max_position_embeddings": 128,
+  "num_attention_heads": 8,
+  "num_hidden_layers": 4,
+  "type_vocab_size": 2,
+  "vocab_size": 512
+}
+
+2024-10-10 07:48:59,003:INFO: Weight doesn't exsits. /home/zyl/MeVTR/modules/cross-base/cross_pytorch_model.bin
+2024-10-10 07:48:59,004:WARNING: Stage-One:True, Stage-Two:False
+2024-10-10 07:48:59,004:WARNING: Test retrieval by loose type.
+2024-10-10 07:48:59,004:WARNING: 	 embed_dim: 512
+2024-10-10 07:48:59,004:WARNING: 	 image_resolution: 224
+2024-10-10 07:48:59,004:WARNING: 	 vision_layers: 12
+2024-10-10 07:48:59,004:WARNING: 	 vision_width: 768
+2024-10-10 07:48:59,004:WARNING: 	 vision_patch_size: 32
+2024-10-10 07:48:59,004:WARNING: 	 context_length: 77
+2024-10-10 07:48:59,004:WARNING: 	 vocab_size: 49408
+2024-10-10 07:48:59,004:WARNING: 	 transformer_width: 512
+2024-10-10 07:48:59,004:WARNING: 	 transformer_heads: 8
+2024-10-10 07:48:59,004:WARNING: 	 transformer_layers: 12
+2024-10-10 07:48:59,004:WARNING: 		 linear_patch: 2d
+2024-10-10 07:48:59,005:WARNING: 	 cut_top_layer: 0
+2024-10-10 07:49:00,586:WARNING: 	 sim_header: meanP
+2024-10-10 07:49:02,035:WARNING: 	 sim_header: meanP
+2024-10-10 07:49:06,552:INFO: --------------------
+2024-10-10 07:49:06,552:INFO: Weights from pretrained model not used in MeRetriever: 
+   positional_embedding
+   text_projection
+   logit_scale
+   input_resolution
+   context_length
+   vocab_size
+   visual.class_embedding
+   visual.positional_embedding
+   visual.proj
+   visual.conv1.weight
+   visual.ln_pre.weight
+   visual.ln_pre.bias
+   visual.transformer.resblocks.0.attn.in_proj_weight
+   visual.transformer.resblocks.0.attn.in_proj_bias
+   visual.transformer.resblocks.0.attn.out_proj.weight
+   visual.transformer.resblocks.0.attn.out_proj.bias
+   visual.transformer.resblocks.0.ln_1.weight
+   visual.transformer.resblocks.0.ln_1.bias
+   visual.transformer.resblocks.0.mlp.c_fc.weight
+   visual.transformer.resblocks.0.mlp.c_fc.bias
+   visual.transformer.resblocks.0.mlp.c_proj.weight
+   visual.transformer.resblocks.0.mlp.c_proj.bias
+   visual.transformer.resblocks.0.ln_2.weight
+   visual.transformer.resblocks.0.ln_2.bias
+   visual.transformer.resblocks.1.attn.in_proj_weight
+   visual.transformer.resblocks.1.attn.in_proj_bias
+   visual.transformer.resblocks.1.attn.out_proj.weight
+   visual.transformer.resblocks.1.attn.out_proj.bias
+   visual.transformer.resblocks.1.ln_1.weight
+   visual.transformer.resblocks.1.ln_1.bias
+   visual.transformer.resblocks.1.mlp.c_fc.weight
+   visual.transformer.resblocks.1.mlp.c_fc.bias
+   visual.transformer.resblocks.1.mlp.c_proj.weight
+   visual.transformer.resblocks.1.mlp.c_proj.bias
+   visual.transformer.resblocks.1.ln_2.weight
+   visual.transformer.resblocks.1.ln_2.bias
+   visual.transformer.resblocks.2.attn.in_proj_weight
+   visual.transformer.resblocks.2.attn.in_proj_bias
+   visual.transformer.resblocks.2.attn.out_proj.weight
+   visual.transformer.resblocks.2.attn.out_proj.bias
+   visual.transformer.resblocks.2.ln_1.weight
+   visual.transformer.resblocks.2.ln_1.bias
+   visual.transformer.resblocks.2.mlp.c_fc.weight
+   visual.transformer.resblocks.2.mlp.c_fc.bias
+   visual.transformer.resblocks.2.mlp.c_proj.weight
+   visual.transformer.resblocks.2.mlp.c_proj.bias
+   visual.transformer.resblocks.2.ln_2.weight
+   visual.transformer.resblocks.2.ln_2.bias
+   visual.transformer.resblocks.3.attn.in_proj_weight
+   visual.transformer.resblocks.3.attn.in_proj_bias
+   visual.transformer.resblocks.3.attn.out_proj.weight
+   visual.transformer.resblocks.3.attn.out_proj.bias
+   visual.transformer.resblocks.3.ln_1.weight
+   visual.transformer.resblocks.3.ln_1.bias
+   visual.transformer.resblocks.3.mlp.c_fc.weight
+   visual.transformer.resblocks.3.mlp.c_fc.bias
+   visual.transformer.resblocks.3.mlp.c_proj.weight
+   visual.transformer.resblocks.3.mlp.c_proj.bias
+   visual.transformer.resblocks.3.ln_2.weight
+   visual.transformer.resblocks.3.ln_2.bias
+   visual.transformer.resblocks.4.attn.in_proj_weight
+   visual.transformer.resblocks.4.attn.in_proj_bias
+   visual.transformer.resblocks.4.attn.out_proj.weight
+   visual.transformer.resblocks.4.attn.out_proj.bias
+   visual.transformer.resblocks.4.ln_1.weight
+   visual.transformer.resblocks.4.ln_1.bias
+   visual.transformer.resblocks.4.mlp.c_fc.weight
+   visual.transformer.resblocks.4.mlp.c_fc.bias
+   visual.transformer.resblocks.4.mlp.c_proj.weight
+   visual.transformer.resblocks.4.mlp.c_proj.bias
+   visual.transformer.resblocks.4.ln_2.weight
+   visual.transformer.resblocks.4.ln_2.bias
+   visual.transformer.resblocks.5.attn.in_proj_weight
+   visual.transformer.resblocks.5.attn.in_proj_bias
+   visual.transformer.resblocks.5.attn.out_proj.weight
+   visual.transformer.resblocks.5.attn.out_proj.bias
+   visual.transformer.resblocks.5.ln_1.weight
+   visual.transformer.resblocks.5.ln_1.bias
+   visual.transformer.resblocks.5.mlp.c_fc.weight
+   visual.transformer.resblocks.5.mlp.c_fc.bias
+   visual.transformer.resblocks.5.mlp.c_proj.weight
+   visual.transformer.resblocks.5.mlp.c_proj.bias
+   visual.transformer.resblocks.5.ln_2.weight
+   visual.transformer.resblocks.5.ln_2.bias
+   visual.transformer.resblocks.6.attn.in_proj_weight
+   visual.transformer.resblocks.6.attn.in_proj_bias
+   visual.transformer.resblocks.6.attn.out_proj.weight
+   visual.transformer.resblocks.6.attn.out_proj.bias
+   visual.transformer.resblocks.6.ln_1.weight
+   visual.transformer.resblocks.6.ln_1.bias
+   visual.transformer.resblocks.6.mlp.c_fc.weight
+   visual.transformer.resblocks.6.mlp.c_fc.bias
+   visual.transformer.resblocks.6.mlp.c_proj.weight
+   visual.transformer.resblocks.6.mlp.c_proj.bias
+   visual.transformer.resblocks.6.ln_2.weight
+   visual.transformer.resblocks.6.ln_2.bias
+   visual.transformer.resblocks.7.attn.in_proj_weight
+   visual.transformer.resblocks.7.attn.in_proj_bias
+   visual.transformer.resblocks.7.attn.out_proj.weight
+   visual.transformer.resblocks.7.attn.out_proj.bias
+   visual.transformer.resblocks.7.ln_1.weight
+   visual.transformer.resblocks.7.ln_1.bias
+   visual.transformer.resblocks.7.mlp.c_fc.weight
+   visual.transformer.resblocks.7.mlp.c_fc.bias
+   visual.transformer.resblocks.7.mlp.c_proj.weight
+   visual.transformer.resblocks.7.mlp.c_proj.bias
+   visual.transformer.resblocks.7.ln_2.weight
+   visual.transformer.resblocks.7.ln_2.bias
+   visual.transformer.resblocks.8.attn.in_proj_weight
+   visual.transformer.resblocks.8.attn.in_proj_bias
+   visual.transformer.resblocks.8.attn.out_proj.weight
+   visual.transformer.resblocks.8.attn.out_proj.bias
+   visual.transformer.resblocks.8.ln_1.weight
+   visual.transformer.resblocks.8.ln_1.bias
+   visual.transformer.resblocks.8.mlp.c_fc.weight
+   visual.transformer.resblocks.8.mlp.c_fc.bias
+   visual.transformer.resblocks.8.mlp.c_proj.weight
+   visual.transformer.resblocks.8.mlp.c_proj.bias
+   visual.transformer.resblocks.8.ln_2.weight
+   visual.transformer.resblocks.8.ln_2.bias
+   visual.transformer.resblocks.9.attn.in_proj_weight
+   visual.transformer.resblocks.9.attn.in_proj_bias
+   visual.transformer.resblocks.9.attn.out_proj.weight
+   visual.transformer.resblocks.9.attn.out_proj.bias
+   visual.transformer.resblocks.9.ln_1.weight
+   visual.transformer.resblocks.9.ln_1.bias
+   visual.transformer.resblocks.9.mlp.c_fc.weight
+   visual.transformer.resblocks.9.mlp.c_fc.bias
+   visual.transformer.resblocks.9.mlp.c_proj.weight
+   visual.transformer.resblocks.9.mlp.c_proj.bias
+   visual.transformer.resblocks.9.ln_2.weight
+   visual.transformer.resblocks.9.ln_2.bias
+   visual.transformer.resblocks.10.attn.in_proj_weight
+   visual.transformer.resblocks.10.attn.in_proj_bias
+   visual.transformer.resblocks.10.attn.out_proj.weight
+   visual.transformer.resblocks.10.attn.out_proj.bias
+   visual.transformer.resblocks.10.ln_1.weight
+   visual.transformer.resblocks.10.ln_1.bias
+   visual.transformer.resblocks.10.mlp.c_fc.weight
+   visual.transformer.resblocks.10.mlp.c_fc.bias
+   visual.transformer.resblocks.10.mlp.c_proj.weight
+   visual.transformer.resblocks.10.mlp.c_proj.bias
+   visual.transformer.resblocks.10.ln_2.weight
+   visual.transformer.resblocks.10.ln_2.bias
+   visual.transformer.resblocks.11.attn.in_proj_weight
+   visual.transformer.resblocks.11.attn.in_proj_bias
+   visual.transformer.resblocks.11.attn.out_proj.weight
+   visual.transformer.resblocks.11.attn.out_proj.bias
+   visual.transformer.resblocks.11.ln_1.weight
+   visual.transformer.resblocks.11.ln_1.bias
+   visual.transformer.resblocks.11.mlp.c_fc.weight
+   visual.transformer.resblocks.11.mlp.c_fc.bias
+   visual.transformer.resblocks.11.mlp.c_proj.weight
+   visual.transformer.resblocks.11.mlp.c_proj.bias
+   visual.transformer.resblocks.11.ln_2.weight
+   visual.transformer.resblocks.11.ln_2.bias
+   visual.ln_post.weight
+   visual.ln_post.bias
+   transformer.resblocks.0.attn.in_proj_weight
+   transformer.resblocks.0.attn.in_proj_bias
+   transformer.resblocks.0.attn.out_proj.weight
+   transformer.resblocks.0.attn.out_proj.bias
+   transformer.resblocks.0.ln_1.weight
+   transformer.resblocks.0.ln_1.bias
+   transformer.resblocks.0.mlp.c_fc.weight
+   transformer.resblocks.0.mlp.c_fc.bias
+   transformer.resblocks.0.mlp.c_proj.weight
+   transformer.resblocks.0.mlp.c_proj.bias
+   transformer.resblocks.0.ln_2.weight
+   transformer.resblocks.0.ln_2.bias
+   transformer.resblocks.1.attn.in_proj_weight
+   transformer.resblocks.1.attn.in_proj_bias
+   transformer.resblocks.1.attn.out_proj.weight
+   transformer.resblocks.1.attn.out_proj.bias
+   transformer.resblocks.1.ln_1.weight
+   transformer.resblocks.1.ln_1.bias
+   transformer.resblocks.1.mlp.c_fc.weight
+   transformer.resblocks.1.mlp.c_fc.bias
+   transformer.resblocks.1.mlp.c_proj.weight
+   transformer.resblocks.1.mlp.c_proj.bias
+   transformer.resblocks.1.ln_2.weight
+   transformer.resblocks.1.ln_2.bias
+   transformer.resblocks.2.attn.in_proj_weight
+   transformer.resblocks.2.attn.in_proj_bias
+   transformer.resblocks.2.attn.out_proj.weight
+   transformer.resblocks.2.attn.out_proj.bias
+   transformer.resblocks.2.ln_1.weight
+   transformer.resblocks.2.ln_1.bias
+   transformer.resblocks.2.mlp.c_fc.weight
+   transformer.resblocks.2.mlp.c_fc.bias
+   transformer.resblocks.2.mlp.c_proj.weight
+   transformer.resblocks.2.mlp.c_proj.bias
+   transformer.resblocks.2.ln_2.weight
+   transformer.resblocks.2.ln_2.bias
+   transformer.resblocks.3.attn.in_proj_weight
+   transformer.resblocks.3.attn.in_proj_bias
+   transformer.resblocks.3.attn.out_proj.weight
+   transformer.resblocks.3.attn.out_proj.bias
+   transformer.resblocks.3.ln_1.weight
+   transformer.resblocks.3.ln_1.bias
+   transformer.resblocks.3.mlp.c_fc.weight
+   transformer.resblocks.3.mlp.c_fc.bias
+   transformer.resblocks.3.mlp.c_proj.weight
+   transformer.resblocks.3.mlp.c_proj.bias
+   transformer.resblocks.3.ln_2.weight
+   transformer.resblocks.3.ln_2.bias
+   transformer.resblocks.4.attn.in_proj_weight
+   transformer.resblocks.4.attn.in_proj_bias
+   transformer.resblocks.4.attn.out_proj.weight
+   transformer.resblocks.4.attn.out_proj.bias
+   transformer.resblocks.4.ln_1.weight
+   transformer.resblocks.4.ln_1.bias
+   transformer.resblocks.4.mlp.c_fc.weight
+   transformer.resblocks.4.mlp.c_fc.bias
+   transformer.resblocks.4.mlp.c_proj.weight
+   transformer.resblocks.4.mlp.c_proj.bias
+   transformer.resblocks.4.ln_2.weight
+   transformer.resblocks.4.ln_2.bias
+   transformer.resblocks.5.attn.in_proj_weight
+   transformer.resblocks.5.attn.in_proj_bias
+   transformer.resblocks.5.attn.out_proj.weight
+   transformer.resblocks.5.attn.out_proj.bias
+   transformer.resblocks.5.ln_1.weight
+   transformer.resblocks.5.ln_1.bias
+   transformer.resblocks.5.mlp.c_fc.weight
+   transformer.resblocks.5.mlp.c_fc.bias
+   transformer.resblocks.5.mlp.c_proj.weight
+   transformer.resblocks.5.mlp.c_proj.bias
+   transformer.resblocks.5.ln_2.weight
+   transformer.resblocks.5.ln_2.bias
+   transformer.resblocks.6.attn.in_proj_weight
+   transformer.resblocks.6.attn.in_proj_bias
+   transformer.resblocks.6.attn.out_proj.weight
+   transformer.resblocks.6.attn.out_proj.bias
+   transformer.resblocks.6.ln_1.weight
+   transformer.resblocks.6.ln_1.bias
+   transformer.resblocks.6.mlp.c_fc.weight
+   transformer.resblocks.6.mlp.c_fc.bias
+   transformer.resblocks.6.mlp.c_proj.weight
+   transformer.resblocks.6.mlp.c_proj.bias
+   transformer.resblocks.6.ln_2.weight
+   transformer.resblocks.6.ln_2.bias
+   transformer.resblocks.7.attn.in_proj_weight
+   transformer.resblocks.7.attn.in_proj_bias
+   transformer.resblocks.7.attn.out_proj.weight
+   transformer.resblocks.7.attn.out_proj.bias
+   transformer.resblocks.7.ln_1.weight
+   transformer.resblocks.7.ln_1.bias
+   transformer.resblocks.7.mlp.c_fc.weight
+   transformer.resblocks.7.mlp.c_fc.bias
+   transformer.resblocks.7.mlp.c_proj.weight
+   transformer.resblocks.7.mlp.c_proj.bias
+   transformer.resblocks.7.ln_2.weight
+   transformer.resblocks.7.ln_2.bias
+   transformer.resblocks.8.attn.in_proj_weight
+   transformer.resblocks.8.attn.in_proj_bias
+   transformer.resblocks.8.attn.out_proj.weight
+   transformer.resblocks.8.attn.out_proj.bias
+   transformer.resblocks.8.ln_1.weight
+   transformer.resblocks.8.ln_1.bias
+   transformer.resblocks.8.mlp.c_fc.weight
+   transformer.resblocks.8.mlp.c_fc.bias
+   transformer.resblocks.8.mlp.c_proj.weight
+   transformer.resblocks.8.mlp.c_proj.bias
+   transformer.resblocks.8.ln_2.weight
+   transformer.resblocks.8.ln_2.bias
+   transformer.resblocks.9.attn.in_proj_weight
+   transformer.resblocks.9.attn.in_proj_bias
+   transformer.resblocks.9.attn.out_proj.weight
+   transformer.resblocks.9.attn.out_proj.bias
+   transformer.resblocks.9.ln_1.weight
+   transformer.resblocks.9.ln_1.bias
+   transformer.resblocks.9.mlp.c_fc.weight
+   transformer.resblocks.9.mlp.c_fc.bias
+   transformer.resblocks.9.mlp.c_proj.weight
+   transformer.resblocks.9.mlp.c_proj.bias
+   transformer.resblocks.9.ln_2.weight
+   transformer.resblocks.9.ln_2.bias
+   transformer.resblocks.10.attn.in_proj_weight
+   transformer.resblocks.10.attn.in_proj_bias
+   transformer.resblocks.10.attn.out_proj.weight
+   transformer.resblocks.10.attn.out_proj.bias
+   transformer.resblocks.10.ln_1.weight
+   transformer.resblocks.10.ln_1.bias
+   transformer.resblocks.10.mlp.c_fc.weight
+   transformer.resblocks.10.mlp.c_fc.bias
+   transformer.resblocks.10.mlp.c_proj.weight
+   transformer.resblocks.10.mlp.c_proj.bias
+   transformer.resblocks.10.ln_2.weight
+   transformer.resblocks.10.ln_2.bias
+   transformer.resblocks.11.attn.in_proj_weight
+   transformer.resblocks.11.attn.in_proj_bias
+   transformer.resblocks.11.attn.out_proj.weight
+   transformer.resblocks.11.attn.out_proj.bias
+   transformer.resblocks.11.ln_1.weight
+   transformer.resblocks.11.ln_1.bias
+   transformer.resblocks.11.mlp.c_fc.weight
+   transformer.resblocks.11.mlp.c_fc.bias
+   transformer.resblocks.11.mlp.c_proj.weight
+   transformer.resblocks.11.mlp.c_proj.bias
+   transformer.resblocks.11.ln_2.weight
+   transformer.resblocks.11.ln_2.bias
+   token_embedding.weight
+   ln_final.weight
+   ln_final.bias
+   clip.input_resolution
+   clip.context_length
+   clip.vocab_size
+2024-10-10 07:49:07,735:INFO: --------------------
+2024-10-10 07:49:07,735:INFO: Weights from pretrained model not used in MeRetriever: 
+   positional_embedding
+   text_projection
+   logit_scale
+   input_resolution
+   context_length
+   vocab_size
+   visual.class_embedding
+   visual.positional_embedding
+   visual.proj
+   visual.conv1.weight
+   visual.ln_pre.weight
+   visual.ln_pre.bias
+   visual.transformer.resblocks.0.attn.in_proj_weight
+   visual.transformer.resblocks.0.attn.in_proj_bias
+   visual.transformer.resblocks.0.attn.out_proj.weight
+   visual.transformer.resblocks.0.attn.out_proj.bias
+   visual.transformer.resblocks.0.ln_1.weight
+   visual.transformer.resblocks.0.ln_1.bias
+   visual.transformer.resblocks.0.mlp.c_fc.weight
+   visual.transformer.resblocks.0.mlp.c_fc.bias
+   visual.transformer.resblocks.0.mlp.c_proj.weight
+   visual.transformer.resblocks.0.mlp.c_proj.bias
+   visual.transformer.resblocks.0.ln_2.weight
+   visual.transformer.resblocks.0.ln_2.bias
+   visual.transformer.resblocks.1.attn.in_proj_weight
+   visual.transformer.resblocks.1.attn.in_proj_bias
+   visual.transformer.resblocks.1.attn.out_proj.weight
+   visual.transformer.resblocks.1.attn.out_proj.bias
+   visual.transformer.resblocks.1.ln_1.weight
+   visual.transformer.resblocks.1.ln_1.bias
+   visual.transformer.resblocks.1.mlp.c_fc.weight
+   visual.transformer.resblocks.1.mlp.c_fc.bias
+   visual.transformer.resblocks.1.mlp.c_proj.weight
+   visual.transformer.resblocks.1.mlp.c_proj.bias
+   visual.transformer.resblocks.1.ln_2.weight
+   visual.transformer.resblocks.1.ln_2.bias
+   visual.transformer.resblocks.2.attn.in_proj_weight
+   visual.transformer.resblocks.2.attn.in_proj_bias
+   visual.transformer.resblocks.2.attn.out_proj.weight
+   visual.transformer.resblocks.2.attn.out_proj.bias
+   visual.transformer.resblocks.2.ln_1.weight
+   visual.transformer.resblocks.2.ln_1.bias
+   visual.transformer.resblocks.2.mlp.c_fc.weight
+   visual.transformer.resblocks.2.mlp.c_fc.bias
+   visual.transformer.resblocks.2.mlp.c_proj.weight
+   visual.transformer.resblocks.2.mlp.c_proj.bias
+   visual.transformer.resblocks.2.ln_2.weight
+   visual.transformer.resblocks.2.ln_2.bias
+   visual.transformer.resblocks.3.attn.in_proj_weight
+   visual.transformer.resblocks.3.attn.in_proj_bias
+   visual.transformer.resblocks.3.attn.out_proj.weight
+   visual.transformer.resblocks.3.attn.out_proj.bias
+   visual.transformer.resblocks.3.ln_1.weight
+   visual.transformer.resblocks.3.ln_1.bias
+   visual.transformer.resblocks.3.mlp.c_fc.weight
+   visual.transformer.resblocks.3.mlp.c_fc.bias
+   visual.transformer.resblocks.3.mlp.c_proj.weight
+   visual.transformer.resblocks.3.mlp.c_proj.bias
+   visual.transformer.resblocks.3.ln_2.weight
+   visual.transformer.resblocks.3.ln_2.bias
+   visual.transformer.resblocks.4.attn.in_proj_weight
+   visual.transformer.resblocks.4.attn.in_proj_bias
+   visual.transformer.resblocks.4.attn.out_proj.weight
+   visual.transformer.resblocks.4.attn.out_proj.bias
+   visual.transformer.resblocks.4.ln_1.weight
+   visual.transformer.resblocks.4.ln_1.bias
+   visual.transformer.resblocks.4.mlp.c_fc.weight
+   visual.transformer.resblocks.4.mlp.c_fc.bias
+   visual.transformer.resblocks.4.mlp.c_proj.weight
+   visual.transformer.resblocks.4.mlp.c_proj.bias
+   visual.transformer.resblocks.4.ln_2.weight
+   visual.transformer.resblocks.4.ln_2.bias
+   visual.transformer.resblocks.5.attn.in_proj_weight
+   visual.transformer.resblocks.5.attn.in_proj_bias
+   visual.transformer.resblocks.5.attn.out_proj.weight
+   visual.transformer.resblocks.5.attn.out_proj.bias
+   visual.transformer.resblocks.5.ln_1.weight
+   visual.transformer.resblocks.5.ln_1.bias
+   visual.transformer.resblocks.5.mlp.c_fc.weight
+   visual.transformer.resblocks.5.mlp.c_fc.bias
+   visual.transformer.resblocks.5.mlp.c_proj.weight
+   visual.transformer.resblocks.5.mlp.c_proj.bias
+   visual.transformer.resblocks.5.ln_2.weight
+   visual.transformer.resblocks.5.ln_2.bias
+   visual.transformer.resblocks.6.attn.in_proj_weight
+   visual.transformer.resblocks.6.attn.in_proj_bias
+   visual.transformer.resblocks.6.attn.out_proj.weight
+   visual.transformer.resblocks.6.attn.out_proj.bias
+   visual.transformer.resblocks.6.ln_1.weight
+   visual.transformer.resblocks.6.ln_1.bias
+   visual.transformer.resblocks.6.mlp.c_fc.weight
+   visual.transformer.resblocks.6.mlp.c_fc.bias
+   visual.transformer.resblocks.6.mlp.c_proj.weight
+   visual.transformer.resblocks.6.mlp.c_proj.bias
+   visual.transformer.resblocks.6.ln_2.weight
+   visual.transformer.resblocks.6.ln_2.bias
+   visual.transformer.resblocks.7.attn.in_proj_weight
+   visual.transformer.resblocks.7.attn.in_proj_bias
+   visual.transformer.resblocks.7.attn.out_proj.weight
+   visual.transformer.resblocks.7.attn.out_proj.bias
+   visual.transformer.resblocks.7.ln_1.weight
+   visual.transformer.resblocks.7.ln_1.bias
+   visual.transformer.resblocks.7.mlp.c_fc.weight
+   visual.transformer.resblocks.7.mlp.c_fc.bias
+   visual.transformer.resblocks.7.mlp.c_proj.weight
+   visual.transformer.resblocks.7.mlp.c_proj.bias
+   visual.transformer.resblocks.7.ln_2.weight
+   visual.transformer.resblocks.7.ln_2.bias
+   visual.transformer.resblocks.8.attn.in_proj_weight
+   visual.transformer.resblocks.8.attn.in_proj_bias
+   visual.transformer.resblocks.8.attn.out_proj.weight
+   visual.transformer.resblocks.8.attn.out_proj.bias
+   visual.transformer.resblocks.8.ln_1.weight
+   visual.transformer.resblocks.8.ln_1.bias
+   visual.transformer.resblocks.8.mlp.c_fc.weight
+   visual.transformer.resblocks.8.mlp.c_fc.bias
+   visual.transformer.resblocks.8.mlp.c_proj.weight
+   visual.transformer.resblocks.8.mlp.c_proj.bias
+   visual.transformer.resblocks.8.ln_2.weight
+   visual.transformer.resblocks.8.ln_2.bias
+   visual.transformer.resblocks.9.attn.in_proj_weight
+   visual.transformer.resblocks.9.attn.in_proj_bias
+   visual.transformer.resblocks.9.attn.out_proj.weight
+   visual.transformer.resblocks.9.attn.out_proj.bias
+   visual.transformer.resblocks.9.ln_1.weight
+   visual.transformer.resblocks.9.ln_1.bias
+   visual.transformer.resblocks.9.mlp.c_fc.weight
+   visual.transformer.resblocks.9.mlp.c_fc.bias
+   visual.transformer.resblocks.9.mlp.c_proj.weight
+   visual.transformer.resblocks.9.mlp.c_proj.bias
+   visual.transformer.resblocks.9.ln_2.weight
+   visual.transformer.resblocks.9.ln_2.bias
+   visual.transformer.resblocks.10.attn.in_proj_weight
+   visual.transformer.resblocks.10.attn.in_proj_bias
+   visual.transformer.resblocks.10.attn.out_proj.weight
+   visual.transformer.resblocks.10.attn.out_proj.bias
+   visual.transformer.resblocks.10.ln_1.weight
+   visual.transformer.resblocks.10.ln_1.bias
+   visual.transformer.resblocks.10.mlp.c_fc.weight
+   visual.transformer.resblocks.10.mlp.c_fc.bias
+   visual.transformer.resblocks.10.mlp.c_proj.weight
+   visual.transformer.resblocks.10.mlp.c_proj.bias
+   visual.transformer.resblocks.10.ln_2.weight
+   visual.transformer.resblocks.10.ln_2.bias
+   visual.transformer.resblocks.11.attn.in_proj_weight
+   visual.transformer.resblocks.11.attn.in_proj_bias
+   visual.transformer.resblocks.11.attn.out_proj.weight
+   visual.transformer.resblocks.11.attn.out_proj.bias
+   visual.transformer.resblocks.11.ln_1.weight
+   visual.transformer.resblocks.11.ln_1.bias
+   visual.transformer.resblocks.11.mlp.c_fc.weight
+   visual.transformer.resblocks.11.mlp.c_fc.bias
+   visual.transformer.resblocks.11.mlp.c_proj.weight
+   visual.transformer.resblocks.11.mlp.c_proj.bias
+   visual.transformer.resblocks.11.ln_2.weight
+   visual.transformer.resblocks.11.ln_2.bias
+   visual.ln_post.weight
+   visual.ln_post.bias
+   transformer.resblocks.0.attn.in_proj_weight
+   transformer.resblocks.0.attn.in_proj_bias
+   transformer.resblocks.0.attn.out_proj.weight
+   transformer.resblocks.0.attn.out_proj.bias
+   transformer.resblocks.0.ln_1.weight
+   transformer.resblocks.0.ln_1.bias
+   transformer.resblocks.0.mlp.c_fc.weight
+   transformer.resblocks.0.mlp.c_fc.bias
+   transformer.resblocks.0.mlp.c_proj.weight
+   transformer.resblocks.0.mlp.c_proj.bias
+   transformer.resblocks.0.ln_2.weight
+   transformer.resblocks.0.ln_2.bias
+   transformer.resblocks.1.attn.in_proj_weight
+   transformer.resblocks.1.attn.in_proj_bias
+   transformer.resblocks.1.attn.out_proj.weight
+   transformer.resblocks.1.attn.out_proj.bias
+   transformer.resblocks.1.ln_1.weight
+   transformer.resblocks.1.ln_1.bias
+   transformer.resblocks.1.mlp.c_fc.weight
+   transformer.resblocks.1.mlp.c_fc.bias
+   transformer.resblocks.1.mlp.c_proj.weight
+   transformer.resblocks.1.mlp.c_proj.bias
+   transformer.resblocks.1.ln_2.weight
+   transformer.resblocks.1.ln_2.bias
+   transformer.resblocks.2.attn.in_proj_weight
+   transformer.resblocks.2.attn.in_proj_bias
+   transformer.resblocks.2.attn.out_proj.weight
+   transformer.resblocks.2.attn.out_proj.bias
+   transformer.resblocks.2.ln_1.weight
+   transformer.resblocks.2.ln_1.bias
+   transformer.resblocks.2.mlp.c_fc.weight
+   transformer.resblocks.2.mlp.c_fc.bias
+   transformer.resblocks.2.mlp.c_proj.weight
+   transformer.resblocks.2.mlp.c_proj.bias
+   transformer.resblocks.2.ln_2.weight
+   transformer.resblocks.2.ln_2.bias
+   transformer.resblocks.3.attn.in_proj_weight
+   transformer.resblocks.3.attn.in_proj_bias
+   transformer.resblocks.3.attn.out_proj.weight
+   transformer.resblocks.3.attn.out_proj.bias
+   transformer.resblocks.3.ln_1.weight
+   transformer.resblocks.3.ln_1.bias
+   transformer.resblocks.3.mlp.c_fc.weight
+   transformer.resblocks.3.mlp.c_fc.bias
+   transformer.resblocks.3.mlp.c_proj.weight
+   transformer.resblocks.3.mlp.c_proj.bias
+   transformer.resblocks.3.ln_2.weight
+   transformer.resblocks.3.ln_2.bias
+   transformer.resblocks.4.attn.in_proj_weight
+   transformer.resblocks.4.attn.in_proj_bias
+   transformer.resblocks.4.attn.out_proj.weight
+   transformer.resblocks.4.attn.out_proj.bias
+   transformer.resblocks.4.ln_1.weight
+   transformer.resblocks.4.ln_1.bias
+   transformer.resblocks.4.mlp.c_fc.weight
+   transformer.resblocks.4.mlp.c_fc.bias
+   transformer.resblocks.4.mlp.c_proj.weight
+   transformer.resblocks.4.mlp.c_proj.bias
+   transformer.resblocks.4.ln_2.weight
+   transformer.resblocks.4.ln_2.bias
+   transformer.resblocks.5.attn.in_proj_weight
+   transformer.resblocks.5.attn.in_proj_bias
+   transformer.resblocks.5.attn.out_proj.weight
+   transformer.resblocks.5.attn.out_proj.bias
+   transformer.resblocks.5.ln_1.weight
+   transformer.resblocks.5.ln_1.bias
+   transformer.resblocks.5.mlp.c_fc.weight
+   transformer.resblocks.5.mlp.c_fc.bias
+   transformer.resblocks.5.mlp.c_proj.weight
+   transformer.resblocks.5.mlp.c_proj.bias
+   transformer.resblocks.5.ln_2.weight
+   transformer.resblocks.5.ln_2.bias
+   transformer.resblocks.6.attn.in_proj_weight
+   transformer.resblocks.6.attn.in_proj_bias
+   transformer.resblocks.6.attn.out_proj.weight
+   transformer.resblocks.6.attn.out_proj.bias
+   transformer.resblocks.6.ln_1.weight
+   transformer.resblocks.6.ln_1.bias
+   transformer.resblocks.6.mlp.c_fc.weight
+   transformer.resblocks.6.mlp.c_fc.bias
+   transformer.resblocks.6.mlp.c_proj.weight
+   transformer.resblocks.6.mlp.c_proj.bias
+   transformer.resblocks.6.ln_2.weight
+   transformer.resblocks.6.ln_2.bias
+   transformer.resblocks.7.attn.in_proj_weight
+   transformer.resblocks.7.attn.in_proj_bias
+   transformer.resblocks.7.attn.out_proj.weight
+   transformer.resblocks.7.attn.out_proj.bias
+   transformer.resblocks.7.ln_1.weight
+   transformer.resblocks.7.ln_1.bias
+   transformer.resblocks.7.mlp.c_fc.weight
+   transformer.resblocks.7.mlp.c_fc.bias
+   transformer.resblocks.7.mlp.c_proj.weight
+   transformer.resblocks.7.mlp.c_proj.bias
+   transformer.resblocks.7.ln_2.weight
+   transformer.resblocks.7.ln_2.bias
+   transformer.resblocks.8.attn.in_proj_weight
+   transformer.resblocks.8.attn.in_proj_bias
+   transformer.resblocks.8.attn.out_proj.weight
+   transformer.resblocks.8.attn.out_proj.bias
+   transformer.resblocks.8.ln_1.weight
+   transformer.resblocks.8.ln_1.bias
+   transformer.resblocks.8.mlp.c_fc.weight
+   transformer.resblocks.8.mlp.c_fc.bias
+   transformer.resblocks.8.mlp.c_proj.weight
+   transformer.resblocks.8.mlp.c_proj.bias
+   transformer.resblocks.8.ln_2.weight
+   transformer.resblocks.8.ln_2.bias
+   transformer.resblocks.9.attn.in_proj_weight
+   transformer.resblocks.9.attn.in_proj_bias
+   transformer.resblocks.9.attn.out_proj.weight
+   transformer.resblocks.9.attn.out_proj.bias
+   transformer.resblocks.9.ln_1.weight
+   transformer.resblocks.9.ln_1.bias
+   transformer.resblocks.9.mlp.c_fc.weight
+   transformer.resblocks.9.mlp.c_fc.bias
+   transformer.resblocks.9.mlp.c_proj.weight
+   transformer.resblocks.9.mlp.c_proj.bias
+   transformer.resblocks.9.ln_2.weight
+   transformer.resblocks.9.ln_2.bias
+   transformer.resblocks.10.attn.in_proj_weight
+   transformer.resblocks.10.attn.in_proj_bias
+   transformer.resblocks.10.attn.out_proj.weight
+   transformer.resblocks.10.attn.out_proj.bias
+   transformer.resblocks.10.ln_1.weight
+   transformer.resblocks.10.ln_1.bias
+   transformer.resblocks.10.mlp.c_fc.weight
+   transformer.resblocks.10.mlp.c_fc.bias
+   transformer.resblocks.10.mlp.c_proj.weight
+   transformer.resblocks.10.mlp.c_proj.bias
+   transformer.resblocks.10.ln_2.weight
+   transformer.resblocks.10.ln_2.bias
+   transformer.resblocks.11.attn.in_proj_weight
+   transformer.resblocks.11.attn.in_proj_bias
+   transformer.resblocks.11.attn.out_proj.weight
+   transformer.resblocks.11.attn.out_proj.bias
+   transformer.resblocks.11.ln_1.weight
+   transformer.resblocks.11.ln_1.bias
+   transformer.resblocks.11.mlp.c_fc.weight
+   transformer.resblocks.11.mlp.c_fc.bias
+   transformer.resblocks.11.mlp.c_proj.weight
+   transformer.resblocks.11.mlp.c_proj.bias
+   transformer.resblocks.11.ln_2.weight
+   transformer.resblocks.11.ln_2.bias
+   token_embedding.weight
+   ln_final.weight
+   ln_final.bias
+   clip.input_resolution
+   clip.context_length
+   clip.vocab_size
+2024-10-10 07:49:08,848:INFO: ***** Running test *****
+2024-10-10 07:49:08,848:INFO:   Num examples = 1334
+2024-10-10 07:49:08,848:INFO:   Batch size = 64
+2024-10-10 07:49:08,848:INFO:   Num steps = 11
+2024-10-10 07:49:08,848:INFO: ***** Running val *****
+2024-10-10 07:49:08,848:INFO:   Num examples = 1334
+2024-10-10 07:49:09,892:INFO: ***** Running test *****
+2024-10-10 07:49:09,893:INFO:   Num examples = 1334
+2024-10-10 07:49:09,893:INFO:   Batch size = 64
+2024-10-10 07:49:09,893:INFO:   Num steps = 11
+2024-10-10 07:49:09,893:INFO: ***** Running val *****
+2024-10-10 07:49:09,893:INFO:   Num examples = 1334
+2024-10-10 07:49:14,794:INFO: ***** Running training *****
+2024-10-10 07:49:14,795:INFO:   Num examples = 5338
+2024-10-10 07:49:14,795:INFO:   Batch size = 256
+2024-10-10 07:49:14,795:INFO:   Num steps = 400
+2024-10-10 07:49:14,802:INFO: ***** Running training *****
+2024-10-10 07:49:14,802:INFO:   Num examples = 5338
+2024-10-10 07:49:14,803:INFO:   Batch size = 256
+2024-10-10 07:49:14,803:INFO:   Num steps = 400

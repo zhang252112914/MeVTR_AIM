@@ -1,0 +1,21 @@
+1、预训练模型ViT-B-32.pt是一个torchscript格式的文件，而代码需要的是一个state_dict类型，显然没有match，需要修改代码
+main_task_retrieval_multi.py line:238 读入torchscript再转换获得state_dict
+
+2、源代码中使用了一个在当前numpy版本中已经被废弃的用法，需要修改代码
+charades_dataloader line:123 dtype = np.float -> dtype = np.float64
+
+3、GPU内存不够？
+通过指定无人使用的GPU运行任务
+
+4、dataloader 停摆
+考虑到只有一个GPU在跑这个任务，先尝试减少num_thread_reader
+没有作用
+单独指定一个GPU去跑，会出现dataloader被kill的问题
+指定多个GPU则会出现3的问题（没有分布式的跑法？）
+如果减少num_thread_reader参数的数量，依然是dataloader被kill
+减少batch size ， 依然没有任何作用
+从新压缩视频（考虑到可能的损坏？） 依然没有任何作用
+似乎问题3仍然没有解决
+
+--------------------------------------------------------------------------------------------
+
