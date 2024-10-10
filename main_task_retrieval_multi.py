@@ -54,6 +54,9 @@ def get_args(description='Me-Retriever on Retrieval Task'):
     parser.add_argument('--hard_negative_rate', type=float, default=0.5, help='rate of intra negative sample')
     parser.add_argument('--negative_weighting', type=int, default=1, help='Weight the loss for intra negative')
     parser.add_argument('--n_pair', type=int, default=1, help='Num of pair to output from data loader')
+    parser.add_argument('--regularize', type=str, default='none', choices=['none', 'l2', 'dropout'],
+                    help='Regularization method. Options are: none, l2, dropout.')
+
 
     parser.add_argument("--output_dir", default=None, type=str, required=True,
                         help="The output directory where the model predictions and checkpoints will be written.")
@@ -235,12 +238,12 @@ def init_device(args, local_rank):
 
 def init_model(args, device, n_gpu, local_rank):
     if args.init_model:
-        #model_state_dict = torch.load(args.init_model, map_location='cpu')
+        model_state_dict = torch.load(args.init_model, map_location='cpu')
         # 加载 TorchScript 模型
-        torchscript_model = torch.jit.load(args.init_model, map_location='cpu')
+        #torchscript_model = torch.jit.load(args.init_model, map_location='cpu')
 
         # 尝试提取 state_dict
-        model_state_dict = torchscript_model.state_dict()
+        #model_state_dict = torchscript_model.state_dict()
 
     else:
         model_state_dict = None

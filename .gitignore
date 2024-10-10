@@ -1,3 +1,5 @@
 .history/*
 captions
 __pycache__/*
+ViT-B-32.pt
+error_trace.txt

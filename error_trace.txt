@@ -19,3 +19,11 @@ charades_dataloader line:123 dtype = np.float -> dtype = np.float64
 
 --------------------------------------------------------------------------------------------
 
+1、main_task_retrieval_multi.py要求有--regularize参数(349) 但是 在get_arg函数里压根没有识别regularize参数
+解决方式：在regularize中添加对应参数的识别(57) 
+
+2、在output中显示模型的参数没有读进去
+不会这个pre_trained函数是读之前自己预训练的模型（checkpoint）吧
+试试去掉脚本中的init-model参数
+--init_model /home/zyl/MeVTR_data_and_models/pretrained_clip/modules/ViT-B-32.pt \
+是这样的（为什么代码里面没有注释？哭死啊）

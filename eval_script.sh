@@ -11,4 +11,5 @@ main_task_retrieval_multi.py --do_eval \
 --loose_type --linear_patch 2d --sim_header meanP \
 --pretrained_clip_name ViT-B/32 \
 --post_process cluster --post_cluster_centroids 16 \
---init_model /home/zyl/MeVTR_data_and_models/pretrained_clip/modules/ViT-B-32.pt
+--init_model  \
+--regularize none
